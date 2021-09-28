@@ -21,7 +21,7 @@
 	--font-gray: #b4b4c4;
 
 	/* Font Family */
-	font-family: "CamphorW01-Regular, 'Helvetica Neue', Arial, sans-serif";
+	font-family: "'Helvetica',CamphorW01-Regular, 'Helvetica Neue', Arial, sans-serif";
 	@font-face {
 		font-family: "CamphorW01-Regular";
 		src: url("//db.onlinewebfonts.com/t/22f912b4b10a938d5f28b7fe79ed7466.eot");
@@ -31,7 +31,9 @@
 			url("//db.onlinewebfonts.com/t/22f912b4b10a938d5f28b7fe79ed7466.ttf") format("truetype"),
 			url("//db.onlinewebfonts.com/t/22f912b4b10a938d5f28b7fe79ed7466.svg#CamphorW01-Regular") format("svg");
 	}
-  
+
+	@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 	/* Font Size */
 	font-size: 62.5%;
 }
@@ -44,6 +46,53 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+* {
+	/* font-family: "'Helvetica',CamphorW01-Regular, 'Helvetica Neue', Arial, sans-serif"; */
+	font-family: 'PT Sans', sans-serif;
+}
+
+*,
+:after,
+:before,
+html {
+	box-sizing: border-box;
+}
+
 code {
+	/* font-family: "'Helvetica',CamphorW01-Regular, 'Helvetica Neue', Arial, sans-serif"; */
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.4rem;
 	/* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; */
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 100%;
+}
+
+/* Helper Classes */
+.txt-gray {
+	color: var(--font-gray);
+}
+
+.txt-black {
+	color: var(--font-black);
+}
+
+.txt-blue {
+	color: var(--secondary-blue-1);
+}
+
+.mt-60 {
+	margin-top: 60px;
 }
