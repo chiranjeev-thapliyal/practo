@@ -1,13 +1,49 @@
+:root {
+	/* Primary Colors */
+	--primary-color: #28328c;
+	--primary-gradient: linear-gradient(to right, #333fa4, #151c5a);
+
+	/* Secondary Colors */
+	--secondary-purple-1: #8a45e6;
+	--secondary-pink-1: #ffdef7;
+	--secondary-blue-1: #1ebef0;
+	--secondary-blue-2: #afcfed;
+	--secondary-green-2: #98cbd6;
+	--secondary-gray-1: #ccd0db;
+	--secondary-blue-2: #a2cae7;
+	--secondary-purple-2: #d5d8fc;
+	--secondary-purple-3: #edf1ff;
+	--secondary-white-2: #f8f8fb;
+	--secondary-face-2: #f8e9e6;
+
+	/* Text Colors */
+	--font-black: #2d2d32;
+	--font-gray: #b4b4c4;
+
+	/* Font Family */
+	font-family: "CamphorW01-Regular, 'Helvetica Neue', Arial, sans-serif";
+	@font-face {
+		font-family: "CamphorW01-Regular";
+		src: url("//db.onlinewebfonts.com/t/22f912b4b10a938d5f28b7fe79ed7466.eot");
+		src: url("//db.onlinewebfonts.com/t/22f912b4b10a938d5f28b7fe79ed7466.eot?#iefix") format("embedded-opentype"),
+			url("//db.onlinewebfonts.com/t/22f912b4b10a938d5f28b7fe79ed7466.woff2") format("woff2"),
+			url("//db.onlinewebfonts.com/t/22f912b4b10a938d5f28b7fe79ed7466.woff") format("woff"),
+			url("//db.onlinewebfonts.com/t/22f912b4b10a938d5f28b7fe79ed7466.ttf") format("truetype"),
+			url("//db.onlinewebfonts.com/t/22f912b4b10a938d5f28b7fe79ed7466.svg#CamphorW01-Regular") format("svg");
+	}
+  
+	/* Font Size */
+	font-size: 62.5%;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	/* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif; */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	/* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; */
 }
