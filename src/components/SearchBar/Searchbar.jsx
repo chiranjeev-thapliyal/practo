@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./icoons/ionicons.min.css";
+import "../Main/icoons/ionicons.min.css";
 import axios from "axios";
-import "./SearchBar.css";
+import style from "./SearchBar.module.css";
 
 export default function Searchbar() {
   const [doctorList, setDoctorsList] = useState([]);
@@ -41,11 +41,11 @@ export default function Searchbar() {
   };
 
   return (
-    <div className="main-section">
-      <div className="inputDiv">
+    <div className={style["main-section"]}>
+      <div className={style.inputDiv}>
         <div>
-          <div className="placeInputDiv div">
-            <i className="ion-ios7-location-outline icons" />
+          <div className={`${style.placeInputDiv}  ${style.div}`}>
+            <i className={`ion-ios7-location-outline ${style.icons}`} />
             <input
               name="place"
               onClick={handleClick}
@@ -54,7 +54,7 @@ export default function Searchbar() {
             />
           </div>
           <div
-            className="placesHidden"
+            className={style.placesHidden}
             style={{
               visibility: placeList.length === 0 ? "hidden" : "visible",
             }}
@@ -62,7 +62,7 @@ export default function Searchbar() {
             {placeList !== [] &&
               placeList.map((el) => (
                 <div
-                  className="placesHiddenDiv"
+                  className={style.placesHiddenDiv}
                   style={{
                     display: "flex",
                     justifyContent: "space-between",
@@ -78,10 +78,10 @@ export default function Searchbar() {
           </div>
         </div>
         <div>
-          <div className="doctorInputDiv div">
-            <i className="ion-ios7-search icons" />
+          <div className={`${style.doctorInputDiv} ${style.div}`}>
+            <i className={`ion-ios7-search ${style.icons}`} />
             <input
-              className="doctorInput"
+              className={style.doctorInput}
               onClick={handleClick}
               name="doctors"
               type="text"
@@ -89,14 +89,14 @@ export default function Searchbar() {
             />
           </div>
           <div
-            className="doctorsHidden"
+            className={style.doctorsHidden}
             style={{
               visibility: doctorList.length === 0 ? "hidden" : "visible",
             }}
           >
             {doctorList !== [] &&
               doctorList.map((el) => (
-                <div className="doctorsHiddenDiv">
+                <div className={style.doctorsHiddenDiv}>
                   <span>
                     <i className={el.i} />
                     <span>{el.title}</span>
@@ -107,9 +107,9 @@ export default function Searchbar() {
           </div>
         </div>
       </div>
-      <div className="imageDiv">
+      <div className={style.imageDiv}>
         <img
-          className="imagetag"
+          className={style.imagetag}
           src="https://www.practostatic.com/subscriptions/images/plus-tag.png"
           alt="img"
         />
