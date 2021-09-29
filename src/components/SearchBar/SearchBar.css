@@ -1,0 +1,62 @@
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10%;
+  font-size: 16px;
+}
+.inputDiv {
+  /* background-color: blue; */
+  display: flex;
+  padding: 20px 0px;
+}
+.div {
+  display: flex;
+  border: 1px solid black;
+  /* border-bottom: none; */
+  width: 250px;
+  padding: 6px 0px;
+}
+.div input {
+  border: none;
+  width: 80%;
+}
+.doctorInputDiv {
+  width: 400px;
+}
+
+.icons {
+  padding: 0px 6px;
+}
+
+.imageDiv {
+  width: 200px;
+  position: relative;
+  align-items: center;
+  align-self: center;
+}
+.imagetag {
+  width: 100%;
+  float: right;
+}
+.doctorsHidden {
+  width: 403px;
+  border-bottom: 1px solid black;
+  position: fixed;
+  top: 60px;
+  display: flex;
+  flex-flow: column;
+}
+.placesHidden {
+  width: 250px;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-flow: column;
+  position: fixed;
+  top: 60px;
+}
+.doctorsHiddenDiv {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-bottom: none;
+}

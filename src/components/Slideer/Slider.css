@@ -1,0 +1,66 @@
+.main {
+  margin: 0px 10%;
+}
+.slider {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider .slide {
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: 0.3s left ease-in-out;
+}
+.slider .item {
+  margin-right: 10px;
+}
+
+.slider .item:last-child {
+  margin-right: 0;
+}
+.ctrl {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.ctrl-btn {
+  padding: 5px 5px;
+  min-width: 50px;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -27.5px;
+}
+
+.ctrl-btn.pro-prev {
+  left: 0;
+  background-color: #f1f1f1;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.ctrl-btn.pro-next {
+  right: 0;
+  background-color: #f1f1f1;
+  height: 50px;
+  border-radius: 50px;
+}
+.item {
+  width: 300px;
+  height: 200px;
+}
+.item img {
+  width: 100%;
+}
