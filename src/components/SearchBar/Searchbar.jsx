@@ -83,7 +83,7 @@ export default function Searchbar() {
             <input
               className={style.doctorInput}
               onClick={handleClick}
-              name="doctors"
+              name="speciality"
               type="text"
               placeholder="Search doctors"
             />

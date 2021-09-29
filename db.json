@@ -1,0 +1,303 @@
+{
+  "speciality": [
+    {
+      "id": 1,
+      "i": "ion-ios7-search",
+      "title": "Dentist",
+      "speaciality": "speaciality"
+    },
+    {
+      "id": 1,
+      "i": "ion-ios7-search",
+      "title": "Gyneocologist",
+      "speaciality": "speaciality"
+    },
+    {
+      "id": 1,
+      "i": "ion-ios7-search",
+      "title": "general physician",
+      "speaciality": "speaciality"
+    },
+    {
+      "id": 1,
+      "i": "ion-ios7-search",
+      "title": "dermatologist",
+      "speaciality": "speaciality"
+    },
+    {
+      "id": 1,
+      "i": "ion-ios7-search",
+      "title": "ear-nose",
+      "speaciality": "speaciality"
+    },
+    {
+      "id": 1,
+      "i": "ion-ios7-search",
+      "title": "Homoeopath",
+      "speaciality": "speaciality"
+    },
+    {
+      "id": 1,
+      "i": "ion-ios7-search",
+      "title": "Ayurveda",
+      "speaciality": "speaciality"
+    }
+  ],
+  "place": [
+    {
+      "id": 1,
+      "title": "cuttact"
+    },
+    {
+      "id": 1,
+      "title": "bbsr"
+    },
+    {
+      "id": 1,
+      "title": "bangalore"
+    },
+    {
+      "id": 1,
+      "title": "pune"
+    }
+  ],
+  "doctors": [
+    {
+      "name": "Dr. Sourabh Nagpal",
+      "img": "https://imagesx.practo.com/providers/e97138f9-c301-4777-b608-ca0e220ee8c7.jpg?i_type=t_100x100",
+      "speciality": "Dentist",
+      "experience": 16,
+      "clinics": [
+        {
+          "name": "Matrix Dental & Skin Lounge",
+          "location": "Vasant Vihar, Delhi"
+        },
+        {
+          "name": "Matrix Dental And Skin Lounge",
+          "location": "Vasant Kunj, Delhi"
+        },
+        {
+          "name": "Matrix clinic",
+          "location": "Munirka, Delhi"
+        },
+        {
+          "name": "Holy Angels Hospital",
+          "location": "Vasant Vihar, Delhi"
+        }
+      ],
+      "video_consult": true,
+      "charges": 500,
+      "ratings": 99,
+      "stories": [
+        {
+          "name": "Jasmine",
+          "reason": "Visited For Misaligned Teeth",
+          "review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
+          "verified": true,
+          "happyWith": [
+            "Doctor friendliness",
+            "Explanation of the health issue",
+            "Treatment satisfaction",
+            "Value for money",
+            "Wait time"
+          ]
+        },
+        {
+          "name": "Jasmine",
+          "reason": "Visited For Misaligned Teeth",
+          "review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
+          "verified": true,
+          "happyWith": [
+            "Doctor friendliness",
+            "Explanation of the health issue",
+            "Treatment satisfaction",
+            "Value for money",
+            "Wait time"
+          ]
+        },
+        {
+          "name": "Jasmine",
+          "reason": "Visited For Misaligned Teeth",
+          "review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
+          "verified": true,
+          "happyWith": [
+            "Doctor friendliness",
+            "Explanation of the health issue",
+            "Treatment satisfaction",
+            "Value for money",
+            "Wait time"
+          ]
+        },
+        {
+          "name": "Jasmine",
+          "reason": "Visited For Misaligned Teeth",
+          "review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
+          "verified": true,
+          "happyWith": [
+            "Doctor friendliness",
+            "Explanation of the health issue",
+            "Treatment satisfaction",
+            "Value for money",
+            "Wait time"
+          ]
+        },
+        {
+          "name": "Jasmine",
+          "reason": "Visited For Misaligned Teeth",
+          "review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
+          "verified": true,
+          "happyWith": [
+            "Doctor friendliness",
+            "Explanation of the health issue",
+            "Treatment satisfaction",
+            "Value for money",
+            "Wait time"
+          ]
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Dr. Varun Raj Kumar",
+      "img": "https://imagesx.practo.com/providers/87dff1b9-1cb9-4005-9dcd-e1c79cb744cf.jpg?i_type=t_100x100",
+      "speciality": "Dentist",
+      "experience": 12,
+      "clinics": [
+        {
+          "name": "Matrix Dental & Skin Lounge",
+          "location": "Vasant Vihar, Delhi"
+        },
+        {
+          "name": "Matrix Dental And Skin Lounge",
+          "location": "Vasant Kunj, Delhi"
+        },
+        {
+          "name": "Matrix clinic",
+          "location": "Munirka, Delhi"
+        },
+        {
+          "name": "Holy Angels Hospital",
+          "location": "Vasant Vihar, Delhi"
+        }
+      ],
+      "video_consult": true,
+      "charges": 1000,
+      "ratings": 100,
+      "stories": [
+        {
+          "name": "Jasmine",
+          "reason": "Visited For Misaligned Teeth",
+          "review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
+          "verified": true,
+          "happyWith": [
+            "Doctor friendliness",
+            "Explanation of the health issue",
+            "Treatment satisfaction",
+            "Value for money",
+            "Wait time"
+          ]
+        },
+        {
+          "name": "Jasmine",
+          "reason": "Visited For Misaligned Teeth",
+          "review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
+          "verified": true,
+          "happyWith": [
+            "Doctor friendliness",
+            "Explanation of the health issue",
+            "Treatment satisfaction",
+            "Value for money",
+            "Wait time"
+          ]
+        },
+        {
+          "name": "Jasmine",
+          "reason": "Visited For Misaligned Teeth",
+          "review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
+          "verified": true,
+          "happyWith": [
+            "Doctor friendliness",
+            "Explanation of the health issue",
+            "Treatment satisfaction",
+            "Value for money",
+            "Wait time"
+          ]
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "Dr. Neha Khandelwal",
+      "img": "https://imagesx.practo.com/providers/cdb10c9f-8dc3-4d2c-8ae3-388c550cd941.jpg?i_type=t_100x100",
+      "speciality": "Gynecologist/Obstetrician",
+      "experience": 16,
+      "clinics": [
+        {
+          "name": "FEHEALTH",
+          "location": "Greater Kailash Part 1, Delhi"
+        },
+        {
+          "name": "Sama Hospital",
+          "location": "Siri Fort Road, Delhi"
+        },
+        {
+          "name": "BirthRight By Rainbow",
+          "location": "Malviya Nagar, Delhi"
+        },
+        {
+          "name": "Surgical Oncology Clinic",
+          "location": "Malviya Nagar, Delhi"
+        },
+        {
+          "name": "Rosewalk Healthcare",
+          "location": "Panchsheel Park, Delhi"
+        }
+      ],
+      "video_consult": true,
+      "charges": 1100,
+      "ratings": 99,
+      "stories": [
+        {
+          "name": "Jasmine",
+          "reason": "Visited For Misaligned Teeth",
+          "review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
+          "verified": true,
+          "happyWith": [
+            "Doctor friendliness",
+            "Explanation of the health issue",
+            "Treatment satisfaction",
+            "Value for money",
+            "Wait time"
+          ]
+        },
+        {
+          "name": "Jasmine",
+          "reason": "Visited For Misaligned Teeth",
+          "review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
+          "verified": true,
+          "happyWith": [
+            "Doctor friendliness",
+            "Explanation of the health issue",
+            "Treatment satisfaction",
+            "Value for money",
+            "Wait time"
+          ]
+        },
+        {
+          "name": "Jasmine",
+          "reason": "Visited For Misaligned Teeth",
+          "review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
+          "verified": true,
+          "happyWith": [
+            "Doctor friendliness",
+            "Explanation of the health issue",
+            "Treatment satisfaction",
+            "Value for money",
+            "Wait time"
+          ]
+        }
+      ],
+      "id": 3
+    }
+  ]
+}
