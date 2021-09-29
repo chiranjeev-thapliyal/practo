@@ -4,6 +4,7 @@ import Main from './components/Main/Main';
 import Banner from './components/Main/Banner/Banner';
 import CardsWrapper from './components/Main/Cards/CardsWrapper';
 import DownloadWrapper from './components/Main/Download/DownloadWrapper';
+import Footerwrapper from './components/Footer/Footerwrapper';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 					Doctors here
 				</Route>
 			</Switch>
+			<Footerwrapper/>
 		</div>
 	);
 }

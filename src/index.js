@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // Importing Contexts for Authentication
-import AuthContextProvider from './contexts/AuthContextProvider';
+import AuthContextProvider from './Contexts/AuthContextProvider';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
