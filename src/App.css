@@ -3,3 +3,9 @@
 	zoom: 1 !important;
 	margin: auto !important;
 }
+
+.DownloadWrapper {
+	height: 572px;
+	background-color: #f8f8fb;
+	position: relative;
+}

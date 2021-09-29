@@ -1,6 +1,6 @@
 import React from 'react';
-import Download from '../../../Styled/Download/Download';
-import Section from '../../../Styled/Section/Section';
+import Download from './Download';
+import Section from '../../Section/Section';
 
 const DownloadWrapper = () => {
 	return (
