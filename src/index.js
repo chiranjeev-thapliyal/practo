@@ -6,12 +6,15 @@ import reportWebVitals from './reportWebVitals';
 
 // Importing Contexts for Authentication
 import AuthContextProvider from './contexts/AuthContextProvider';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<AuthContextProvider>
-			<App />
-		</AuthContextProvider>
+		<BrowserRouter>
+			<AuthContextProvider>
+				<App />
+			</AuthContextProvider>
+		</BrowserRouter>
 	</React.StrictMode>,
 	document.getElementById('root')
 );
