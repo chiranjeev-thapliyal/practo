@@ -1,0 +1,8 @@
+.header {
+  background-image: url("https://www.practostatic.com/web-assets/home/assets/images/homepage.06859593240c3efd483fe48951cfe6ff.svg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  /* background-attachment: fixed; */
+}

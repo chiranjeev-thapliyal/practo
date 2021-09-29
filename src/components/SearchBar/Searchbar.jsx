@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Main/icoons/ionicons.min.css";
+import "./icons/ionicons.min.css";
 import axios from "axios";
 import style from "./SearchBar.module.css";
 

@@ -1,4 +1,4 @@
-import BannerWrapper from '../../../Styled/Banner/BannerWrapper';
+import BannerWrapper from './BannerWrapper';
 
 const Banner = ({ bannerImg }) => {
 	return (

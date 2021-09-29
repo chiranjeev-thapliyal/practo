@@ -1,67 +1,28 @@
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import Main from "./components/Main/Main";
 import Banner from "./components/Main/Banner/Banner";
-import Section from "./Styled/Section/Section";
-import Cards from "./Styled/Cards/Cards";
-import Card from "./Styled/Cards/Card";
-import Searchbar from "./components/SearchBar/Searchbar";
+import CardsWrapper from "./components/Main/Cards/CardsWrapper";
+import DownloadWrapper from "./components/Main/Download/DownloadWrapper";
+import Footerwrapper from "./components/Footer/Footerwrapper";
+import FindDoctors from "./components/FindDoctors/FindDoctors";
 
 function App() {
-  const info = [
-    {
-      title: "Instant Video Consultation",
-      desc: "Connect within 60 secs",
-      img: "https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png",
-      bg: "#afcfed",
-    },
-    {
-      title: "Find Doctors Near You",
-      desc: "Confirmed Appointments",
-      img: "https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_find_doctors.png",
-      bg: "#98cbd6",
-    },
-    {
-      title: "Medicines",
-      desc: "Essentials at your doorstep",
-      img: "https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_medicines.png",
-      bg: "#ccd0db",
-    },
-    {
-      title: "Lab Tests",
-      desc: "Sample pickup at your home",
-      img: "https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_lab_tests.png",
-      bg: "#a2cae7",
-    },
-    {
-      title: "Surgeries",
-      desc: "Safe and trusted surgery centers",
-      img: "https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_surgeries.png",
-      bg: "#d5d8fc",
-    },
-  ];
-
   return (
     <div className="App">
-      <Searchbar />
-
-      <Main>
-        <Banner bannerImg="https://www.practostatic.com/consumer-home/desktop/images/1597423628/practo_care_dweb_banner.png" />
-        <Section className="mt-60">
-          <Cards className="content">
-            {info.map(({ title, desc, img, bg }) => (
-              <Card bg={bg} key={title} className="Card">
-                <div className="img-wrapper">
-                  <img src={img} alt={title} />
-                </div>
-                <div className="info">
-                  <h3>{title}</h3>
-                  <p>{desc}</p>
-                </div>
-              </Card>
-            ))}
-          </Cards>
-        </Section>
-      </Main>
+      <Switch>
+        <Route exact path="/">
+          <Main>
+            <Banner bannerImg="https://www.practostatic.com/consumer-home/desktop/images/1597423628/practo_care_dweb_banner.png" />
+            <CardsWrapper />
+            <DownloadWrapper />
+          </Main>
+        </Route>
+        <Route exact path="/doctors">
+          <FindDoctors />
+        </Route>
+      </Switch>
+      <Footerwrapper />
     </div>
   );
 }

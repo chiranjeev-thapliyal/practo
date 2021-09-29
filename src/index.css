@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 :root {
 	/* Primary Colors */
 	--primary-color: #28328c;
@@ -20,34 +22,17 @@
 	--font-black: #2d2d32;
 	--font-gray: #b4b4c4;
 
-	/* Font Family */
-	font-family: "'Helvetica',CamphorW01-Regular, 'Helvetica Neue', Arial, sans-serif";
-	@font-face {
-		font-family: "CamphorW01-Regular";
-		src: url("//db.onlinewebfonts.com/t/22f912b4b10a938d5f28b7fe79ed7466.eot");
-		src: url("//db.onlinewebfonts.com/t/22f912b4b10a938d5f28b7fe79ed7466.eot?#iefix") format("embedded-opentype"),
-			url("//db.onlinewebfonts.com/t/22f912b4b10a938d5f28b7fe79ed7466.woff2") format("woff2"),
-			url("//db.onlinewebfonts.com/t/22f912b4b10a938d5f28b7fe79ed7466.woff") format("woff"),
-			url("//db.onlinewebfonts.com/t/22f912b4b10a938d5f28b7fe79ed7466.ttf") format("truetype"),
-			url("//db.onlinewebfonts.com/t/22f912b4b10a938d5f28b7fe79ed7466.svg#CamphorW01-Regular") format("svg");
-	}
-
-	@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-
 	/* Font Size */
 	font-size: 62.5%;
 }
 
 body {
 	margin: 0;
-	/* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-		'Droid Sans', 'Helvetica Neue', sans-serif; */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 * {
-	/* font-family: "'Helvetica',CamphorW01-Regular, 'Helvetica Neue', Arial, sans-serif"; */
 	font-family: 'PT Sans', sans-serif;
 }
 
@@ -59,10 +44,8 @@ html {
 }
 
 code {
-	/* font-family: "'Helvetica',CamphorW01-Regular, 'Helvetica Neue', Arial, sans-serif"; */
 	font-family: 'PT Sans', sans-serif;
 	font-size: 1.4rem;
-	/* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; */
 }
 
 h1,
