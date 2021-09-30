@@ -9,9 +9,10 @@ import FindDoctors from './components/FindDoctors/FindDoctors';
 
 import Consultdoctor from './components/Main/Consultdoctor/Consultdoctor';
 import Navbarwrapper from './components/Navbar/Navbarwrapper';
-import Searchbar from './components/SearchBar/Searchbar';
+import SearchbarWrapper from './components/SearchBar/SearchbarWrapper';
 import Slider from './components/Slider/Slider';
 import SearchWrapper from './components/SearchResults/SearchWrapper';
+import Searchbar from './components/SearchBar/Searchbar';
 
 function App() {
 	return (
@@ -20,7 +21,9 @@ function App() {
 			<Switch>
 				<Route exact path='/'>
 					<Main>
-						<Searchbar />
+						<SearchbarWrapper>
+							<Searchbar />
+						</SearchbarWrapper>
 						<Banner bannerImg='https://www.practostatic.com/consumer-home/desktop/images/1597423628/practo_care_dweb_banner.png' />
 						<CardsWrapper />
 						<Consultdoctor />
