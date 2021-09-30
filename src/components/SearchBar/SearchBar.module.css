@@ -13,6 +13,7 @@
   display: flex;
   border: 1px solid black;
   /* border-bottom: none; */
+  background-color: white;
   width: 250px;
   padding: 6px 0px;
 }

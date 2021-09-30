@@ -1,8 +1,321 @@
+.headerDiv {
+  width: 100%;
+  height: 70vh;
+}
 .header {
   background-image: url("https://www.practostatic.com/web-assets/home/assets/images/homepage.06859593240c3efd483fe48951cfe6ff.svg");
-  background-size: cover;
-  background-position: center;
-  height: 70vh;
+  height: 100%;
   position: relative;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
+}
+.headerTitle {
+  color: white;
+  font-size: 210%;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+.headerSmallTitle {
+  color: white;
+  text-align: center;
+  font-size: 210%;
+}
+.headerSearchBar > div {
+  display: inline-block;
+  margin: 0px 25%;
+}
+.headerPopularSearchDiv {
+  color: white;
+  font-size: 140%;
+  text-align: center;
+  padding-left: 45px;
+}
+.headerPopularSearch > span {
+  margin: 0px 15px;
+}
+.headerIconDiv {
+  color: white;
+  font-size: 140%;
+  background-color: #1d2869;
+  text-align: center;
+  padding-left: 45px;
+  padding: 20px 0px;
+}
+.headerIconDiv > div {
+  display: inline-block;
+}
+.headerIcon {
+  display: flex;
+  text-align: center;
+}
+.headerIcon > div {
+  margin: 0px 25px;
+}
+.headerIcon > div > div {
+  margin-top: 10px;
+}
+.icons {
+  color: white;
+  width: 20px;
+}
+.secondPage {
+  padding: 100px 100px;
+  overflow: hidden;
+  background-color: #f0f0f5;
+}
+.secondPageFlexbox {
+  display: flex;
+  font-size: 280%;
+}
+.secondPageFlexbox > div {
+  flex-basis: 50%;
+}
+
+.flex1 > div {
+  width: 80%;
+  margin: 0px auto;
+}
+.flex1 > div h2 {
+  font-weight: 500;
+}
+.flex1Heading {
+  margin-bottom: 30px;
+}
+.tickBox {
+  font-size: large;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+.tickBox i {
+  color: blueviolet;
+  margin-right: 8px;
+}
+.readMoreBox {
+  display: inline-block;
+  font-size: 18px;
+  width: 130px;
+  background-color: #14bef0;
+  text-align: center;
+  height: 50px;
+  padding: 10px 0px;
+  border-radius: 3px;
+  margin-top: 30px;
+}
+.readMoreBox > a {
+  text-decoration: none;
+  color: #fff;
+}
+.flex2 {
+  text-align: center;
+}
+.flex2 img {
+  width: 50%;
+}
+.flex2 video {
+  width: 40%;
+}
+.iconBox {
+  width: 925px;
+  padding-top: 50px;
+  margin: 0 auto;
+  display: flex;
+}
+.iconBox > div {
+  flex-basis: 23%;
+  margin: 0px 1%;
+  text-align: center;
+  font-size: 150%;
+}
+.iconBox > div img {
+  width: 35%;
+}
+.thirdPage {
+  padding: 50px 100px;
+  overflow: hidden;
+}
+.readMoreBox2 {
+  width: 230px;
+  margin-bottom: 50px;
+}
+.testimonials {
+  font-size: 60%;
+}
+.profileIcon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #e0e0e5;
+  text-align: center;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.starsDiv {
+  margin-bottom: 5px;
+}
+.stars {
+  color: #00a500;
+  margin: 0px 5px;
+}
+/* width="250" height="480" loading="false" autoplay="" loop="" __idm_id__="416600065" */
+.fourthPage {
+  padding: 50px 100px;
+  background-color: #f0f0f5;
+  overflow: hidden;
+}
+.flex12 {
+  margin: 0px;
+}
+.cercleIcon {
+  color: blueviolet;
+  margin: 0px 5px;
+  font-size: 18px;
+}
+.spanBox span {
+  font-size: 18px;
+}
+.spanBox {
+  margin-bottom: 35px;
+}
+.fifthPage {
+  padding: 50px 100px;
+  background-color: #f0f0f5;
+  overflow: hidden;
+}
+.readMoreBox3 {
+  width: 170px;
+}
+.spanBox2 {
+  padding-top: 27px;
+  display: inline-block;
+  font-size: 18px;
+}
+.readMoreBox4 {
+  display: flex;
+}
+.cercleIcon2 {
+  padding-top: 40px;
+  margin: 0px 10px;
+}
+.readMoreBox5 {
+  width: 200px;
+}
+.sixthPage {
+  padding: 50px 100px;
+  overflow: hidden;
+}
+.flex4 img {
+  width: 95%;
+}
+.seventhPage {
+  padding: 50px 100px;
+  overflow: hidden;
+}
+.appDownloadIcons {
+  display: flex;
+  margin-top: 30px;
+}
+.appDownloadIcons > a {
+  flex-basis: 25%;
+  margin-right: 10px;
+}
+.eighthPage {
+  padding: 50px 100px;
+  overflow: hidden;
+  justify-content: center;
+}
+.secondPageSubjectData {
+  width: 90%;
+  margin: 0px auto;
+  position: relative;
+  /* background-color: cadetblue; */
+}
+.slider {
+  width: 87%;
+  margin: 0px auto;
+  height: 350px;
+  font-size: 200%;
+  /* background-color: brown; */
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+.slide {
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: 0.3s left ease-in-out;
+}
+
+.item {
+  width: 320px;
+  height: 350px;
+  font-size: 70%;
+  margin: 0px 13px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 2px #e4d4d4;
+}
+.imageBox {
+  width: 100%;
+}
+.imageBox img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+}
+.detailBox {
+  height: 20%;
+  margin: 15px;
+}
+
+.ctrl-btn {
+  padding: 5px 5px;
+  min-width: 50px;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -27.5px;
+}
+
+.ctrl-btn.pro-prev {
+  left: 25px;
+  background-color: #f1f1f1;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.ctrl-btn.pro-next {
+  right: 25px;
+  background-color: #f1f1f1;
+  height: 50px;
+  border-radius: 50px;
+}
+.secondPageSubjectHeading {
+  text-align: center;
+  font-size: 380%;
+  margin-bottom: 50px;
+}
+.secondPageSubjectReadmoreDiv {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 200%;
+}
+.secondPageSubjectReadmore {
+  background: blue;
+  color: white;
+  text-align: center;
+  font-size: 100%;
+  display: inline-block;
+  width: 150px;
+  padding: 10px 0px;
+  border-radius: 4px;
 }

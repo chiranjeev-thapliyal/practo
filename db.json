@@ -7,37 +7,37 @@
       "speaciality": "speaciality"
     },
     {
-      "id": 1,
+      "id": 2,
       "i": "ion-ios7-search",
       "title": "Gyneocologist",
       "speaciality": "speaciality"
     },
     {
-      "id": 1,
+      "id": 3,
       "i": "ion-ios7-search",
       "title": "general physician",
       "speaciality": "speaciality"
     },
     {
-      "id": 1,
+      "id": 4,
       "i": "ion-ios7-search",
       "title": "dermatologist",
       "speaciality": "speaciality"
     },
     {
-      "id": 1,
+      "id": 5,
       "i": "ion-ios7-search",
       "title": "ear-nose",
       "speaciality": "speaciality"
     },
     {
-      "id": 1,
+      "id": 6,
       "i": "ion-ios7-search",
       "title": "Homoeopath",
       "speaciality": "speaciality"
     },
     {
-      "id": 1,
+      "id": 7,
       "i": "ion-ios7-search",
       "title": "Ayurveda",
       "speaciality": "speaciality"
@@ -49,15 +49,15 @@
       "title": "cuttact"
     },
     {
-      "id": 1,
+      "id": 2,
       "title": "bbsr"
     },
     {
-      "id": 1,
+      "id": 3,
       "title": "bangalore"
     },
     {
-      "id": 1,
+      "id": 4,
       "title": "pune"
     }
   ],
