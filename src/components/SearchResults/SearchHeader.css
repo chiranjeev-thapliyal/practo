@@ -78,7 +78,23 @@ input.no_appearance {
 	transform: rotate(-45deg);
 }
 
-.filter_select__radio.checked::before {
+input[type=checkbox]:checked + div::before {
+	content: "";
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	height: 5px;
+	width: 10px;
+	height: 4px;
+	width: 9px;
+	margin-top: 1px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+input[type=radio]:checked + div::before {
 	background-color: #fff;
 	content: "";
 	border-radius: 100%;
@@ -168,15 +184,15 @@ input.no_appearance {
 	overflow: hidden;
 	z-index: 2;
 	width: 100%;
+	font-size: 1.4rem;
+	background-color: #28328c;
+	color: white;
 	-webkit-transition: max-height .2s ease;
 	transition: max-height .2s ease;
 }
 
 .filter_bottom.expanded {
 	max-height: 191px;
-	font-size: 1.4rem;
-	background-color: #28328c;
-	color: white;
 }
 
 .filter_bottom > div.container {

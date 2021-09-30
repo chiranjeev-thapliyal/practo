@@ -1,6 +1,18 @@
+import { useRef } from 'react';
 import './SearchCard.css';
 
 const SearchCard = ({ name, img, speciality, experience, video_consult, charges, ratings, stories }) => {
+	const Timings = useRef();
+
+	const handleBookAppointment = (e) => {
+		e.stopPropagation();
+		if (Timings.current.className.indexOf('expanded') === -1) {
+			Timings.current.className = `slots expanded`;
+		} else {
+			Timings.current.className = `slots`;
+		}
+	};
+
 	return (
 		<div className='card_general'>
 			<div className='doctor_card'>
@@ -26,7 +38,7 @@ const SearchCard = ({ name, img, speciality, experience, video_consult, charges,
 
 						<div className='card_bottom'>
 							<span className='card_like_button'>
-								<i class='fas fa-thumbs-up' />
+								<i className='fas fa-thumbs-up' />
 								<span>{ratings}%</span>
 							</span>
 							<span className='card_stories'>{stories.length} Patient Stories</span>
@@ -35,11 +47,11 @@ const SearchCard = ({ name, img, speciality, experience, video_consult, charges,
 				</div>
 				<div className='appointment_section'>
 					<div className='appointment_status'>
-						<i class='far fa-calendar' />
+						<i className='far fa-calendar' />
 						<span>Available Today</span>
 					</div>
 					<div className='appointment_button'>
-						<button className='book_appointment'>
+						<button className='book_appointment' onClick={handleBookAppointment}>
 							Book Appointment
 							<div>No Booking Fee</div>
 						</button>
@@ -54,11 +66,11 @@ const SearchCard = ({ name, img, speciality, experience, video_consult, charges,
 				</div>
 			</div>
 			<div className='doctor_slots'>
-				<div className='slots'>
+				<div className='slots' ref={Timings}>
 					<div className='slots_header'>
 						<div className='slot_header_btn slots_header_prev'>
 							<span>
-								<i class='fas fa-chevron-left' />
+								<i className='fas fa-chevron-left' />
 							</span>
 						</div>
 						<div className='slots_header_daybar'>
@@ -78,7 +90,7 @@ const SearchCard = ({ name, img, speciality, experience, video_consult, charges,
 						</div>
 						<div className='slot_header_btn slots_header_next'>
 							<span className='slot_available'>
-								<i class='fas fa-chevron-right' />
+								<i className='fas fa-chevron-right' />
 							</span>
 						</div>
 					</div>
