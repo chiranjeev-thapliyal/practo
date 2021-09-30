@@ -1,86 +1,165 @@
-.main-section {
+.content {
+  width: 1180px;
+  zoom: 1;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  margin: 0px 10%;
-  font-size: 16px;
-}
-.inputDiv {
-  /* background-color: blue; */
-  display: flex;
-  padding: 20px 0px;
-}
-.div {
-  display: flex;
-  border: 1px solid black;
-  /* border-bottom: none; */
-  background-color: white;
-  width: 250px;
-  padding: 6px 0px;
-}
-.div input {
-  border: none;
-  width: 80%;
-  cursor: pointer;
-}
-.doctorInputDiv {
-  width: 400px;
-}
-
-.icons {
-  padding: 0px 6px;
-}
-
-.imageDiv {
-  width: 200px;
-  position: relative;
   align-items: center;
-  align-self: center;
 }
-.imagetag {
+
+.content>img {
+  height: 4rem;
+  max-width: 21rem;
+}
+
+.searchBarWrapper {
+  width: 712px;
+  padding: 20px 0;
+}
+
+.searchBarContainer {
+  font-size: 1.4rem;
+  color: #414146;
   width: 100%;
-  float: right;
-}
-.doctorsHidden {
-  width: 400px;
-  
-  position: absolute;
-  top: 33px;
-  display: flex;
-  flex-flow: column;
-  background-color: white;
-  cursor: pointer;
-  
-    font-size: 14px;
-    border-bottom: 1px solid #e0e0e5;
-    line-height: 1.5;
-    color: #414146;
-    
-    
-    display: table;
-    zoom: 1;
-  
-}
-.placesHidden {
-  width: 250px;
-  
-  display: flex;
-  flex-flow: column;
-  position: absolute;
-  top: 32px;
-  background-color: white;
-  cursor: pointer;
+  color: #414146;
   font-size: 14px;
-    border-bottom: 1px solid #e0e0e5;
-    line-height: 1.5;
-    color: #414146;
-    
-    
-    display: table;
-    zoom: 1;
-}
-.doctorsHiddenDiv {
+  line-height: 1.4;
+  position: relative;
+  height: 40px;
   display: flex;
-  justify-content: space-between;
-  border: 1px solid black;
-  border-bottom: none;
+}
+
+.searchBarLocality {
+  width: 40%;
+  position: relative;
+}
+
+.searchBarKeyword {
+  width: 60%;
+  position: relative;
+}
+
+.searchbox_wrapper {
+  position: relative;
+  width: 100%;
+  color: #414146;
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.searchbox_icon {
+  font-size: 1.6rem;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.searchbox {
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.4;
+  padding: 6px 20px 5px 30px;
+  color: inherit;
+  border-radius: 2px;
+  border: 1px solid #b4b4be;
+  cursor: pointer;
+  outline: 0;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background: #fff;
+  height: 4rem;
+}
+
+.searchbox {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#searchbox_keyword {
+  border-left: 0;
+}
+
+/* Suggestion List */
+.suggestion_list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 2px;
+  border: 1px solid #787887;
+  box-shadow: 0 1px 2px #b4b4be;
+  z-index: 2;
+}
+
+.suggestion_group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.suggestion_item {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-bottom: 1px solid #e0e0e5;
+  line-height: 1.5;
+  color: #414146;
+  background: #fff;
+  cursor: pointer;
+  display: table;
+  zoom: 1;
+  width: 100%;
+}
+
+.suggestion_item:hover {
+  background-color: #f0f0f5;
+}
+
+.suggest_item_media {
+  padding-right: 15px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.suggest_item_media_item {
+  background-color: #f0f0f5;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggest_item_content {
+  display: table-cell;
+  vertical-align: middle;
+  width: 10000px;
+}
+
+.suggest_item_content_sub_text {
+  font-size: 12px;
+  color: #787887;
+  text-transform: capitalize;
+}
+
+.suggest_item_right {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #787887;
+  padding-top: 2px;
+  text-align: right;
+  display: table-cell;
+  vertical-align: middle;
 }
