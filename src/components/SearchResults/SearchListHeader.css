@@ -1,0 +1,28 @@
+.search_list__header {
+	margin: 3.6rem 0;
+	color: #2d2d32;
+}
+
+.search_list__header > p {
+	font-size: 2.4rem;
+	font-weight: 700;
+	word-spacing: normal;
+	letter-spacing: normal;
+}
+
+.search_list__sub_header {
+	display: flex;
+	align-items: center;
+	margin-top: 1.2rem;
+}
+
+.search_list__sub_header > img {
+	width: 2rem;
+	margin-right: 1rem;
+}
+
+.search_list__sub_header > p {
+	font-size: 1.5rem;
+	word-spacing: normal;
+	letter-spacing: normal;
+}
