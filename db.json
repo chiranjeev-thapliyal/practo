@@ -4,61 +4,65 @@
 			"id": 1,
 			"i": "ion-ios7-search",
 			"title": "Dentist",
-			"speaciality": "speaciality"
+			"keyword": "speciality"
 		},
 		{
 			"id": 2,
 			"i": "ion-ios7-search",
 			"title": "Gyneocologist",
-			"speaciality": "speaciality"
+			"keyword": "speciality"
 		},
 		{
 			"id": 3,
 			"i": "ion-ios7-search",
 			"title": "general physician",
-			"speaciality": "speaciality"
+			"keyword": "speciality"
 		},
 		{
 			"id": 4,
 			"i": "ion-ios7-search",
 			"title": "dermatologist",
-			"speaciality": "speaciality"
+			"keyword": "speciality"
 		},
 		{
 			"id": 5,
 			"i": "ion-ios7-search",
 			"title": "ear-nose",
-			"speaciality": "speaciality"
+			"keyword": "speciality"
 		},
 		{
 			"id": 6,
 			"i": "ion-ios7-search",
 			"title": "Homoeopath",
-			"speaciality": "speaciality"
+			"keyword": "speciality"
 		},
 		{
 			"id": 7,
 			"i": "ion-ios7-search",
 			"title": "Ayurveda",
-			"speaciality": "speaciality"
+			"keyword": "speciality"
 		}
 	],
 	"place": [
 		{
 			"id": 1,
-			"title": "cuttact"
+			"title": "Dwarka",
+			"sub_title": "Delhi"
 		},
 		{
-			"id": 1,
-			"title": "bbsr"
+			"id": 2,
+			"title": "Kumaramangalam",
+			"sub_title": "Bangalore"
 		},
 		{
-			"id": 1,
-			"title": "bangalore"
+			"id": 3,
+			"title": "Indirapuram",
+			"sub_title": "Ghaziabad"
 		},
 		{
-			"id": 1,
-			"title": "pune"
+			"id": 4,
+			"title": "Noida",
+			"sub_title": "Ghaziabad"
 		}
 	],
 	"doctors": [
