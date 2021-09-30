@@ -35,6 +35,9 @@ function App() {
 					<FindDoctors />
 				</Route>
 				<Route path='/search'>
+					<SearchbarWrapper>
+						<Searchbar />
+					</SearchbarWrapper>
 					<SearchWrapper />
 				</Route>
 			</Switch>

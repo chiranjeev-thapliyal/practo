@@ -32,7 +32,7 @@ const SearchCard = ({ name, img, speciality, experience, video_consult, charges,
 							<span className='doctor_clinic_name'>Dr. Ekta Narula's Dental Care Centre</span>
 						</div>
 						<div className='fees'>
-							<span className='consultation_fee'>₹ {charges} </span>
+							<span className='consultation_fee'><span className="rupees_symbol">₹</span> {charges} </span>
 							<span>Consultation fee at clinic</span>
 						</div>
 
