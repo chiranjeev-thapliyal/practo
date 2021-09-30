@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Slider.css";
-import "../icoons/ionicons.min.css";
+//import "../icoons/ionicons.min.css";
 
 export default function Slider() {
   const [position, setPosition] = useState(0);

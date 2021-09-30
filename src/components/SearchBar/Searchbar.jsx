@@ -5,7 +5,6 @@ import axios from 'axios';
 export default function Searchbar() {
 	const [ doctorList, setDoctorsList ] = useState([]);
 	const [ placeList, setPlaceList ] = useState([]);
-
 	const handleClick = (e) => {
 		const { name, value } = e.target;
 		if (value === '') getEmptyData(name);
@@ -39,73 +38,77 @@ export default function Searchbar() {
 		console.log(res.data);
 	};
 
-  return (
-    <div className={style["main-section"]}>
-      <div className={style.inputDiv}>
-        <div>
-          <div className={`${style.placeInputDiv}  ${style.div}`}>
-            <i className={`ion-ios7-location-outline ${style.icons}`} />
-            <input
-              name="place"
-              onClick={handleClick}
-              type="text"
-              placeholder="place"
-            />
-          </div>
-          <div
-            className={style.placesHidden}
-            style={{
-              visibility: placeList.length === 0 ? "hidden" : "visible",
-            }}
-          >
-            {placeList !== [] &&
-              placeList.map((el) => (
-                <div
-                  className={style.placesHiddenDiv}
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    border: "1px solid black",
-                    borderBottom: "none",
-                  }}
-                >
-                  <div>{el.i}</div>
-                  <div>{el.title}</div>
-                  <div>{el.speaciality}</div>
-                </div>
-              ))}
-          </div>
-        </div>
-        <div>
-          <div className={`${style.doctorInputDiv} ${style.div}`}>
-            <i className={`ion-ios7-search ${style.icons}`} />
-            <input
-              className={style.doctorInput}
-              onClick={handleClick}
-              name="speciality"
-              type="text"
-              placeholder="Search doctors"
-            />
-          </div>
-          <div
-            className={style.doctorsHidden}
-            style={{
-              visibility: doctorList.length === 0 ? "hidden" : "visible",
-            }}
-          >
-            {doctorList !== [] &&
-              doctorList.map((el) => (
-                <div className={style.doctorsHiddenDiv}>
-                  <span>
-                    <i className={el.i} />
-                    <span>{el.title}</span>
-                  </span>
-                  <div>{el.speaciality}</div>
-                </div>
-              ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+	return (
+		<div className={style['main-section']}>
+			<div className={style.inputDiv}>
+				<div style={{position:"relative"}}>
+					<div className={`${style.placeInputDiv}  ${style.div}`}>
+						<i className={`ion-ios7-location-outline ${style.icons}`} />
+						<input name='place' onClick={handleClick} type='text' placeholder='place' />
+					</div>
+					<div
+						className={style.placesHidden}
+						style={{
+							visibility: placeList.length === 0 ? 'hidden' : 'visible'
+						}}
+					>
+						{placeList !== [] &&
+							placeList.map((el) => (
+								<div
+									className={style.placesHiddenDiv}
+									style={{
+										display: 'flex',
+										justifyContent: 'space-between',
+										border: '1px solid black',
+										borderBottom: 'none'
+									}} key={el.id}
+								>
+									<span style={{marginLeft:"10px"}}>
+										<i className={el.i} />
+										<span style={{marginLeft:"10px"}}>{el.title}</span>
+									</span>
+									
+								</div>
+							))}
+					</div>
+				</div>
+				<div style={{position:"relative"}}>
+					<div className={`${style.doctorInputDiv} ${style.div}`}>
+						<i className={`ion-ios7-search ${style.icons}`} />
+						<input
+							className={style.doctorInput}
+							onClick={handleClick}
+							name='speciality'
+							type='text'
+							placeholder='Search doctors'
+						/>
+					</div>
+					<div
+						className={style.doctorsHidden}
+						style={{
+							visibility: doctorList.length === 0 ? 'hidden' : 'visible'
+						}}
+					>
+						{doctorList !== [] &&
+							doctorList.map((el) => (
+								<div className={style.doctorsHiddenDiv} key={el.id}>
+									<span style={{marginLeft:"10px"}}>
+										<i className={el.i} />
+										<span style={{marginLeft:"10px"}}>{el.title}</span>
+									</span>
+									<div style={{color:"#787887",marginRight:"10px"}}>{el.speaciality}</div>
+								</div>
+							))}
+					</div>
+				</div>
+			</div>
+			<div className={style.imageDiv}>
+				<img
+					className={style.imagetag}
+					src='https://www.practostatic.com/subscriptions/images/plus-tag.png'
+					alt='img'
+				/>
+			</div>
+		</div>
+	);
 }

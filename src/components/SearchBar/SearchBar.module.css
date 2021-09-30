@@ -20,6 +20,7 @@
 .div input {
   border: none;
   width: 80%;
+  cursor: pointer;
 }
 .doctorInputDiv {
   width: 400px;
@@ -40,20 +41,42 @@
   float: right;
 }
 .doctorsHidden {
-  width: 403px;
-  border-bottom: 1px solid black;
-  position: fixed;
-  top: 60px;
+  width: 400px;
+  
+  position: absolute;
+  top: 33px;
   display: flex;
   flex-flow: column;
+  background-color: white;
+  cursor: pointer;
+  
+    font-size: 14px;
+    border-bottom: 1px solid #e0e0e5;
+    line-height: 1.5;
+    color: #414146;
+    
+    
+    display: table;
+    zoom: 1;
+  
 }
 .placesHidden {
   width: 250px;
-  border-bottom: 1px solid black;
+  
   display: flex;
   flex-flow: column;
-  position: fixed;
-  top: 60px;
+  position: absolute;
+  top: 32px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+    border-bottom: 1px solid #e0e0e5;
+    line-height: 1.5;
+    color: #414146;
+    
+    
+    display: table;
+    zoom: 1;
 }
 .doctorsHiddenDiv {
   display: flex;
