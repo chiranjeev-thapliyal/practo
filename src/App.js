@@ -6,14 +6,14 @@ import CardsWrapper from "./components/Main/Cards/CardsWrapper";
 import DownloadWrapper from "./components/Main/Download/DownloadWrapper";
 import Footerwrapper from "./components/Footer/Footerwrapper";
 import FindDoctors from "./components/FindDoctors/FindDoctors";
-
 import Consultdoctor from "./components/Main/Consultdoctor/Consultdoctor";
 import Navbarwrapper from "./components/Navbar/Navbarwrapper";
 import SearchbarWrapper from "./components/SearchBar/SearchbarWrapper";
 import Slider from "./components/Slider/Slider";
 import SearchWrapper from "./components/SearchResults/SearchWrapper";
 import Searchbar from "./components/SearchBar/Searchbar";
-// import ConsultPage from "./components/ConsultPage/ConsultPage";
+import ConsultPage from "./components/ConsultPage/ConsultPage";
+import Flow2ConsultPage from "./components/Flow2Consult/Flow2ConsultPage";
 
 function App() {
   return (
@@ -35,6 +35,12 @@ function App() {
         <Route exact path="/doctors">
           <FindDoctors />
           {/* <ConsultPage /> */}
+        </Route>
+        <Route exact path="/consultpage">
+          <ConsultPage />
+        </Route>
+        <Route exact path="/flow2consultpage">
+          <Flow2ConsultPage />
         </Route>
         <Route path="/search">
           <SearchbarWrapper>
