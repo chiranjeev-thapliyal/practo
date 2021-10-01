@@ -1,5 +1,7 @@
 .main {
-  margin: 0px 10%;
+margin: 70px 70px;
+  margin-bottom: 30px;
+
 }
 .slider {
   width: 100%;
@@ -7,6 +9,7 @@
   position: relative;
   overflow-x: scroll;
   overflow-y: hidden;
+
 }
 .slider::-webkit-scrollbar {
   display: none;
@@ -17,6 +20,7 @@
   position: absolute;
   left: 0;
   transition: 0.3s left ease-in-out;
+  cursor: pointer;
 }
 .slider .item {
   margin-right: 10px;

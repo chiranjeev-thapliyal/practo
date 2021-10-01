@@ -15,6 +15,7 @@ const Wrapper= styled.div`
         margin-top: 30px;
         margin-right: auto;
         margin-left: auto;
+        
 
         & > .sub2{
             margin-top:20px

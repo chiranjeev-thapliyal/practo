@@ -46,7 +46,15 @@ export default function Slider() {
 
   return (
     <div className="main">
-      <div className="slider">
+      <div style={{display: "flex",
+    justifyContent: "space-between"}}>
+        <div>
+          <h2 style={{margin:0,fontWeight:700,fontSize:"24px"}}>Book an appointment of in clinic appointment</h2>
+          <div style={{fontSize: "16px",
+    lineHeight: 1.5,marginTop:"5px"}}>Find experienced doctors all accross the specialities</div>
+        </div>
+      </div>
+      <div className="slider" style={{marginTop:"20px"}}>
         <div className="slide" style={{ left: `${position * -310}px` }}>
           {arr.map((el) => (
             <div className="item">
@@ -69,16 +77,7 @@ export default function Slider() {
           <i className="ion-ios7-arrow-forward" />
         </button>
       </div>
-      <div className="commentSection">
-        <h2>What our users have to say</h2>
-        <div></div>
-        <button>
-          <i className="ion-ios7-arrow-back" />
-        </button>
-        <button>
-          <i className="ion-ios7-arrow-forward" />
-        </button>
-      </div>
+      
     </div>
   );
 }
