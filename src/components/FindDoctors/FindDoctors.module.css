@@ -1,11 +1,13 @@
 .headerDiv {
   width: 100%;
-  height: 70vh;
+  /* height: 70vh; */
 }
 .header {
   background-image: url("https://www.practostatic.com/web-assets/home/assets/images/homepage.06859593240c3efd483fe48951cfe6ff.svg");
-  height: 100%;
+  /* height: 100%; */
+  min-height: 460px;
   position: relative;
+  background-position-y: 60px;
   background-attachment: fixed;
 }
 .headerTitle {
@@ -21,8 +23,14 @@
   font-size: 210%;
 }
 .headerSearchBar > div {
-  display: inline-block;
-  margin: 0px 25%;
+  /* display: inline-block;
+  margin: 0px 25%; */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .headerPopularSearchDiv {
   color: white;
@@ -138,7 +146,16 @@
   margin-bottom: 50px;
 }
 .testimonials {
+  max-width: 455px;
+  min-height: 210px;
+  position: relative;
   font-size: 60%;
+  margin: 0px auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.testimonials::-webkit-scrollbar {
+  display: none;
 }
 .profileIcon {
   display: inline-block;
@@ -151,6 +168,10 @@
   margin-right: 10px;
   margin-top: 10px;
 }
+.testimonialseach {
+  width: 450px;
+  margin: 0px 5px;
+}
 .starsDiv {
   margin-bottom: 5px;
 }
@@ -158,7 +179,7 @@
   color: #00a500;
   margin: 0px 5px;
 }
-/* width="250" height="480" loading="false" autoplay="" loop="" __idm_id__="416600065" */
+
 .fourthPage {
   padding: 50px 100px;
   background-color: #f0f0f5;
@@ -234,7 +255,7 @@
 .slider {
   width: 87%;
   margin: 0px auto;
-  height: 350px;
+  height: 389px;
   font-size: 200%;
   /* background-color: brown; */
   position: relative;
@@ -250,14 +271,19 @@
   left: 0;
   transition: 0.3s left ease-in-out;
 }
-
+.slide1 {
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: 0.3s left ease-in-out;
+}
 .item {
   width: 320px;
   height: 350px;
   font-size: 70%;
   margin: 0px 13px;
   border-radius: 5px;
-  box-shadow: 5px 5px 5px 2px #e4d4d4;
+  box-shadow: 0px 2px 4px 0px #e4d4d4;
 }
 .imageBox {
   width: 100%;
@@ -285,6 +311,16 @@
   top: 50%;
   margin-top: -27.5px;
 }
+.ctrl-btnTest {
+  background: #f1f1f1;
+  font-size: large;
+  border: none;
+  background-color: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -27.5px;
+}
 
 .ctrl-btn.pro-prev {
   left: 25px;
@@ -292,12 +328,20 @@
   height: 50px;
   border-radius: 50px;
 }
-
+.pro-prevTest {
+  left: 0px;
+}
+.ctrl-btnTestWhite {
+  background-color: white;
+}
 .ctrl-btn.pro-next {
   right: 25px;
   background-color: #f1f1f1;
   height: 50px;
   border-radius: 50px;
+}
+.pro-next-Test {
+  right: 0px;
 }
 .secondPageSubjectHeading {
   text-align: center;
