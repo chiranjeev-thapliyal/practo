@@ -302,7 +302,7 @@ export default function FindDoctors() {
                       }}
                     >
                       {commentArr1.map((el) => (
-                        <div className={styles.testimonialseach}>
+                        <div key={el.name} className={styles.testimonialseach}>
                           <div className={styles.starsDiv}>
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
@@ -420,8 +420,8 @@ export default function FindDoctors() {
                         left: `${position1 * -460}px`,
                       }}
                     >
-                      {commentArr1.map((el) => (
-                        <div className={styles.testimonialseach}>
+                      {commentArr1.map((el, indx) => (
+                        <div key={indx} className={styles.testimonialseach}>
                           <div className={styles.starsDiv}>
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
@@ -471,8 +471,8 @@ export default function FindDoctors() {
                 className={styles.slide}
                 style={{ left: `${position * -350}px` }}
               >
-                {arr.map((el) => (
-                  <div className={styles.item}>
+                {arr.map((el, indx) => (
+                  <div key={indx} className={styles.item}>
                     <div className={styles.imageBox}>
                       <img src={el.img} alt="img" />
                     </div>
@@ -658,8 +658,8 @@ export default function FindDoctors() {
                         left: `${position1 * -460}px`,
                       }}
                     >
-                      {commentArr1.map((el) => (
-                        <div className={styles.testimonialseach}>
+                      {commentArr1.map((el, indx) => (
+                        <div key={indx} className={styles.testimonialseach}>
                           <div className={styles.starsDiv}>
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
                             <i className={`${el.starIcon} ${styles.stars}`}></i>

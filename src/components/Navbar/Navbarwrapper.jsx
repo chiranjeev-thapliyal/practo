@@ -105,7 +105,7 @@ const Navbarwrapper = () => {
 										cursor: 'pointer'
 									}}
 								>
-									<i class='fas fa-chevron-down' />
+									<i className='fas fa-chevron-down' />
 								</span>{' '}
 								<div
 									style={{
@@ -180,7 +180,7 @@ const Navbarwrapper = () => {
 										cursor: 'pointer'
 									}}
 								>
-									<i class='fas fa-chevron-down' />
+									<i className='fas fa-chevron-down' />
 								</span>{' '}
 							</div>
 							<div

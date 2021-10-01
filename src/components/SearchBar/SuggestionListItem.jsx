@@ -4,7 +4,7 @@ const SuggestionListItem = ({ list, type, handleQuery }) => {
 	return (
 		<div className={styles.suggestion_list}>
 			<div className={styles.suggestion_group}>
-				{list.map(({ id, title, sub_title, keyword}) => (
+				{list.map(({ id, title, sub_title, speciality }) => (
 					<div key={id} className={styles.suggestion_item} onClick={() => {
 						if (type === "speciality") return handleQuery("keyword", title);
 						else return handleQuery("location", sub_title);
@@ -31,7 +31,7 @@ const SuggestionListItem = ({ list, type, handleQuery }) => {
 								<div className={styles.suggest_item_content_title}>{title}</div>
 							</span>
 							<span className={styles.suggest_item_right}>
-								<span>{keyword}</span>
+								<span>{speciality}</span>
 							</span>
 							</>
 							: (

@@ -14,43 +14,43 @@
 			"id": 1,
 			"i": "ion-ios7-search",
 			"title": "Dentist",
-			"speaciality": "speaciality"
+			"speciality": "speciality"
 		},
 		{
 			"id": 2,
 			"i": "ion-ios7-search",
 			"title": "Gyneocologist",
-			"speaciality": "speaciality"
+			"speciality": "speciality"
 		},
 		{
 			"id": 3,
 			"i": "ion-ios7-search",
 			"title": "general physician",
-			"speaciality": "speaciality"
+			"speciality": "speciality"
 		},
 		{
 			"id": 4,
 			"i": "ion-ios7-search",
 			"title": "dermatologist",
-			"speaciality": "speaciality"
+			"speciality": "speciality"
 		},
 		{
 			"id": 5,
 			"i": "ion-ios7-search",
 			"title": "ear-nose",
-			"speaciality": "speaciality"
+			"speciality": "speciality"
 		},
 		{
 			"id": 6,
 			"i": "ion-ios7-search",
 			"title": "Homoeopath",
-			"speaciality": "speaciality"
+			"speciality": "speciality"
 		},
 		{
 			"id": 7,
 			"i": "ion-ios7-search",
 			"title": "Ayurveda",
-			"speaciality": "speaciality"
+			"speciality": "speciality"
 		}
 	],
 	"place": [
