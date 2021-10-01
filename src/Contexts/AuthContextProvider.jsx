@@ -4,6 +4,10 @@ import { useHistory } from 'react-router-dom';
 export const AuthContext = createContext();
 
 const AuthContextProvider = ({ children }) => {
+	const [ user, setUser ] = useState({ name: '', phone: '' });
+	const [ token, setToken ] = useState('');
+	const [ currentAppointment, setCurrentAppointment ] = useState({});
+
 	const history = useHistory();
 
 	const [ query, setQuery ] = useState({
@@ -37,10 +41,16 @@ const AuthContextProvider = ({ children }) => {
 
 	const values = {
 		...query,
+		user,
+		token,
 		searched,
+		currentAppointment,
 		handleLocation,
 		handleKeyword,
-		handleSearched
+		handleSearched,
+		setUser,
+		setToken,
+		setCurrentAppointment
 	};
 
 	return <AuthContext.Provider value={values}>{children}</AuthContext.Provider>;

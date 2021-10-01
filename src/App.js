@@ -14,6 +14,7 @@ import SearchWrapper from "./components/SearchResults/SearchWrapper";
 import Searchbar from "./components/SearchBar/Searchbar";
 import ConsultPage from "./components/ConsultPage/ConsultPage";
 import Flow2ConsultPage from "./components/Flow2Consult/Flow2ConsultPage";
+import Payment from "./components/Payment/Payment";
 
 function App() {
   return (
@@ -48,6 +49,10 @@ function App() {
           </SearchbarWrapper>
           <SearchWrapper />
         </Route>
+        <Route path="/payment">
+          <Payment />
+        </Route>
+
       </Switch>
       <Footerwrapper />
     </div>
