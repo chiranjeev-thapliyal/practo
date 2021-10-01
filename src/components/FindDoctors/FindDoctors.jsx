@@ -310,7 +310,7 @@ export default function FindDoctors() {
                 <div className={styles.tickBox}>
                   <div>
                     <i className="ion-checkmark-round"></i>
-                    <span>Fees starting at ₹99</span>
+                    <span>Fees starting at <span className="rupees_symbol">₹</span> 99</span>
                   </div>
                 </div>
                 <div className={styles.tickBox}>

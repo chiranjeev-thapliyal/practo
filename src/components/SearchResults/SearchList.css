@@ -1,0 +1,34 @@
+.search_list {
+	letter-spacing: -.31em;
+	letter-spacing: normal;
+	word-spacing: -.43em;
+	text-rendering: optimizespeed;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	flex-flow: row wrap;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	-ms-flex-flow: row wrap;
+	-ms-align-content: flex-start;
+	-ms-flex-line-pack: start;
+	align-content: flex-start;
+	word-spacing: normal;
+	letter-spacing: normal;
+}
+
+.search_list__left {
+	min-height: 100vh;
+	width: 70.8333%;
+}
+
+.search_list__left > .container {
+	margin: 0 6rem;
+}
+
+.search_list__right {
+	padding-left: 20px;
+	width: 29.1357%;
+	background: url(https://www.practostatic.com/web-assets/images/maps/delhi.1e895963363a.png) no-repeat;
+	background-size: cover;
+}
