@@ -1,18 +1,20 @@
-import { Route, Switch } from 'react-router-dom';
-import './App.css';
-import Main from './components/Main/Main';
-import Banner from './components/Main/Banner/Banner';
-import CardsWrapper from './components/Main/Cards/CardsWrapper';
-import DownloadWrapper from './components/Main/Download/DownloadWrapper';
-import Footerwrapper from './components/Footer/Footerwrapper';
-import FindDoctors from './components/FindDoctors/FindDoctors';
+import { Route, Switch } from "react-router-dom";
+import "./App.css";
+import Main from "./components/Main/Main";
+import Banner from "./components/Main/Banner/Banner";
+import CardsWrapper from "./components/Main/Cards/CardsWrapper";
+import DownloadWrapper from "./components/Main/Download/DownloadWrapper";
+import Footerwrapper from "./components/Footer/Footerwrapper";
+import FindDoctors from "./components/FindDoctors/FindDoctors";
 
-import Consultdoctor from './components/Main/Consultdoctor/Consultdoctor';
-import Navbarwrapper from './components/Navbar/Navbarwrapper';
+import Consultdoctor from "./components/Main/Consultdoctor/Consultdoctor";
+import Navbarwrapper from "./components/Navbar/Navbarwrapper";
+import Searchbar from "./components/SearchBar/Searchbar";
+import Slider from "./components/Slider/Slider";
+import Article from "./components/Main/Toparticle/Article";
+
 import SearchbarWrapper from './components/SearchBar/SearchbarWrapper';
-import Slider from './components/Slider/Slider';
 import SearchWrapper from './components/SearchResults/SearchWrapper';
-import Searchbar from './components/SearchBar/Searchbar';
 
 function App() {
 	return (
@@ -28,6 +30,7 @@ function App() {
 						<CardsWrapper />
 						<Consultdoctor />
 						<Slider />
+            <Article/>
 						<DownloadWrapper />
 					</Main>
 				</Route>

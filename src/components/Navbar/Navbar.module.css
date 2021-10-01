@@ -1,0 +1,31 @@
+.u{
+    cursor: pointer;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.nav-interect{
+    color: #414146;
+    line-height: 35px;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.new{
+    float: right;
+    background: #ff7800;
+    padding: 2px 5px;
+    font-size: 10px;
+    box-sizing: content-box;
+    color: white;
+    vertical-align: middle;
+    display: inline;
+    line-height: 12px;
+    border-radius: 2px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
