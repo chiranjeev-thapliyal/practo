@@ -1,24 +1,46 @@
-import { createContext, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 export const AuthContext = createContext();
 
 const AuthContextProvider = ({ children }) => {
-	const [ location, setLocation ] = useState({});
-	const [ query, setQuery ] = useState('');
+	const history = useHistory();
+
+	const [ query, setQuery ] = useState({
+		location: '',
+		keyword: ''
+	});
+	const [ searched, setSearched ] = useState(false);
+
+	useEffect(
+		() => {
+			const { location, keyword, searched } = query;
+			if (location && keyword && !searched) {
+				handleSearched();
+				return history.push('/search');
+			}
+		},
+		[ query ]
+	);
 
 	const handleLocation = (newLocation) => {
-		setLocation(newLocation);
+		setQuery({ ...query, location: newLocation });
 	};
 
-	const handleQuery = (newQuery) => {
-		setQuery(newQuery);
+	const handleKeyword = (newKeyword) => {
+		setQuery({ ...query, keyword: newKeyword });
+	};
+
+	const handleSearched = () => {
+		setSearched(!searched);
 	};
 
 	const values = {
-		location,
-		query,
+		...query,
+		searched,
 		handleLocation,
-		handleQuery
+		handleKeyword,
+		handleSearched
 	};
 
 	return <AuthContext.Provider value={values}>{children}</AuthContext.Provider>;

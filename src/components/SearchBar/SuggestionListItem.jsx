@@ -1,11 +1,14 @@
 import styles from './SearchBar.module.css';
 
-const SuggestionListItem = ({ list, type }) => {
+const SuggestionListItem = ({ list, type, handleQuery }) => {
 	return (
 		<div className={styles.suggestion_list}>
 			<div className={styles.suggestion_group}>
 				{list.map(({ id, title, sub_title, keyword}) => (
-					<div key={id} className={styles.suggestion_item}>
+					<div key={id} className={styles.suggestion_item} onClick={() => {
+						if (type === "speciality") return handleQuery("keyword", title);
+						else return handleQuery("location", sub_title);
+					}}>
 						<div className={styles.suggest_item_media}>
 							<div className={styles.suggest_item_media_item}>
 								<svg
