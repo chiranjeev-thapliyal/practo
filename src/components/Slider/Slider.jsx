@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import Section from "../Section/Section";
 import "./Slider.css";
-//import "../icoons/ionicons.min.css";
 
 export default function Slider() {
   const [position, setPosition] = useState(0);
@@ -45,7 +45,7 @@ export default function Slider() {
   };
 
   return (
-    <div className="main">
+    <div className="main content">
       <div style={{display: "flex",
     justifyContent: "space-between"}}>
         <div>

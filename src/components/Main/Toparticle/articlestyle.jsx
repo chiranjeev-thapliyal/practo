@@ -18,7 +18,7 @@ const Wrapper= styled.div`
         
 
         & > .sub2{
-            margin-top:20px
+            margin-top:20px;
 
             & > .subcard{
                 vertical-align: top;
