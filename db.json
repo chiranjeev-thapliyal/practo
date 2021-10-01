@@ -1,14 +1,4 @@
 {
-  "consult": [
-    {
-      "id": 1,
-      "date": "Sep 30,2021",
-      "time": "At 11:41 PM",
-      "name": "Dr. Mahantesh",
-      "titleMain": "BDS, MDS - Orthodontics and Dentofacial",
-      "titleOther": "Dentist, Orthodontist, Cosmetic/Aesthetic"
-    }
-  ],
   "speciality": [
     {
       "id": 1,
