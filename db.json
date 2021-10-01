@@ -1,313 +1,869 @@
 {
-	"speciality": [
+  "speciality": [
+    {
+      "id": 1,
+      "i": "ion-ios7-search",
+      "title": "Dentist",
+      "keyword": "speciality"
+    },
+    {
+      "id": 2,
+      "i": "ion-ios7-search",
+      "title": "Gyneocologist",
+      "keyword": "speciality"
+    },
+    {
+      "id": 3,
+      "i": "ion-ios7-search",
+      "title": "general physician",
+      "keyword": "speciality"
+    },
+    {
+      "id": 4,
+      "i": "ion-ios7-search",
+      "title": "dermatologist",
+      "keyword": "speciality"
+    },
+    {
+      "id": 5,
+      "i": "ion-ios7-search",
+      "title": "ear-nose",
+      "keyword": "speciality"
+    },
+    {
+      "id": 6,
+      "i": "ion-ios7-search",
+      "title": "Homoeopath",
+      "keyword": "speciality"
+    },
+    {
+      "id": 7,
+      "i": "ion-ios7-search",
+      "title": "Ayurveda",
+      "keyword": "speciality"
+    }
+  ],
+  "place": [
+    {
+      "id": 1,
+      "title": "Dwarka",
+      "sub_title": "Delhi"
+    },
+    {
+      "id": 2,
+      "title": "Kumaramangalam",
+      "sub_title": "Bangalore"
+    },
+    {
+      "id": 3,
+      "title": "Indirapuram",
+      "sub_title": "Ghaziabad"
+    },
+    {
+      "id": 4,
+      "title": "Noida",
+      "sub_title": "Ghaziabad"
+    }
+  ],
+  "doctors": [
+    {
+      "name": "Dr. Sourabh Nagpal",
+      "gender": "male",
+      "img": "https://imagesx.practo.com/providers/e97138f9-c301-4777-b608-ca0e220ee8c7.jpg?i_type=t_100x100",
+      "speciality": "Dentist",
+      "experience": 16,
+      "locality": "Delhi",
+      "clinics": [
+        {
+          "name": "Matrix Dental & Skin Lounge",
+          "location": "Vasant Vihar, Delhi"
+        },
+        {
+          "name": "Matrix Dental And Skin Lounge",
+          "location": "Vasant Kunj, Delhi"
+        },
+        {
+          "name": "Matrix clinic",
+          "location": "Munirka, Delhi"
+        },
+        {
+          "name": "Holy Angels Hospital",
+          "location": "Vasant Vihar, Delhi"
+        }
+      ],
+      "video_consult": false,
+      "charges": 500,
+      "ratings": 99,
+      "stories": "603 patient stories",
+      "time": [
+        {
+          "afternoon": [
+            "12:00 PM",
+            "12:30 PM",
+            "01:00 PM",
+            "01:30 PM",
+            "02:00 PM",
+            "02:30 PM"
+          ]
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Dr. Varun Raj Kumar",
+      "gender": "male",
+      "img": "https://imagesx.practo.com/providers/87dff1b9-1cb9-4005-9dcd-e1c79cb744cf.jpg?i_type=t_100x100",
+      "speciality": "Dentist",
+      "experience": 12,
+      "locality": "Delhi",
+      "clinics": [
+        {
+          "name": "Matrix Dental & Skin Lounge",
+          "location": "Vasant Vihar, Bangalore"
+        },
+        {
+          "name": "Matrix Dental And Skin Lounge",
+          "location": "Vasant Kunj, Delhi"
+        },
+        {
+          "name": "Matrix clinic",
+          "location": "Munirka, Delhi"
+        },
+        {
+          "name": "Holy Angels Hospital",
+          "location": "Vasant Vihar, Delhi"
+        }
+      ],
+      "video_consult": true,
+      "charges": 1000,
+      "ratings": 100,
+      "stories": "10 patient stories",
+      "time": [
+        {
+          "morning": ["11:00 AM", "11:15 AM", "11:30 AM", "11:45 AM"]
+        },
+        {
+          "afternoon": [
+            "12:00 PM",
+            "12:15 PM",
+            "12:30 PM",
+            "12:45 PM",
+            "01:00 PM",
+            "01:15 PM",
+            "01:30 PM",
+            "01:45 PM",
+            "02:00 PM",
+			"02:15 PM",
+			"02:30 PM"
+          ]
+        },
 		{
-			"id": 1,
-			"i": "ion-ios7-search",
-			"title": "Dentist",
-			"keyword": "speciality"
-		},
-		{
-			"id": 2,
-			"i": "ion-ios7-search",
-			"title": "Gyneocologist",
-			"keyword": "speciality"
-		},
-		{
-			"id": 3,
-			"i": "ion-ios7-search",
-			"title": "general physician",
-			"keyword": "speciality"
-		},
-		{
-			"id": 4,
-			"i": "ion-ios7-search",
-			"title": "dermatologist",
-			"keyword": "speciality"
-		},
-		{
-			"id": 5,
-			"i": "ion-ios7-search",
-			"title": "ear-nose",
-			"keyword": "speciality"
-		},
-		{
-			"id": 6,
-			"i": "ion-ios7-search",
-			"title": "Homoeopath",
-			"keyword": "speciality"
-		},
-		{
-			"id": 7,
-			"i": "ion-ios7-search",
-			"title": "Ayurveda",
-			"keyword": "speciality"
+			"evening":[
+				"04:00 PM",
+				"04:15 PM",
+				"04:30 PM",
+				"04:45 PM",
+				"05:00 PM",
+				"05:15 PM",
+				"05:30 PM"
+			]
 		}
-	],
-	"place": [
-		{
-			"id": 1,
-			"title": "Dwarka",
-			"sub_title": "Delhi"
-		},
-		{
-			"id": 2,
-			"title": "Kumaramangalam",
-			"sub_title": "Bangalore"
-		},
-		{
-			"id": 3,
-			"title": "Indirapuram",
-			"sub_title": "Ghaziabad"
-		},
-		{
-			"id": 4,
-			"title": "Noida",
-			"sub_title": "Ghaziabad"
+      ],
+      "id": 2
+    },
+    {
+      "name": "Dr. Neha Khandelwal",
+      "gender": "female",
+      "img": "https://imagesx.practo.com/providers/cdb10c9f-8dc3-4d2c-8ae3-388c550cd941.jpg?i_type=t_100x100",
+      "speciality": "Gynecologist/Obstetrician",
+      "experience": 16,
+      "locality": "Delhi",
+      "clinics": [
+        {
+          "name": "FEHEALTH",
+          "location": "Greater Kailash Part 1, Delhi"
+        },
+        {
+          "name": "Sama Hospital",
+          "location": "Siri Fort Road, Delhi"
+        },
+        {
+          "name": "BirthRight By Rainbow",
+          "location": "Malviya Nagar, Delhi"
+        },
+        {
+          "name": "Surgical Oncology Clinic",
+          "location": "Malviya Nagar, Delhi"
+        },
+        {
+          "name": "Rosewalk Healthcare",
+          "location": "Panchsheel Park, Delhi"
+        }
+      ],
+      "video_consult": true,
+      "charges": 1100,
+      "ratings": 99,
+      "stories": "314 patient stories",
+      "time": [
+        {
+          "evening": [
+            "04:00 PM",
+            "04:30 PM",
+            "05:00 PM",
+            "05:30 PM",
+            "06:00 PM",
+            "06:30 PM",
+            "07:00 PM"
+          ]
+        }
+      ],
+      "id": 3
+    },
+	{
+		"name": "Dr. Meeka Gulati",
+		"gender": "female",
+		"img": "https://imagesx.practo.com/providers/7b10f696-d01a-45b6-a236-0bf6152403dd.jpg?i_type=t_100x100",
+		"speciality": "Dentist",
+		"experience": 14,
+		"locality": "Delhi",
+		"clinics": [
+		  {
+			"name": "Alps dental care",
+			"location": "Janakpuri, Delhi"
+		  },
+		  {
+			"name": "Sama Hospital",
+			"location": "Siri Fort Road, Delhi"
+		  },
+		  {
+			"name": "BirthRight By Rainbow",
+			"location": "Malviya Nagar, Delhi"
+		  },
+		  {
+			"name": "Surgical Oncology Clinic",
+			"location": "Malviya Nagar, Delhi"
+		  },
+		  {
+			"name": "Rosewalk Healthcare",
+			"location": "Panchsheel Park, Delhi"
+		  }
+		],
+		"video_consult": false,
+		"charges": 500,
+		"ratings": 97,
+		"stories": 99,
+		"time": [
+		  {
+			"evening": [
+			  "06:00 PM",
+			  "06:30 PM",
+			  "07:00 PM",
+			  "07:30 PM",
+			  "08:00 PM"
+			]
+		  },
+		  {
+			  "morning":[
+				  "09:30 Am",
+				  "10:00 AM"
+			  ]
+		  }
+		 
+		],
+		"id": 4
+	  },
+	  {
+		"name": "Dr. Ankit Jain",
+		"gender": "male",
+		"img": "https://imagesx.practo.com/providers/1307b7ec-916c-4493-9fc8-0ee40963621d.jpg?i_type=t_100x100",
+		"speciality": "Dentist",
+		"experience": 9,
+		"locality": "Delhi",
+		"clinics": [
+		  {
+			"name": "Alps dental care",
+			"location": "Janakpuri, Delhi"
+		  },
+		  {
+			"name": "Sama Hospital",
+			"location": "Siri Fort Road, Delhi"
+		  },
+		  {
+			"name": "BirthRight By Rainbow",
+			"location": "Malviya Nagar, Delhi"
+		  },
+		  {
+			"name": "Surgical Oncology Clinic",
+			"location": "Malviya Nagar, Delhi"
+		  },
+		  {
+			"name": "Rosewalk Healthcare",
+			"location": "Panchsheel Park, Delhi"
+		  }
+		],
+		"video_consult": true,
+		"charges": 300,
+		"ratings": 100,
+		"stories": 66,
+		"time": [
+		  {
+			"evening": [
+			  "06:00 PM",
+			  "06:30 PM",
+			  "07:00 PM",
+			  "07:30 PM",
+			  "08:00 PM",
+			  "08:00 PM"
+			]
+		  }
+		 
+		],
+		"id": 5
+	  },
+	  {
+		"name": "Dr. Ruchi Gupta",
+		"gender": "female",
+		"img": "https://imagesx.practo.com/providers/4aad8b2d-ad14-4a47-9b49-47dd6e3ef05d.jpg?i_type=t_100x100",
+		"speciality": "Dentist",
+		"experience": 14,
+		"locality": "Delhi",
+		"clinics": [
+		  {
+			"name": "Alps dental care",
+			"location": "Janakpuri, Delhi"
+		  },
+		  {
+			"name": "Sama Hospital",
+			"location": "Siri Fort Road, Delhi"
+		  },
+		  {
+			"name": "BirthRight By Rainbow",
+			"location": "Malviya Nagar, Delhi"
+		  },
+		  {
+			"name": "Surgical Oncology Clinic",
+			"location": "Malviya Nagar, Delhi"
+		  },
+		  {
+			"name": "Rosewalk Healthcare",
+			"location": "Panchsheel Park, Delhi"
+		  }
+		],
+		"video_consult": true,
+		"charges": 300,
+		"ratings": 96,
+		"stories": 43,
+		"time": [
+		  {
+			"evening": [
+			  "06:00 PM",
+			  "06:30 PM",
+			  "07:00 PM",
+			  "07:30 PM"
+			]
+		  },
+		  {
+			  "night":[
+				  "08:00 PM",
+				  "08:30 PM"
+			  ]
+		  }
+		],
+		"id": 6
+	  },
+	  {
+		"name": "Dr.Pratibha Gupta",
+		"gender": "female",
+		"img": "https://imagesx.practo.com/providers/8048a391-84d6-42cc-aed5-3aa2e971abb0.jpg?i_type=t_100x100",
+		"speciality": "Gynecologist/Obstetrician",
+		"experience": 20,
+		"locality": "Delhi",
+		"clinics": [
+		  {
+			"name": "Angel Mother child clinic",
+			"location": "Dwarka, Delhi"
+		  },
+		  {
+			"name": "Sama Hospital",
+			"location": "Siri Fort Road, Delhi"
+		  },
+		  {
+			"name": "BirthRight By Rainbow",
+			"location": "Malviya Nagar, Delhi"
+		  },
+		  {
+			"name": "Surgical Oncology Clinic",
+			"location": "Malviya Nagar, Delhi"
+		  },
+		  {
+			"name": "Rosewalk Healthcare",
+			"location": "Panchsheel Park, Delhi"
+		  }
+		],
+		"video_consult": true,
+		"charges": 500,
+		"ratings": 95,
+		"stories": 321,
+		"time": [
+			{
+				"morning": [
+				  "11:00 AM",
+				  "11:30 AM",
+				  "11:45 AM"
+				  
+				]
+			  },
+		  {
+			"evening": [
+			  "04:00 PM",
+			  "04:30 PM",
+			  "05:01 PM",
+			  "05:21 PM",
+			  "06:11 PM",
+			  "06:30 PM",
+			  "07:00 PM"
+			]
+		  }
+		],
+		"id": 7
+	  },
+	  {
+		"name": "Dr. Kalpana Agarwal",
+		"gender": "female",
+		"img": "https://imagesx.practo.com/providers/f2c238da-137b-4621-bf95-5500c38912eb.jpg?i_type=t_100x100",
+		"speciality": "Gynecologist/Obstetrician",
+		"experience": 18,
+		"locality": "Delhi",
+		"clinics": [
+		  {
+			"name": "Angel Mother child clinic",
+			"location": "Dwarka, Delhi"
+		  },
+		  {
+			"name": "Sama Hospital",
+			"location": "Siri Fort Road, Delhi"
+		  },
+		  {
+			"name": "BirthRight By Rainbow",
+			"location": "Malviya Nagar, Delhi"
+		  },
+		  {
+			"name": "Surgical Oncology Clinic",
+			"location": "Malviya Nagar, Delhi"
+		  },
+		  {
+			"name": "Rosewalk Healthcare",
+			"location": "Panchsheel Park, Delhi"
+		  }
+		],
+		"video_consult": false,
+		"charges": 500,
+		"ratings": 90,
+		"stories": 259,
+		"time": [
+			
+		  {
+			"evening": [
+			  "04:00 PM",
+			  "04:30 PM",
+			  "05:01 PM",
+			  "05:21 PM",
+			  "06:11 PM",
+			  "06:30 PM",
+			  "07:00 PM"
+			]
+		  }
+		],
+		"id": 8
+	  },
+	  {
+		"name": "Dr.Sristhi Agarwal",
+		"gender": "female",
+		"img": "https://imagesx.practo.com/providers/2e2330b1-7466-4a0a-8e67-fc34142a4f37.jpg?i_type=t_100x100",
+		"speciality": "Gynecologist/Obstetrician",
+		"experience": 16,
+		"locality": "Delhi",
+		"clinics": [
+		  {
+			"name": "Agarwal clinic",
+			"location": "Dwarka, Delhi"
+		  },
+		  {
+			"name": "Sama Hospital",
+			"location": "Siri Fort Road, Delhi"
+		  },
+		  {
+			"name": "BirthRight By Rainbow",
+			"location": "Malviya Nagar, Delhi"
+		  },
+		  {
+			"name": "Surgical Oncology Clinic",
+			"location": "Malviya Nagar, Delhi"
+		  },
+		  {
+			"name": "Rosewalk Healthcare",
+			"location": "Panchsheel Park, Delhi"
+		  }
+		],
+		"video_consult": true,
+		"charges": 700,
+		"ratings": 97,
+		"stories": 42,
+		"time": [
+			{
+				"morning": [
+				  "09:00 AM",
+				  "10:00 AM",
+				  "10:30 AM"
+				  
+				]
+			  },
+		  {
+			"evening": [
+			  "04:00 PM",
+			  "04:30 PM",
+			  "05:00 PM",
+			  "05:30 PM",
+			  "06:00 PM",
+			  "06:30 PM",
+			  "07:00 PM"
+			]
+		  }
+		],
+		"id": 9
+	  },
+	  {
+		"name": "Dr. Mayur Dass",
+		"gender": "female",
+		"img": "https://imagesx.practo.com/providers/6c3fcb13-0aa9-4bb0-b9b7-fdf3da4d7005.jpg?i_type=t_100x100",
+		"speciality": "Gynecologist/Obstetrician",
+		"experience": 18,
+		"locality": "Delhi",
+		"clinics": [
+		  {
+			"name": "Agarwal clinic",
+			"location": "Dwarka, Delhi"
+		  },
+		  {
+			"name": "Sama Hospital",
+			"location": "Siri Fort Road, Delhi"
+		  },
+		  {
+			"name": "BirthRight By Rainbow",
+			"location": "Malviya Nagar, Delhi"
+		  },
+		  {
+			"name": "Surgical Oncology Clinic",
+			"location": "Malviya Nagar, Delhi"
+		  },
+		  {
+			"name": "Rosewalk Healthcare",
+			"location": "Panchsheel Park, Delhi"
+		  }
+		],
+		"video_consult": true,
+		"charges": 500,
+		"ratings": 99,
+		"stories": 114,
+		"time": [
+			{
+				"morning": [
+				  "09:00 AM",
+				  "10:00 AM",
+				  "10:30 AM"
+				  
+				]
+			  },
+		  {
+			"evening": [
+			  "04:00 PM",
+			  "04:30 PM",
+			  "05:00 PM",
+			  "05:30 PM",
+			  "06:00 PM",
+			  "06:30 PM",
+			  "07:00 PM"
+			]
+		  }
+		],
+		"id": 10
+	  },
+	  {
+		"name": "Dr. Ankita Balakrishna",
+		"gender": "female",
+		"img": "https://imagesx.practo.com/providers/842b32b5-54d6-4d44-9289-e94c579cc023.jpg?i_type=t_100x100",
+		"speciality": "Gynecologist/Obstetrician",
+		"experience": 21,
+		"locality": "Bangalore",
+		"clinics": [
+		  {
+			"name": "Agarwal clinic",
+			"location": "Bangalore"
+		  },
+		  {
+			"name": "Sama Hospital",
+			"location": "Siri Fort Road, Bangalore"
+		  },
+		  {
+			"name": "BirthRight By Rainbow",
+			"location": "Malviya Nagar, Bangalore"
+		  },
+		  {
+			"name": "Surgical Oncology Clinic",
+			"location": "Malviya Nagar, Bangalore"
+		  },
+		  {
+			"name": "Rosewalk Healthcare",
+			"location": "Panchsheel Park, Bangalore"
+		  }
+		],
+		"video_consult": false,
+		"charges": 600,
+		"ratings": 94,
+		"stories": 73,
+		"time": [
+			{
+				"morning": [
+				  "09:00 AM",
+				  "10:00 AM",
+				  "10:30 AM"
+				  
+				]
+			  },
+		  {
+			"evening": [
+			  "04:00 PM",
+			  "04:30 PM",
+			  "05:00 PM",
+			  "05:30 PM",
+			  "06:00 PM",
+			  "06:30 PM",
+			  "07:00 PM"
+			]
+		  }
+		],
+		"id": 11
+	  },
+	  {
+		"name": "Dr. Deepak V Rao",
+		"gender": "male",
+		"img": "https://imagesx.practo.com/providers/71770ee6-f242-4457-b5d2-29566f7a44aa.jpg?i_type=t_100x100",
+		"speciality": "Gynecologist/Obstetrician",
+		"experience": 30,
+		"locality": "Bangalore",
+		"clinics": [
+		  {
+			"name": "Agarwal clinic",
+			"location": "Bangalore"
+		  },
+		  {
+			"name": "Sama Hospital",
+			"location": "Siri Fort Road, Bangalore"
+		  },
+		  {
+			"name": "BirthRight By Rainbow",
+			"location": "Malviya Nagar, Bangalore"
+		  },
+		  {
+			"name": "Surgical Oncology Clinic",
+			"location": "Malviya Nagar, Bangalore"
+		  },
+		  {
+			"name": "Rosewalk Healthcare",
+			"location": "Panchsheel Park, Bangalore"
+		  }
+		],
+		"video_consult": false,
+		"charges": 700,
+		"ratings": 97,
+		"stories": 20,
+		"time": [
+			{
+				"morning": [
+				  "09:00 AM",
+				  "10:00 AM",
+				  "10:30 AM"
+				  
+				]
+			  },
+		  {
+			"evening": [
+			  "04:00 PM",
+			  "04:30 PM",
+			  "05:00 PM",
+			  "05:30 PM",
+			  "06:00 PM",
+			  "06:30 PM",
+			  "07:00 PM"
+			]
+		  }
+		],
+		"id": 12
+	  },
+	  {
+		"name": "Dr. Janani V Manoharan",
+		"gender": "female",
+		"img": "https://imagesx.practo.com/providers/560b0b95-535c-4205-8844-e30964182e30.jpg?i_type=t_100x100",
+		"speciality": "Gynecologist/Obstetrician",
+		"experience": 14,
+		"locality": "Bangalore",
+		"clinics": [
+		  {
+			"name": "Agarwal clinic",
+			"location": "Bangalore"
+		  },
+		  {
+			"name": "Sama Hospital",
+			"location": "Siri Fort Road, Bangalore"
+		  },
+		  {
+			"name": "BirthRight By Rainbow",
+			"location": "Malviya Nagar, Bangalore"
+		  },
+		  {
+			"name": "Surgical Oncology Clinic",
+			"location": "Malviya Nagar, Bangalore"
+		  },
+		  {
+			"name": "Rosewalk Healthcare",
+			"location": "Panchsheel Park, Bangalore"
+		  }
+		],
+		"video_consult": false,
+		"charges": 700,
+		"ratings": 97,
+		"stories": 63,
+		"time": [
+			
+		  {
+			"evening": [
+			  "04:00 PM",
+			  "04:30 PM",
+			  "05:00 PM",
+			  "05:30 PM",
+			  "06:00 PM",
+			  "06:30 PM",
+			  "07:00 PM"
+			]
+		  }
+		],
+		"id": 13
+	  },
+	  {
+		"name": "Dr. Bhargavi Reddy",
+		"gender": "female",
+		"img": "https://imagesx.practo.com/providers/560b0b95-535c-4205-8844-e30964182e30.jpg?i_type=t_100x100",
+		"speciality": "Gynecologist/Obstetrician",
+		"experience": 31,
+		"locality": "Bangalore",
+		"clinics": [
+		  {
+			"name": "Agarwal clinic",
+			"location": "Bangalore"
+		  },
+		  {
+			"name": "Sama Hospital",
+			"location": "Siri Fort Road, Bangalore"
+		  },
+		  {
+			"name": "BirthRight By Rainbow",
+			"location": "Malviya Nagar, Bangalore"
+		  },
+		  {
+			"name": "Surgical Oncology Clinic",
+			"location": "Malviya Nagar, Bangalore"
+		  },
+		  {
+			"name": "Rosewalk Healthcare",
+			"location": "Panchsheel Park, Bangalore"
+		  }
+		],
+		"video_consult": false,
+		"charges": 150,
+		"ratings": 92,
+		"stories": 200,
+		"time": [
+			
+		  {
+			"evening": [
+			  "04:00 PM",
+			  "04:30 PM",
+			  "05:00 PM",
+			  "05:30 PM",
+			  "06:00 PM",
+			  "06:30 PM",
+			  "07:00 PM"
+			]
+		  },
+		  {
+			"night":[
+				"08:00 PM",
+				"08:30 PM"
+			]
 		}
-	],
-	"doctors": [
-		{
-			"name": "Dr. Sourabh Nagpal",
-			"gender": "male",
-			"img": "https://imagesx.practo.com/providers/e97138f9-c301-4777-b608-ca0e220ee8c7.jpg?i_type=t_100x100",
-			"speciality": "Dentist",
-			"experience": 16,
-			"locality": "Delhi",
-			"clinics": [
-				{
-					"name": "Matrix Dental & Skin Lounge",
-					"location": "Vasant Vihar, Delhi"
-				},
-				{
-					"name": "Matrix Dental And Skin Lounge",
-					"location": "Vasant Kunj, Delhi"
-				},
-				{
-					"name": "Matrix clinic",
-					"location": "Munirka, Delhi"
-				},
-				{
-					"name": "Holy Angels Hospital",
-					"location": "Vasant Vihar, Delhi"
-				}
-			],
-			"video_consult": false,
-			"charges": 500,
-			"ratings": 99,
-			"stories": [
-				{
-					"name": "Jasmine",
-					"reason": "Visited For Misaligned Teeth",
-					"review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
-					"verified": true,
-					"happyWith": [
-						"Doctor friendliness",
-						"Explanation of the health issue",
-						"Treatment satisfaction",
-						"Value for money",
-						"Wait time"
-					]
-				},
-				{
-					"name": "Jasmine",
-					"reason": "Visited For Misaligned Teeth",
-					"review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
-					"verified": true,
-					"happyWith": [
-						"Doctor friendliness",
-						"Explanation of the health issue",
-						"Treatment satisfaction",
-						"Value for money",
-						"Wait time"
-					]
-				},
-				{
-					"name": "Jasmine",
-					"reason": "Visited For Misaligned Teeth",
-					"review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
-					"verified": true,
-					"happyWith": [
-						"Doctor friendliness",
-						"Explanation of the health issue",
-						"Treatment satisfaction",
-						"Value for money",
-						"Wait time"
-					]
-				},
-				{
-					"name": "Jasmine",
-					"reason": "Visited For Misaligned Teeth",
-					"review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
-					"verified": true,
-					"happyWith": [
-						"Doctor friendliness",
-						"Explanation of the health issue",
-						"Treatment satisfaction",
-						"Value for money",
-						"Wait time"
-					]
-				},
-				{
-					"name": "Jasmine",
-					"reason": "Visited For Misaligned Teeth",
-					"review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
-					"verified": true,
-					"happyWith": [
-						"Doctor friendliness",
-						"Explanation of the health issue",
-						"Treatment satisfaction",
-						"Value for money",
-						"Wait time"
-					]
-				}
-			],
-			"id": 1
-		},
-		{
-			"name": "Dr. Varun Raj Kumar",
-			"gender": "male",
-			"img": "https://imagesx.practo.com/providers/87dff1b9-1cb9-4005-9dcd-e1c79cb744cf.jpg?i_type=t_100x100",
-			"speciality": "Dentist",
-			"experience": 12,
-			"locality": "Bangalore",
-			"clinics": [
-				{
-					"name": "Matrix Dental & Skin Lounge",
-					"location": "Vasant Vihar, Bangalore"
-				},
-				{
-					"name": "Matrix Dental And Skin Lounge",
-					"location": "Vasant Kunj, Delhi"
-				},
-				{
-					"name": "Matrix clinic",
-					"location": "Munirka, Delhi"
-				},
-				{
-					"name": "Holy Angels Hospital",
-					"location": "Vasant Vihar, Delhi"
-				}
-			],
-			"video_consult": true,
-			"charges": 1000,
-			"ratings": 100,
-			"stories": [
-				{
-					"name": "Jasmine",
-					"reason": "Visited For Misaligned Teeth",
-					"review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
-					"verified": true,
-					"happyWith": [
-						"Doctor friendliness",
-						"Explanation of the health issue",
-						"Treatment satisfaction",
-						"Value for money",
-						"Wait time"
-					]
-				},
-				{
-					"name": "Jasmine",
-					"reason": "Visited For Misaligned Teeth",
-					"review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
-					"verified": true,
-					"happyWith": [
-						"Doctor friendliness",
-						"Explanation of the health issue",
-						"Treatment satisfaction",
-						"Value for money",
-						"Wait time"
-					]
-				},
-				{
-					"name": "Jasmine",
-					"reason": "Visited For Misaligned Teeth",
-					"review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
-					"verified": true,
-					"happyWith": [
-						"Doctor friendliness",
-						"Explanation of the health issue",
-						"Treatment satisfaction",
-						"Value for money",
-						"Wait time"
-					]
-				}
-			],
-			"id": 2
-		},
-		{
-			"name": "Dr. Neha Khandelwal",
-			"gender": "female",
-			"img": "https://imagesx.practo.com/providers/cdb10c9f-8dc3-4d2c-8ae3-388c550cd941.jpg?i_type=t_100x100",
-			"speciality": "Gynecologist/Obstetrician",
-			"experience": 16,
-			"locality": "Mumbai",
-			"clinics": [
-				{
-					"name": "FEHEALTH",
-					"location": "Greater Kailash Part 1, Delhi"
-				},
-				{
-					"name": "Sama Hospital",
-					"location": "Siri Fort Road, Delhi"
-				},
-				{
-					"name": "BirthRight By Rainbow",
-					"location": "Malviya Nagar, Delhi"
-				},
-				{
-					"name": "Surgical Oncology Clinic",
-					"location": "Malviya Nagar, Delhi"
-				},
-				{
-					"name": "Rosewalk Healthcare",
-					"location": "Panchsheel Park, Delhi"
-				}
-			],
-			"video_consult": true,
-			"charges": 1100,
-			"ratings": 99,
-			"stories": [
-				{
-					"name": "Jasmine",
-					"reason": "Visited For Misaligned Teeth",
-					"review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
-					"verified": true,
-					"happyWith": [
-						"Doctor friendliness",
-						"Explanation of the health issue",
-						"Treatment satisfaction",
-						"Value for money",
-						"Wait time"
-					]
-				},
-				{
-					"name": "Jasmine",
-					"reason": "Visited For Misaligned Teeth",
-					"review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
-					"verified": true,
-					"happyWith": [
-						"Doctor friendliness",
-						"Explanation of the health issue",
-						"Treatment satisfaction",
-						"Value for money",
-						"Wait time"
-					]
-				},
-				{
-					"name": "Jasmine",
-					"reason": "Visited For Misaligned Teeth",
-					"review": "My treatment experience was amazing with doctor Nagpal, he suggested all the possible options which I could go for my aligners treatment. Best thing about him is he explains everything in layman's language , which is of great help for the patients. If you have any doubt regarding treatment just ask him. :)",
-					"verified": true,
-					"happyWith": [
-						"Doctor friendliness",
-						"Explanation of the health issue",
-						"Treatment satisfaction",
-						"Value for money",
-						"Wait time"
-					]
-				}
-			],
-			"id": 3
+
+		],
+		"id": 14
+	  },
+	  {
+		"name": "Dr. Triveni M.P",
+		"gender": "female",
+		"img": "https://imagesx.practo.com/providers/cfab49cb-94ba-4768-8b9f-b4e235618ab7.jpg?i_type=t_100x100",
+		"speciality": "Gynecologist/Obstetrician",
+		"experience": 26,
+		"locality": "Bangalore",
+		"clinics": [
+		  {
+			"name": "Agarwal clinic",
+			"location": "Bangalore"
+		  },
+		  {
+			"name": "Sama Hospital",
+			"location": "Siri Fort Road, Bangalore"
+		  },
+		  {
+			"name": "BirthRight By Rainbow",
+			"location": "Malviya Nagar, Bangalore"
+		  },
+		  {
+			"name": "Surgical Oncology Clinic",
+			"location": "Malviya Nagar, Bangalore"
+		  },
+		  {
+			"name": "Rosewalk Healthcare",
+			"location": "Panchsheel Park, Bangalore"
+		  }
+		],
+		"video_consult": false,
+		"charges": 700,
+		"ratings": 92,
+		"stories": 200,
+		"time": [
+			
+		  {
+			"evening": [
+			  "04:00 PM",
+			  "04:30 PM",
+			  "05:00 PM",
+			  "05:30 PM",
+			  "06:00 PM",
+			  "06:30 PM",
+			  "07:00 PM"
+			]
+		  },
+		  {
+			"night":[
+				"08:00 PM",
+				"08:30 PM"
+			]
 		}
-	]
+
+		],
+		"id": 15
+	  }
+	 
+	
+
+
+  ]
 }
