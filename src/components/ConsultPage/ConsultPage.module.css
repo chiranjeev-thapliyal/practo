@@ -1,0 +1,137 @@
+.ConsultPageSection {
+  background-color: #f0f0f5;
+  padding-top: 35px;
+  height: 100vh;
+}
+.flexBox {
+  display: flex;
+}
+.flexBox > div {
+  flex-basis: 50%;
+}
+.flex2 {
+  display: flex;
+  justify-content: right;
+}
+.flex12 {
+  width: 440px;
+  height: 410px;
+  background-color: #ffffff;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  padding: 0px 10px;
+}
+.flex12Header {
+  font-size: 170%;
+  padding: 15px 0px;
+}
+
+.dateTimeDiv {
+  display: flex;
+  font-size: 150%;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+.dateTimeChange {
+  padding: 5px 0px;
+}
+.icons {
+  margin-right: 10px;
+}
+.posterDiv {
+  display: flex;
+  margin-top: 10px;
+}
+.posterDivImgBox {
+  width: 100px;
+  margin: 1px 0px;
+  margin-right: 10px;
+}
+.posterDetail {
+  margin: 10px 0px;
+}
+.posterDetail > h3 {
+  font-size: 150%;
+}
+
+.posterDetail > h4,
+a {
+  font-size: 130%;
+}
+
+.flex1 {
+  width: 440px;
+}
+.PatientHeader {
+  margin: 10px 0px;
+}
+.PatientHeader > h2 {
+  font-size: 215%;
+  margin-bottom: 25px;
+}
+.PatientHeader > div {
+  font-size: 140%;
+}
+.inputNameBox {
+  width: 400px;
+  background-color: white;
+  height: 40px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 3px;
+  align-items: center;
+  /* margin-bottom: 15px; */
+}
+.iconCercle {
+  font-size: medium;
+  margin: 0px 10px;
+}
+.inputNameBox > input {
+  width: 80%;
+  border: none;
+  height: 70%;
+}
+
+.followingDiv {
+  margin: 15px 0px;
+  font-size: 140%;
+}
+.fullNameLabel {
+  font-size: 140%;
+  margin-bottom: 7px;
+}
+.inputFullNameBox {
+  width: 400px;
+  background-color: white;
+  border-radius: 3px;
+  height: 40px;
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.inputFullNameBox > input {
+  width: 80%;
+  height: 70%;
+  border: none;
+}
+.mobileInput {
+  justify-content: space-between;
+}
+.confirmDiv {
+  background-color: #199fd9;
+  font-size: 140%;
+  text-align: center;
+}
+.confirmBox {
+  display: inline-block;
+  margin: 0px auto;
+  color: white;
+}
+.mobileNumberDiv {
+  font-size: 140%;
+  margin-bottom: 10px;
+}
+.termsDiv {
+  font-size: 120%;
+}
