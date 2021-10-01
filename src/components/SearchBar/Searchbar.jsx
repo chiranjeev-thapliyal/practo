@@ -5,8 +5,7 @@ import SuggestionListItem from './SuggestionListItem';
 import { AuthContext } from '../../Contexts/AuthContextProvider';
 
 export default function Searchbar() {
-	const {handleLocation, handleKeyword } = useContext(AuthContext);
-
+	const { location, keyword, handleLocation, handleKeyword } = useContext(AuthContext);
 	const [ showPlaces, setShowPlaces ] = useState(false);
 	const [ showSpeciality, setShowSpeciality ] = useState(false);
 
@@ -23,7 +22,6 @@ export default function Searchbar() {
 		if (type === 'location') handleLocation(value);
 		else handleKeyword(value);
 	};
-
 
 	const getData = async () => {
 		if (!showPlaces && !showSpeciality) return;
@@ -68,11 +66,12 @@ export default function Searchbar() {
 							</svg>
 						</span>
 						<input
+							value={location}
 							className={styles.searchbox}
 							type='text'
 							name='searchbox_locality'
 							id={styles.searchbox_locality}
-							placeholder='Delhi'
+							placeholder={location ? location : 'Search Location'}
 						/>
 					</div>
 					{showPlaces ? (
@@ -100,11 +99,12 @@ export default function Searchbar() {
 							</svg>
 						</span>
 						<input
+							value={keyword}
 							className={styles.searchbox}
 							type='text'
 							name='searchbox_keyword'
 							id={styles.searchbox_keyword}
-							placeholder='Search doctors, clinics, hospitals, etc.'
+							placeholder={keyword ? keyword : 'Search doctors, clinics, hospitals, etc.'}
 						/>
 					</div>
 					{showSpeciality ? (
