@@ -7,6 +7,7 @@ import article from "./book-open.png";
 
 export default function FindDoctors() {
   const [position, setPosition] = useState(0);
+  const [position1, setPosition1] = useState(0);
 
   let arr = [
     {
@@ -46,9 +47,50 @@ export default function FindDoctors() {
     },
   ];
 
+  const commentArr1 = [
+    {
+      starIcon: "ion-ios7-star",
+      summary:
+        " Very helpful. Far easier than doing same things oncomputer. Allows quick and easy search with speedybooking. Even maintains history of doctors visited.",
+      personIcon: "ion-ios7-person-outline",
+      name: "Amit Sharma",
+    },
+    {
+      starIcon: "ion-ios7-star",
+      summary:
+        "Boon for patients.God bless who made this app.I would not recover so soon if this app would not be there. Feedback- Practo has doctor for common disease or complications.It should focus on those complications which is uncommon because it is hard to find suitable doctor in some cases like Varicocele,Esinophill count increase",
+      personIcon: "ion-ios7-person-outline",
+      name: "Anoop Kumar",
+    },
+    {
+      starIcon: "ion-ios7-star",
+      summary:
+        "Very good app. Well thought out about booking/rescheduling/cancelling an appointment. Also Doctor's feedbac k mechanism is good and describes all the basics in good way.",
+      personIcon: "ion-ios7-person-outline",
+      name: "Avinash Kumar",
+    },
+    {
+      starIcon: "ion-ios7-star",
+      summary:
+        "Very easy to use, user interface is amazing. The option Where I can book a cab truly showed how much this app-makers cares about the patient's health👍",
+      personIcon: "ion-ios7-person-outline",
+      name: "Anjani Sirivella",
+    },
+  ];
+  const handleNext1 = () => {
+    if (position1 >= 0 && position1 < 4) {
+      setPosition1(position1 + 1);
+    }
+  };
+
   const handleNext = () => {
     if (position >= 0 && position < 3) {
       setPosition(position + 1);
+    }
+  };
+  const handlePrev1 = () => {
+    if (position1 >= 1) {
+      setPosition1(position1 - 1);
     }
   };
   const handlePrev = () => {
@@ -101,7 +143,17 @@ export default function FindDoctors() {
             <div>
               <div>
                 <i className={`ion-beaker ${styles.icons}`}></i>
-                <span>New</span>
+                <span
+                  style={{
+                    background: "yellow",
+                    color: "black",
+                    padding: "2px 3px",
+                    marginLeft: "3px",
+                    borderRadius: "1px",
+                  }}
+                >
+                  New
+                </span>
               </div>
               <div>Book test</div>
             </div>
@@ -207,7 +259,7 @@ export default function FindDoctors() {
         <div className={styles.secondPageSubject}>
           <div className={styles.secondPageFlexbox}>
             <div className={styles.flex1}>
-              <div>
+              <div style={{ position: "relative" }}>
                 <div className={styles.flex1Heading}>
                   <h2 styles={{ display: "inline" }}>
                     Instant appointment with doctors.
@@ -236,27 +288,48 @@ export default function FindDoctors() {
                 <div className={`${styles.readMoreBox} ${styles.readMoreBox2}`}>
                   <a href="/">Find me the right doctor</a>
                 </div>
-                <div className={styles.testimonials}>
-                  <div>
-                    <div className={styles.starsDiv}>
-                      <i className={`ion-ios7-star ${styles.stars}`}></i>
-                      <i className={`ion-ios7-star ${styles.stars}`}></i>
-                      <i className={`ion-ios7-star ${styles.stars}`}></i>
-                      <i className={`ion-ios7-star ${styles.stars}`}></i>
-                      <i className={`ion-ios7-star ${styles.stars}`}></i>
-                    </div>
-                    <div>
-                      Very helpful. Far easier than doing same things on
-                      computer. Allows quick and easy search with speedy
-                      booking. Even maintains history of doctors visited.
-                    </div>
-                    <div>
-                      <div className={styles.profileIcon}>
-                        <i className="ion-ios7-person-outline"></i>
-                      </div>
-                      <span>Amit Sharma</span>
+                <div style={{ position: "relative" }}>
+                  <div className={styles.testimonials}>
+                    <div
+                      className={styles.slide1}
+                      style={{
+                        left: `${position1 * -460}px`,
+                      }}
+                    >
+                      {commentArr1.map((el) => (
+                        <div className={styles.testimonialseach}>
+                          <div className={styles.starsDiv}>
+                            <i className={`${el.starIcon} ${styles.stars}`}></i>
+                            <i className={`${el.starIcon} ${styles.stars}`}></i>
+                            <i className={`${el.starIcon} ${styles.stars}`}></i>
+                            <i className={`${el.starIcon} ${styles.stars}`}></i>
+                            <i className={`${el.starIcon} ${styles.stars}`}></i>
+                          </div>
+                          <div>{el.summary}</div>
+                          <div>
+                            <div className={styles.profileIcon}>
+                              <i className={el.personIcon}></i>
+                            </div>
+                            <span>{el.name}</span>
+                          </div>
+                        </div>
+                      ))}
                     </div>
                   </div>
+                  <button
+                    className={`${styles["ctrl-btnTest"]} ${styles["pro-prevTest"]} ${styles["ctrl-btnTestWhite"]}`}
+                    onClick={handlePrev1}
+                    style={{ visibility: position1 === 0 && "hidden" }}
+                  >
+                    <i className="ion-chevron-left" />
+                  </button>
+                  <button
+                    className={`${styles["ctrl-btnTest"]} ${styles["pro-next-Test"]} ${styles["ctrl-btnTestWhite"]}`}
+                    onClick={handleNext1}
+                    style={{ visibility: position1 === 3 && "hidden" }}
+                  >
+                    <i className="ion-chevron-right" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -334,27 +407,48 @@ export default function FindDoctors() {
                   ></i>
                   <span>55629 doctors online</span>
                 </div>
-                <div className={styles.testimonials}>
-                  <div>
-                    <div className={styles.starsDiv}>
-                      <i className={`ion-ios7-star ${styles.stars}`}></i>
-                      <i className={`ion-ios7-star ${styles.stars}`}></i>
-                      <i className={`ion-ios7-star ${styles.stars}`}></i>
-                      <i className={`ion-ios7-star ${styles.stars}`}></i>
-                      <i className={`ion-ios7-star ${styles.stars}`}></i>
-                    </div>
-                    <div>
-                      Very helpful. Far easier than doing same things on
-                      computer. Allows quick and easy search with speedy
-                      booking. Even maintains history of doctors visited.
-                    </div>
-                    <div>
-                      <div className={styles.profileIcon}>
-                        <i className="ion-ios7-person-outline"></i>
-                      </div>
-                      <span>Amit Sharma</span>
+                <div style={{ position: "relative" }}>
+                  <div className={styles.testimonials}>
+                    <div
+                      className={styles.slide1}
+                      style={{
+                        left: `${position1 * -460}px`,
+                      }}
+                    >
+                      {commentArr1.map((el) => (
+                        <div className={styles.testimonialseach}>
+                          <div className={styles.starsDiv}>
+                            <i className={`${el.starIcon} ${styles.stars}`}></i>
+                            <i className={`${el.starIcon} ${styles.stars}`}></i>
+                            <i className={`${el.starIcon} ${styles.stars}`}></i>
+                            <i className={`${el.starIcon} ${styles.stars}`}></i>
+                            <i className={`${el.starIcon} ${styles.stars}`}></i>
+                          </div>
+                          <div>{el.summary}</div>
+                          <div>
+                            <div className={styles.profileIcon}>
+                              <i className={el.personIcon}></i>
+                            </div>
+                            <span>{el.name}</span>
+                          </div>
+                        </div>
+                      ))}
                     </div>
                   </div>
+                  <button
+                    className={`${styles["ctrl-btnTest"]} ${styles["pro-prevTest"]}`}
+                    onClick={handlePrev1}
+                    style={{ visibility: position1 === 0 && "hidden" }}
+                  >
+                    <i className="ion-chevron-left" />
+                  </button>
+                  <button
+                    className={`${styles["ctrl-btnTest"]} ${styles["pro-next-Test"]}`}
+                    onClick={handleNext1}
+                    style={{ visibility: position1 === 3 && "hidden" }}
+                  >
+                    <i className="ion-chevron-right" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -551,27 +645,48 @@ export default function FindDoctors() {
                     <a href="/">Learn more</a>
                   </div>
                 </div>
-                <div className={styles.testimonials}>
-                  <div>
-                    <div className={styles.starsDiv}>
-                      <i className={`ion-ios7-star ${styles.stars}`}></i>
-                      <i className={`ion-ios7-star ${styles.stars}`}></i>
-                      <i className={`ion-ios7-star ${styles.stars}`}></i>
-                      <i className={`ion-ios7-star ${styles.stars}`}></i>
-                      <i className={`ion-ios7-star ${styles.stars}`}></i>
-                    </div>
-                    <div>
-                      Very helpful. Far easier than doing same things on
-                      computer. Allows quick and easy search with speedy
-                      booking. Even maintains history of doctors visited.
-                    </div>
-                    <div>
-                      <div className={styles.profileIcon}>
-                        <i className="ion-ios7-person-outline"></i>
-                      </div>
-                      <span>Amit Sharma</span>
+                <div style={{ position: "relative" }}>
+                  <div className={styles.testimonials}>
+                    <div
+                      className={styles.slide1}
+                      style={{
+                        left: `${position1 * -460}px`,
+                      }}
+                    >
+                      {commentArr1.map((el) => (
+                        <div className={styles.testimonialseach}>
+                          <div className={styles.starsDiv}>
+                            <i className={`${el.starIcon} ${styles.stars}`}></i>
+                            <i className={`${el.starIcon} ${styles.stars}`}></i>
+                            <i className={`${el.starIcon} ${styles.stars}`}></i>
+                            <i className={`${el.starIcon} ${styles.stars}`}></i>
+                            <i className={`${el.starIcon} ${styles.stars}`}></i>
+                          </div>
+                          <div>{el.summary}</div>
+                          <div>
+                            <div className={styles.profileIcon}>
+                              <i className={el.personIcon}></i>
+                            </div>
+                            <span>{el.name}</span>
+                          </div>
+                        </div>
+                      ))}
                     </div>
                   </div>
+                  <button
+                    className={`${styles["ctrl-btnTest"]} ${styles["pro-prevTest"]}`}
+                    onClick={handlePrev1}
+                    style={{ visibility: position1 === 0 && "hidden" }}
+                  >
+                    <i className="ion-chevron-left" />
+                  </button>
+                  <button
+                    className={`${styles["ctrl-btnTest"]} ${styles["pro-next-Test"]}`}
+                    onClick={handleNext1}
+                    style={{ visibility: position1 === 3 && "hidden" }}
+                  >
+                    <i className="ion-chevron-right" />
+                  </button>
                 </div>
               </div>
             </div>
