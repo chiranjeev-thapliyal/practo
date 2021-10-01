@@ -104,7 +104,7 @@
       "video_consult": false,
       "charges": 500,
       "ratings": 99,
-      "stories": "603 patient stories",
+      "stories": 603,
       "time": [
         {
           "afternoon": [
@@ -147,7 +147,7 @@
       "video_consult": true,
       "charges": 1000,
       "ratings": 100,
-      "stories": "10 patient stories",
+      "stories": 10,
       "time": [
         {
           "morning": ["11:00 AM", "11:15 AM", "11:30 AM", "11:45 AM"]
@@ -213,7 +213,7 @@
       "video_consult": true,
       "charges": 1100,
       "ratings": 99,
-      "stories": "314 patient stories",
+      "stories": 314,
       "time": [
         {
           "evening": [
@@ -870,6 +870,178 @@
 
 		],
 		"id": 15
+	  },
+	  {
+		"name": "Dr. Raghu T Narayan",
+		"gender": "male",
+		"img": "https://imagesx.practo.com/providers/7aaf257f-befb-4a96-804e-f99504ab8ace.jpg?i_type=t_100x100",
+		"speciality": "Dentist",
+		"experience": 22,
+		"locality": "Bangalore",
+		"clinics": [
+		  {
+			"name": "Matrix Dental & Skin Lounge",
+			"location": "Vasant Vihar, Bangalore"
+		  },
+		  {
+			"name": "Matrix Dental And Skin Lounge",
+			"location": "Vasant Kunj, Bangalore"
+		  },
+		  {
+			"name": "Matrix clinic",
+			"location": "Munirka, Bangalore"
+		  },
+		  {
+			"name": "Holy Angels Hospital",
+			"location": "Vasant Vihar, Bangalore"
+		  }
+		],
+		"video_consult": false,
+		"charges": 500,
+		"ratings": 94,
+		"stories": 58,
+		"time": [
+		  {
+			"afternoon": [
+			  "12:00 PM",
+			  "12:30 PM",
+			  "01:00 PM",
+			  "01:30 PM",
+			  "02:00 PM",
+			  "02:30 PM"
+			]
+		  }
+		],
+		"id": 16
+	  },
+	  {
+		"name": "Dr.  T Ramakishnan",
+		"gender": "male",
+		"img": "https://imagesx.practo.com/providers/40bb73bd-14e6-471f-9e38-2c4203bcbe91.jpg?i_type=t_100x100",
+		"speciality": "Dentist",
+		"experience": 24,
+		"locality": "Bangalore",
+		"clinics": [
+		  {
+			"name": "Matrix Dental & Skin Lounge",
+			"location": "Vasant Vihar, Bangalore"
+		  },
+		  {
+			"name": "Matrix Dental And Skin Lounge",
+			"location": "Vasant Kunj, Bangalore"
+		  },
+		  {
+			"name": "Matrix clinic",
+			"location": "Munirka, Bangalore"
+		  },
+		  {
+			"name": "Holy Angels Hospital",
+			"location": "Vasant Vihar, Bangalore"
+		  }
+		],
+		"video_consult": true,
+		"charges": 300,
+		"ratings": 94,
+		"stories": 58,
+		"time": [
+		  {
+			"afternoon": [
+			  "12:00 PM",
+			  "12:30 PM",
+			  "01:00 PM",
+			  "01:30 PM",
+			  "02:00 PM",
+			  "02:30 PM"
+			]
+		  }
+		],
+		"id": 17
+	  },
+	  {
+		"name": "Dr. Vinay Avekar",
+		"gender": "male",
+		"img": "https://imagesx.practo.com/providers/cd213642-d0ca-4f49-b1f3-461778e31352.jpg?i_type=t_100x100",
+		"speciality": "Dentist",
+		"experience": 24,
+		"locality": "Bangalore",
+		"clinics": [
+		  {
+			"name": "Matrix Dental & Skin Lounge",
+			"location": "Vasant Vihar, Bangalore"
+		  },
+		  {
+			"name": "Matrix Dental And Skin Lounge",
+			"location": "Vasant Kunj, Bangalore"
+		  },
+		  {
+			"name": "Matrix clinic",
+			"location": "Munirka, Bangalore"
+		  },
+		  {
+			"name": "Holy Angels Hospital",
+			"location": "Vasant Vihar, Bangalore"
+		  }
+		],
+		"video_consult": true,
+		"charges": 500,
+		"ratings": 90,
+		"stories": 320,
+		"time": [
+		  {
+			"afternoon": [
+			  "12:00 PM",
+			  "12:30 PM",
+			  "01:00 PM",
+			  "01:30 PM",
+			  "02:00 PM",
+			  "02:30 PM"
+			]
+		  }
+		],
+		"id": 18
+	  },
+	  {
+		"name": "Dr. Pranay",
+		"gender": "male",
+		"img": "https://imagesx.practo.com/providers/1be33ddc-3f44-4c06-8832-e68658b175cf.jpg?i_type=t_100x100",
+		"speciality": "Dentist",
+		"experience": 15,
+		"locality": "Bangalore",
+		"clinics": [
+		  {
+			"name": "Matrix Dental & Skin Lounge",
+			"location": "Vasant Vihar, Bangalore"
+		  },
+		  {
+			"name": "Matrix Dental And Skin Lounge",
+			"location": "Vasant Kunj, Bangalore"
+		  },
+		  {
+			"name": "Matrix clinic",
+			"location": "Munirka, Bangalore"
+		  },
+		  {
+			"name": "Holy Angels Hospital",
+			"location": "Vasant Vihar, Bangalore"
+		  }
+		],
+		"video_consult": false,
+		"charges": 700,
+		"ratings": 98,
+		"stories": 220,
+		"time": [
+		  {
+			"afternoon": [
+			  "12:00 PM",
+			  "12:30 PM",
+			  "01:00 PM",
+			  "01:30 PM",
+			  "02:00 PM",
+			  "02:30 PM"
+			]
+		  }
+		],
+		"id": 19
 	  }
 	 
 	
