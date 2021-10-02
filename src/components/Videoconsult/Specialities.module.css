@@ -9,8 +9,9 @@
 	background: #ffffff;
 	border: 1px solid #ffffff;
 	box-sizing: border-box;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+	box-shadow: 3px 3px 6px 0 rgb(45 45 51 / 8%);
 	padding: 1rem 3rem;
+	cursor: default;
 }
 
 .speciality_card > .speciality_card_img {
@@ -29,6 +30,7 @@
 .speciality_card > .speciality_card_price {
 	font-size: 1.4rem;
 	color: #787887;
+	font-weight: 400;
 }
 
 .speciality_card > .consult_link {
@@ -39,4 +41,13 @@
 	margin-bottom: 2rem;
 	color: #14bef0;
 	text-decoration: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	font-family: 'CamphorBold';
+}
+
+.consult_link > svg{
+	height: 3rem;
 }

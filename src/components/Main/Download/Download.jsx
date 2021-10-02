@@ -30,17 +30,24 @@ const Download = styled.div`
 
 		& > h3 {
 			font-size: 3.2rem;
-			font-weight: bold;
+			/* font-weight: bold;  */
+			font-weight: 400;
+			color: #414146;
+			font-family: 'CamphorBold';
 		}
 
 		& > p.app_info {
+			max-width: 44rem;
 			margin-top: 2rem;
 			color: #414146;
 			font-size: 1.4rem;
 		}
 
 		& > p.get_link {
-			font-weight: 700;
+			/* font-weight: 700; */
+			font-weight: 400;
+			font-family: 'CamphorBold';
+			color: #414146;
 			margin-top: 5rem;
 			font-size: 1.6rem;
 			line-height: 1.5;
@@ -64,11 +71,13 @@ const Download = styled.div`
 					border-right: 1px solid rgba(180, 180, 190, .3);
 					padding: 1.5rem;
 					color: #000;
-					font-weight: 700;
+					/* font-weight: 700; */
 					font-size: 1.5rem;
 					display: flex;
 					justify-content: center;
 					align-items: center;
+					font-weight: 400;
+					font-family: 'CamphorBold';
 				}
 
 				& > input {
@@ -78,6 +87,14 @@ const Download = styled.div`
 					flex-grow: 100;
 					background-color: transparent;
 					padding: 1.5rem;
+					font-weight: 400;
+					font-family: 'CamphorBold';
+				}
+
+				& > input::placeholder{
+					color: #686867;
+					font-weight: 400;
+					font-family: 'CamphorBold';
 				}
 			}
 
@@ -102,6 +119,7 @@ const Download = styled.div`
 			& > img {
 				width: 130px;
 				height: 40px;
+				cursor: pointer;
 			}
 
 			& > img.play_store_button {

@@ -48,6 +48,8 @@
 	line-height: 1.42;
 	max-width: 310px;
 	margin: 1rem 0;
+	font-weight: 400;
+	font-family: 'CamphorBold';
 }
 
 .badge{
@@ -83,6 +85,8 @@
 	display: flex;
 	align-items: center;
 	margin: 1rem 0;
+	font-weight: 400;
+	font-family: 'CamphorBold';
 }
 
 .card_content > .cta > svg{

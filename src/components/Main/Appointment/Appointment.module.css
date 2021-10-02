@@ -16,9 +16,15 @@
 
 .appointment_card_title{
 	margin-top: 12px;
-	color: #14bef0;
-	font-weight: 700;
+	/* font-weight: 700; */
+	font-weight: 400;
+	font-family: 'CamphorBold';
+	color: #414146;
 	font-size: 1.6rem;
+}
+
+.appointment_card:hover .appointment_card_title{
+	color: #14bef0;
 }
 
 .appointment_card_desc{

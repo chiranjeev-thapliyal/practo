@@ -14,7 +14,7 @@ import Faq from "./Faq"
 
 const Videoconsult=()=>{
     return(
-       <>
+       <div className="bg-white">
        <Pinkheader/>
        <Specialities />
        <CommonConcerns />
@@ -27,7 +27,7 @@ const Videoconsult=()=>{
        <Healthqueries/>
        <Beforedownload/>
        <Appdownload/>
-        </>
+        </div>
     )
 }
 export default Videoconsult

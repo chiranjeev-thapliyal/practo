@@ -7,7 +7,7 @@ import DownloadWrapper from './components/Main/Download/DownloadWrapper';
 import Footerwrapper from './components/Footer/Footerwrapper';
 import FindDoctors from './components/FindDoctors/FindDoctors';
 import Consultdoctor from './components/Main/Consultdoctor/Consultdoctor';
-import Navbarwrapper from "./components/Navbar/Navbarwrapper";
+import Navbarwrapper from './components/Navbar/Navbarwrapper';
 import SearchbarWrapper from './components/SearchBar/SearchbarWrapper';
 import SearchWrapper from './components/SearchResults/SearchWrapper';
 import Searchbar from './components/SearchBar/Searchbar';
@@ -20,7 +20,7 @@ import Appointment from './components/Main/Appointment/Appointment';
 function App() {
 	return (
 		<div className='App'>
-      <Navbarwrapper />
+			<Navbarwrapper />
 			<Switch>
 				<Route exact path='/'>
 					<Main>
@@ -47,10 +47,12 @@ function App() {
 					<Videoconsult />
 				</Route>
 				<Route path='/search'>
-					<SearchbarWrapper>
-						<Searchbar />
-					</SearchbarWrapper>
-					<SearchWrapper />
+					<div className='bg-white'>
+						<SearchbarWrapper>
+							<Searchbar />
+						</SearchbarWrapper>
+						<SearchWrapper />
+					</div>
 				</Route>
 				<Route path='/payment'>
 					<Payment />

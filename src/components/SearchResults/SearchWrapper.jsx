@@ -65,7 +65,7 @@ const SearchWrapper = () => {
 	);
 
 	return (
-		<div>
+		<div className="bg-white">
 			<SearchHeader {...content} /> 
 			<div className='search_list'>
 				<div className='search_list__left'>
