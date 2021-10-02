@@ -44,7 +44,7 @@
 
 .payment_option_item {
 	font-size: 1.8rem;
-	padding: 1rem 3rem;
+	padding: 2rem 3rem;
 	cursor: pointer;
 	border-bottom: 1px solid #f0f0f5;
 }
@@ -55,6 +55,7 @@
 
 .selected_option {
 	background-color: #f0f0f5;
+	border-left: 1rem solid #15BEF0;
 }
 
 .payment_primary_bg {

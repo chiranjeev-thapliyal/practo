@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useContext } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from 'react/cjs/react.development';
 import { AuthContext } from '../../Contexts/AuthContextProvider';
 import styles from './ConsultPage.module.css';
@@ -22,11 +22,15 @@ export default function ConsultPage() {
 	// Checking if user is logged in or not
 	const { currentAppointment: doctor, token, user, setUser, setToken } = useContext(AuthContext);
 
-	const history = useHistory();
 
 	// Checking state for filling patient form
 	const [ forOwn, setForOwn ] = useState(true);
 	const [ forSomeoneElse, setForSomeoneElse ] = useState(false);
+	const [otp, setOTP] = useState('');
+
+	const handleOTP = (e) => {
+		setOTP(e.target.value);
+	}
 
 	// Changing state for person
 	const changeRef = (value) => {
@@ -66,6 +70,10 @@ export default function ConsultPage() {
 	};
 
 	const handleSignIn = async () => {
+		if (otp.length !== 6) {
+			setOTP("");
+			return;
+		}
 		const user = await getUser();
 		if (!user) return;
 		setUser(user);
@@ -354,7 +362,7 @@ export default function ConsultPage() {
 										<div
 											className={`${styles.inputFullNameBox} ${styles.mobileInput} ${styles.inputOtpBox}`}
 										>
-											<input type='text' placeholder='Please enter the 6 digit OTP here' />
+											<input type='text' value={otp} placeholder='Please enter the 6 digit OTP here' onChange={handleOTP} />
 										</div>
 									</div>
 									<div className={styles.resendOtpBox}>

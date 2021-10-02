@@ -35,7 +35,7 @@ const Payment = () => {
 					<h3 className='payment_secton_heading'>Payment Options</h3>
 					<ul className='payment_option_list'>
 						<li className='payment_option_item selected_option'>Debit/Credit</li>
-						<li className='payment_option_item'>Paytm Wallet</li>
+						<li className='payment_option_item'>Paytm Wallet</li> 
 						<li className='payment_option_item'>UPI</li>
 						<li className='payment_option_item'>Google Pay</li>
 						<li className='payment_option_item'>Amazon Pay</li>
