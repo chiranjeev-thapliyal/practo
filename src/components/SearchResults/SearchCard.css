@@ -34,6 +34,8 @@
 
 .card_general:hover .view_profile {
 	display: block;
+	font-weight: 400;
+	font-family: 'CamphorBold';
 }
 
 .card_profile > button {
@@ -68,7 +70,9 @@
 
 .practice_locality,
 .practice_city {
-	font-weight: 700;
+	/* font-weight: 700; */
+	font-weight: 400;
+	font-family: 'CamphorBold';
 }
 
 .separator {
@@ -105,7 +109,9 @@
 
 .card_stories {
 	text-decoration: underline;
-	font-weight: 700;
+	/* font-weight: 700; */
+	font-weight: 400;
+	font-family: 'CamphorBold';
 	color: #414146;
 	font-size: 1.4rem;
 }
@@ -315,7 +321,9 @@ button.video_consult:hover {
 .slot_time {
 	width: 14.285%;
 	padding: 4px;
-	letter-spacing: normal;
+	/* letter-spacing: normal; */
+	/* letter-spacing: 19.6px; */
+
 }
 
 .slot_time > span {
@@ -327,4 +335,5 @@ button.video_consult:hover {
 	display: inline-block;
 	text-align: center;
 	cursor: pointer;
+	letter-spacing: normal;
 }
