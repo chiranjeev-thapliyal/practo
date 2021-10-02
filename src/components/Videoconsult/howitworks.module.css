@@ -1,0 +1,86 @@
+.howitworks{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    display: block;
+}
+.howitworkswrap{
+    padding: 25px 50px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1280px;
+    width: 100%;
+}
+.howitworkshead{
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+.howitworkssection{
+    display: flex;
+    padding-top: 18px;
+    position: relative;
+    margin-bottom: 32px;
+    justify-content: space-around;
+}
+.howitworkssection::before{
+    content: "";
+    width: 68%;
+    background: #eaeaea;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 48px;
+    left: 14.5%;
+}
+.eachprop{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    width: 3333.33333%;
+   
+    align-items: center;
+}
+.eachpropimg{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.eachpropcontent{
+    padding-top: 24px;
+    margin-top: auto;
+    text-align: center;
+    padding-left: 12px;
+}
+.desc{
+    line-height: 1.29;
+    font-size: 14px;
+    color: #2d2d32;
+
+}
+
+.icon{
+    background: #f0eff4;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon::before{
+    margin: 0;
+    content: "\e921";
+    font-family: practicon,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+}
