@@ -19,13 +19,14 @@
 
 .flex12 {
   width: 440px;
-  height: 410px;
+  /* height: 410px; */
   background-color: #ffffff;
   margin-right: 40px;
   margin-bottom: 40px;
-  padding: 0px 10px;
+  /* padding: 0px 10px; */
   position: relative;
-}
+  font-family: 'Camphor';
+} 
 
 .go_back{
   position: absolute;
@@ -35,6 +36,8 @@
   border: none;
   cursor: pointer;
   font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'CamphorBold';
 }
 
 .flex12Header {
@@ -44,12 +47,29 @@
   align-items: center;
 }
 
+.flex12> div{
+  padding: 15px;
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
+}
+
+.flex12 > div:not(:first-child){
+  border-top: 1px solid #e0e0e5;
+}
+
+
 .flex12Header>svg {
   width: 2.rem;
 }
 
 .flex12Header>span {
   margin-left: 1rem;
+}
+
+.flex12Header > span > h3{
+  font-weight: 400;
+  font-family: 'CamphorBold';
+  font-size: 1.8rem;
 }
 
 .consultTime {
@@ -59,6 +79,11 @@
 
 .consultTime>span {
   margin-left: 1rem;
+}
+
+.consultTime > span > strong{
+  font-weight: 400;
+  font-family: 'CamphorBold';
 }
 
 
@@ -75,6 +100,9 @@
   color: #14bef0;
   font-weight: 700;
   font-size: 1.4rem;
+  
+  font-weight: 400;
+  font-family: 'CamphorBold';
 }
 
 
@@ -112,7 +140,10 @@
 
 .posterDetail>h3 {
   font-size: 1.6rem;
-  font-weight: 700;
+  /* font-weight: 700; */
+  
+  font-weight: 400;
+  font-family: 'CamphorBold';
 }
 
 .posterDetail>h4, .posterDetails > a {
@@ -121,7 +152,9 @@
 
 .blue_link{
   color: #14bef0;
-  font-weight: 700;
+  /* font-weight: 700; */
+  font-weight: 400;
+  font-family: 'CamphorBold';
   text-decoration: none;
 }
 
@@ -134,8 +167,12 @@
 }
 
 .PatientHeader>h2 {
-  font-size: 215%;
+  /* font-size: 215%; */
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: 'CamphorBold';
   margin-bottom: 25px;
+
 }
 
 .PatientHeader>div {
@@ -226,6 +263,13 @@
   text-align: center;
 }
 
+.disabled_div{
+  background-color: #b4b4be;
+  border: 1px solid #b4b4be;
+  font-size: 140%;
+  text-align: center;
+}
+
 .confirmBox {
   position: relative;
   margin: 0px auto;
@@ -248,8 +292,20 @@
 }
 
 .mobileNumberDiv {
-  font-size: 140%;
+  /* font-size: 140%; */
+  font-size: 1.2rem;
+  color: #414146;
+  line-height: 0.7;
   margin-bottom: 10px;
+}
+
+.disabled_btn{
+  background-color: #787887;
+  position: relative;
+  margin: 0px auto;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .termsDiv {
@@ -286,4 +342,9 @@
 .resendOtpBox {
   display: flex;
   justify-content: space-between;
+}
+
+.doctor_name, .posterDetail > h3{
+  font-weight: 400;
+  font-family: 'CamphorBold';
 }
