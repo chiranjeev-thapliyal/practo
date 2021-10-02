@@ -43,7 +43,7 @@ const Navbarwrapper = () => {
 						</div>{' '}
 						<div className='nav-mid'>
 							<Link to='/doctors' className={`prod ${pathname === '/doctors' ? 'active' : ''}`}>
-								<div className='prod-title'> Find Doctor </div>{' '}
+								<div className='prod-title'> Find Doctors </div>{' '}
 								<div className='prod-sub'> Book an appointment </div>{' '}
 							</Link>{' '}
 							<Link
@@ -51,19 +51,19 @@ const Navbarwrapper = () => {
 								className={`prod ${pathname === '/video-consult' ? 'active' : ''}`}
 							>
 								<div className='prod-title'> Video Consult </div>{' '}
-								<div className='prod-sub'> Consult top doctor </div>{' '}
+								<div className='prod-sub'> Consult top doctors </div>{' '}
 							</Link>{' '}
 							<div className='prod'>
 								<div className='prod-title'> Medicines </div>{' '}
-								<div className='prod-sub'> Practo pharmecy </div>{' '}
+								<div className='prod-sub'> Practo pharmacy </div>{' '}
 							</div>{' '}
 							<div className='prod'>
 								<div className='prod-title'> Lab Tests </div>{' '}
-								<div className='prod-sub'> Book test & checkup </div>{' '}
+								<div className='prod-sub'> Book tests & checkup </div>{' '}
 							</div>{' '}
 							<div className='prod'>
 								<div className='prod-title'> Surgeries </div>{' '}
-								<div className='prod-sub'> Eexpert sugical care </div>{' '}
+								<div className='prod-sub'> Expert sugical care </div>{' '}
 							</div>{' '}
 						</div>{' '}
 						<div
@@ -217,21 +217,9 @@ const Navbarwrapper = () => {
 									}}
 								>
 									<span>
-										<a
-											href='/'
-											style={{
-												fontSize: '13px',
-												lineHeight: '13px',
-												color: '#787887 !important',
-												borderRadius: '4px',
-												border: 'solid 1px #d3d3d3',
-												padding: '8px 10px',
-												textDecoration: 'none',
-												fontWeight: 400
-											}}
-										>
+										<Link className='navbar_login' to='/'>
 											Login / Signup{' '}
-										</a>{' '}
+										</Link>{' '}
 									</span>{' '}
 								</div>
 							)}{' '}
