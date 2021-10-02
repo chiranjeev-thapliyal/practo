@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+.App{
+	/* background-color: #cfcfcf; */
+}
+
+.bg-white{
+	background-color: #fff;
+}
+
 .content {
 	width: 1180px !important;
 	zoom: 1 !important;
