@@ -181,12 +181,46 @@ export default function FindDoctors() {
               <div>Order Medicines</div>
             </div>
             <div>
-              <img src={record} className={styles.icons} alt="records" />
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 4.5H7C6.17157 4.5 5.5 5.17157 5.5 6V18C5.5 18.8284 6.17157 19.5 7 19.5H18C18.8284 19.5 19.5 18.8284 19.5 18V6C19.5 5.17157 18.8284 4.5 18 4.5Z"
+                  stroke="white"
+                />
+                <path d="M8.5 5V19" stroke="white" />
+                <path d="M13.5 9V14" stroke="white" />
+                <path d="M16 11.5H11" stroke="white" />
+                <path d="M16 16.5H11" stroke="white" />
+              </svg>
+
               <div>View medical records</div>
             </div>
-            <div>
-              <div>
-                <i className={`ion-beaker ${styles.icons}`}></i>
+            <div style={{ marginTop: "1px" }}>
+              <div style={{ display: "flex" }}>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 11.5V6H14V11.5L19 19H5L10 11.5Z"
+                    stroke="white"
+                  />
+                  <path d="M7.5 6H16.5" stroke="white" />
+                  <path
+                    d="M7.5 15.5002C8 14.8335 9.49998 13.9754 11.5 14.7754C14 15.7754 14.5 16.7754 16.5 15.7754"
+                    stroke="white"
+                    stroke-width="0.75"
+                  />
+                </svg>
+
                 <span
                   style={{
                     background: "yellow",
@@ -202,11 +236,60 @@ export default function FindDoctors() {
               <div>Book test</div>
             </div>
             <div>
-              <img src={article} alt="articles" className={styles.icons} />
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 18V6C8.6 6 11.5 7.33333 12.5 8V19C9.3 17.4 6.16667 17.6667 5 18Z"
+                  stroke="white"
+                  stroke-width="0.75"
+                />
+                <path
+                  d="M20 18V6C16.4 6 13.5 7.33333 12.5 8V19C15.7 17.4 18.8333 17.6667 20 18Z"
+                  stroke="white"
+                  stroke-width="0.75"
+                />
+                <path d="M7.5 9.5H10.5" stroke="white" />
+                <path d="M14.5 9.5H17.5" stroke="white" />
+                <path d="M7.5 12.5H10.5" stroke="white" />
+                <path d="M14.5 12.5H17.5" stroke="white" />
+                <path d="M7.5 15.5H10.5" stroke="white" />
+                <path d="M14.5 15.5H17.5" stroke="white" />
+              </svg>
+
               <div>Read articles</div>
             </div>
             <div>
-              <i className={`ion-briefcase ${styles.icons}`}></i>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 7.5H6C5.17157 7.5 4.5 8.17157 4.5 9V17C4.5 17.8284 5.17157 18.5 6 18.5H19C19.8284 18.5 20.5 17.8284 20.5 17V9C20.5 8.17157 19.8284 7.5 19 7.5Z"
+                  stroke="white"
+                />
+                <path
+                  d="M4.5 11.5C6.83333 12.3333 13.3 13.5 20.5 11.5"
+                  stroke="white"
+                  stroke-width="0.75"
+                />
+                <path
+                  d="M15 5.5H10C9.72386 5.5 9.5 5.72386 9.5 6V7C9.5 7.27614 9.72386 7.5 10 7.5H15C15.2761 7.5 15.5 7.27614 15.5 7V6C15.5 5.72386 15.2761 5.5 15 5.5Z"
+                  stroke="white"
+                />
+                <path
+                  d="M13.5 11H11.5C11.2239 11 11 11.2239 11 11.5C11 11.7761 11.2239 12 11.5 12H13.5C13.7761 12 14 11.7761 14 11.5C14 11.2239 13.7761 11 13.5 11Z"
+                  fill="white"
+                />
+              </svg>
+
               <div>For healthcare providers</div>
             </div>
           </div>

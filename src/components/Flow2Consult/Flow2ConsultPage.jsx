@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useState } from "react/cjs/react.development";
 import styles from "./Flow2ConsultPage.module.css";
+import { AuthContext } from "../../Contexts/AuthContextProvider";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function Flow2ConsultPage() {
   const [login, setLogin] = useState(false);
@@ -12,10 +15,36 @@ export default function Flow2ConsultPage() {
   const [otp, setOtp] = useState(null);
   const [nameInput, setNameInput] = useState("");
 
+  const { token, user, setUser, setToken } = useContext(AuthContext);
+
   const handleChange = (e) => {
     const { value } = e.target;
     setDeaseses(value);
     value === "fever" && setMore(true);
+  };
+
+  const handleCheck = async () => {
+    // if (mobNumber === 0) return;
+    if (user.phone === "") return;
+    let data = await getData();
+    if (!data || data.length === 0) return;
+    console.log("yes");
+    setUser(data[0]);
+    setPayment(true);
+  };
+  const handleLogin = () => {
+    console.log(mobNumber);
+    if (otp === null) return;
+    if (+otp === 123456) return setToken("authenticated");
+  };
+
+  const getData = async () => {
+    let res = await axios.get("http://localhost:3001/users", {
+      params: {
+        phone: user.phone,
+      },
+    });
+    return res.data;
   };
 
   return (
@@ -107,7 +136,11 @@ export default function Flow2ConsultPage() {
                       >
                         <path d="M7 10L12 15L17 10H7Z" fill="black" />
                       </svg>
-                      <input type="number" placeholder="Enter mobile number" />
+                      <input
+                        value={user.phone}
+                        type="number"
+                        placeholder="Enter mobile number"
+                      />
                     </div>
                     <div className={styles.mobileNumberDiv}>
                       A verification code will be sent to this number
@@ -336,7 +369,13 @@ export default function Flow2ConsultPage() {
                       </svg>
                       <input
                         type="number"
-                        onChange={(e) => setMobNumber(e.target.value)}
+                        value={user.phone}
+                        onChange={(e) => {
+                          setUser((prev) => {
+                            return { ...prev, phone: e.target.value };
+                          });
+                          // setMobNumber(e.target.value);
+                        }}
                         placeholder="Enter mobile number"
                       />
                     </div>
@@ -344,11 +383,7 @@ export default function Flow2ConsultPage() {
                       A verification code will be sent to this number
                     </div>
                     <div
-                      onClick={() => {
-                        if (mobNumber === 0) return;
-                        console.log("yes");
-                        setPayment(true);
-                      }}
+                      onClick={handleCheck}
                       className={`${styles.inputFullNameBox} ${styles.confirmDiv}`}
                     >
                       <div className={styles.confirmBox}>Confirm</div>
@@ -459,7 +494,8 @@ export default function Flow2ConsultPage() {
                     className={`${styles.inputFullNameBox} ${styles.nameBox}`}
                   >
                     <input
-                      onChange={(e) => setNameInput(e.target.value)}
+                      value={user.name}
+                      // onChange={(e) => setNameInput(e.target.value)}
                       type="text"
                       placeholder="Your name"
                     />
@@ -486,15 +522,17 @@ export default function Flow2ConsultPage() {
                   >
                     Show fee breakup
                   </div>
-                  <div
-                    onClick={() => {
-                      if (nameInput === "") return;
-                      console.log(nameInput);
-                    }}
+                  <Link
+                    to="/payment"
+                    // onClick={() => {
+                    //   if (user.name === "") return;
+                    //   console.log(user.name);
+                    //   // return;
+                    // }}
                     className={`${styles.confirmDiv} ${styles.payment}`}
                   >
                     <div className={styles.confirmBox}>Continue to payment</div>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -513,7 +551,7 @@ export default function Flow2ConsultPage() {
         </div>
       )}
 
-      {!login && payment && (
+      {token === "" && payment && (
         <div className={styles.modal}>
           <div className={styles.modalHeader}>
             <div>Login</div>
@@ -533,7 +571,7 @@ export default function Flow2ConsultPage() {
           <div className={styles.modalContent}>
             <div className={styles.text}>We have sent you an OTP on</div>
             <div className={styles.otpNumbBox}>
-              <h3>+91 {mobNumber}</h3>
+              <h3>+91 {user.phone}</h3>
 
               <svg
                 width="15"
@@ -565,14 +603,7 @@ export default function Flow2ConsultPage() {
               </div>
               <div style={{ color: "blue" }}>Resend OTP</div>
             </div>
-            <div
-              onClick={() => {
-                console.log(mobNumber);
-                if (otp === null) return;
-                if (+otp === 123456) return setLogin(true);
-              }}
-              className={styles.loginButton}
-            >
+            <div onClick={handleLogin} className={styles.loginButton}>
               <div>Login</div>
             </div>
           </div>

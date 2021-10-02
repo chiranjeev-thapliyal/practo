@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Section from "../Section/Section";
 import style from "./pinkheader.module.css";
 
@@ -41,15 +42,20 @@ const Pinkheader = () => {
                 </span>
                 <span
                   className={style.eachimgcount}
-                  style={{ transform: "translateX(-30px)", zIndex: 1,marginLeft:"15px" }}
+                  style={{
+                    transform: "translateX(-30px)",
+                    zIndex: 1,
+                    marginLeft: "15px",
+                  }}
                 >
                   +108 doctors online <span className={style.pulse}></span>
                 </span>
               </div>
             </article>
-            <a href="/doctor" className={style.consultnow}>
+            {/* <a href="/doctor" className={style.consultnow}>
               Consult now
-            </a>
+            </a> */}
+            <Link to="/flow2consultpage">Consult now</Link>
           </div>
           <img
             className={style.banner}
@@ -60,18 +66,29 @@ const Pinkheader = () => {
             <img
               src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-award-business-kiranshastry-lineal-kiranshastry.png"
               alt="a"
-              style={{ width: "20px", height: "20px",marginRight:"5px"  }}
+              style={{ width: "20px", height: "20px", marginRight: "5px" }}
             />
             <p>Verified Doctors</p>
             <img
               src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/000000/external-prescription-medical-healthcare-those-icons-lineal-color-those-icons.png"
               alt="p"
-              style={{ width: "20px", height: "20px",marginRight:"5px",marginLeft:"5px"  }}
+              style={{
+                width: "20px",
+                height: "20px",
+                marginRight: "5px",
+                marginLeft: "5px",
+              }}
             />
             <p>Digital Prescription</p>
-            <img src="https://img.icons8.com/windows/32/000000/chat-message.png"
-             alt="m"
-             style={{ width: "20px", height: "20px",marginRight:"5px",marginLeft:"5px" }}
+            <img
+              src="https://img.icons8.com/windows/32/000000/chat-message.png"
+              alt="m"
+              style={{
+                width: "20px",
+                height: "20px",
+                marginRight: "5px",
+                marginLeft: "5px",
+              }}
             />
             <p>Free Followup</p>
           </div>
