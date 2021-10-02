@@ -22,6 +22,8 @@ export default function ConsultPage() {
 	// Checking if user is logged in or not
 	const { currentAppointment: doctor, token, user, setUser, setToken } = useContext(AuthContext);
 
+	const history = useHistory();
+
 	// Checking state for filling patient form
 	const [ forOwn, setForOwn ] = useState(true);
 	const [ forSomeoneElse, setForSomeoneElse ] = useState(false);
@@ -180,6 +182,9 @@ export default function ConsultPage() {
 									</a>
 								</div>
 							</div>
+							<Link to='/search' className={`${styles.blue_link} ${styles.go_back}`}>
+								Go Back To Results
+							</Link>
 						</div>
 					</div>
 					<div className={styles.flex21}>
@@ -288,7 +293,9 @@ export default function ConsultPage() {
 										Confirm<Link to='/payment' />
 									</div>
 								</div>
-								<div className={styles.mobileNumberDiv}>Updates will be sent to +91{forOwn ? user.phone : patientDetails.mobile}</div>
+								<div className={styles.mobileNumberDiv}>
+									Updates will be sent to +91{forOwn ? user.phone : patientDetails.mobile}
+								</div>
 								<div className={styles.termsDiv}>
 									By booking this appointment, you agree to Practo’s{' '}
 									<span className={styles.blue_link}>Terms and Conditions.</span>
