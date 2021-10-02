@@ -48,6 +48,14 @@
     margin: 0;
     padding: 0;
     border: 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    background: #f0eff4;
+    justify-content: center;
+    display: flex;
+    
+    align-items: center;
 }
 .eachpropcontent{
     padding-top: 24px;
@@ -63,11 +71,9 @@
 }
 
 .icon{
-    background: #f0eff4;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    
+   
 }
 .icon::before{
     margin: 0;

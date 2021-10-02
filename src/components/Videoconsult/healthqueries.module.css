@@ -1,0 +1,55 @@
+.section{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.wrap{
+    padding: 25px 50px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1280px;
+    width: 100%;
+
+}
+
+.heading{
+    font-size: 30px;
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+
+.healthquaries{
+    padding: unset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.healthquarie{
+    width: 30%;
+    font-size: 14px;
+    margin-top: 20px;
+    border-bottom: 1px solid #f0f0f5;
+}
+.quaryheader{
+    display: flex;
+    justify-content: space-between;
+}
+.quarycontent{
+    line-height: 1.43;
+    padding: 14px 0 20px;
+}
+.link{
+    color: inherit;
+    text-decoration: underline;
+    user-select: none;
+    outline: 0;
+}
+.footer{
+    text-align: right;
+    flex: 0 0 100%;
+}
