@@ -11,6 +11,15 @@ const Wrapper = styled.div`
 			position: relative;
 			margin-top: 15px;
 
+			& > h2 {
+				margin-top: 15px;
+				margin: 0px;
+				/* font-weight: 700; */
+				font-weight: 400;
+				font-family: 'CamphorBold';
+				font-size: 24px;
+			}
+
 			& > .btn {
 				font-size: 14px;
 				color: #14bef0;
@@ -38,8 +47,11 @@ const Wrapper = styled.div`
 		}
 
 		& .speciality {
-			font-weight: 700;
-			font-size: 1.5rem;
+			/* font-weight: 700; */
+			font-weight: 400;
+			font-family: 'CamphorBold';
+			color: #414146;
+			font-size: 1.4rem;
 			text-align: center;
 			margin-top: 10px;
 		}
@@ -49,7 +61,9 @@ const Wrapper = styled.div`
 			text-transform: uppercase;
 			color: #14bef0;
 			text-align: center;
-			font-weight: 700;
+			/* font-weight: 700; */
+			font-weight: 400;
+			font-family: 'CamphorBold';
 			font-size: 1.2rem;
 		}
 	}

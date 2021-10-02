@@ -8,7 +8,7 @@ const Consultdoctor = () => {
 			<Wrapper>
 				<div className='content'>
 					<div className='head'>
-						<h2 style={{ marginTop: '15px', margin: '0px', fontWeight: 700, fontSize: '24px' }}>
+						<h2>
 							Consult top doctors online for any health concern
 						</h2>
 						<div style={{ marginTop: '5px', fontSize: '14px' }}>
@@ -26,7 +26,7 @@ const Consultdoctor = () => {
 											/>
 										</span>
 									</div>
-									<div className='speciality'>Period doubts or pregnancy</div>
+									<div className='speciality'>Period doubts or Pregnancy</div>
 									<div className='consult_now'> Consult now</div>
 								</div>
 							</div>
@@ -40,7 +40,7 @@ const Consultdoctor = () => {
 											/>
 										</span>
 									</div>
-									<div className='speciality'>Acne,Pimple skin issues</div>
+									<div className='speciality'>Acne, pimple or skin issues</div>
 									<div className='consult_now'> Consult now</div>
 								</div>
 							</div>

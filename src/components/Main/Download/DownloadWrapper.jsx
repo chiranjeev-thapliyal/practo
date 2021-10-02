@@ -12,7 +12,7 @@ const DownloadWrapper = () => {
 						alt='download practo app'
 					/>
 				</div>
-				<div className='right'>
+				<div className='right'> 
 					<h3>Download the Practo app </h3>
 					<p className='app_info'>
 						Access video consultation with India’s top doctors on the Practo app. Connect with doctors
