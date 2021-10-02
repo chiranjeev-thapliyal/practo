@@ -65,6 +65,7 @@ const Navbar = styled.div`
 						font-weight: bold;
 						color: #2d2d32;
 						letter-spacing: -0.3px;
+						font-family: 'CamphorBold';
 					}
 
 					& > .prod-sub {
