@@ -1,0 +1,51 @@
+.trustmetrics{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: inherit;
+    color: #fff;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    
+    display: block;
+    
+}
+.black{
+    background-color: #2d2d32;
+    box-sizing: inherit;
+}
+.eachmetric{
+    text-align: center;
+    width: 25%;
+    padding: 16px;
+}
+.metriccount{
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+
+}
+.namemetric{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.wrap{
+    justify-content: space-around;
+    margin: 16px auto;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 0;
+    max-width: 1280px;
+    width: 100%;
+
+}

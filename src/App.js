@@ -15,6 +15,7 @@ import Searchbar from "./components/SearchBar/Searchbar";
 import ConsultPage from "./components/ConsultPage/ConsultPage";
 import Flow2ConsultPage from "./components/Flow2Consult/Flow2ConsultPage";
 import Payment from "./components/Payment/Payment";
+import Videoconsult from "./components/Videoconsult/Videoconsult";
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
         </Route>
         <Route exact path="/flow2consultpage">
           <Flow2ConsultPage />
+        </Route>
+        <Route path="/video-consult">
+         <Videoconsult/>
         </Route>
         <Route path="/search">
           <SearchbarWrapper>
