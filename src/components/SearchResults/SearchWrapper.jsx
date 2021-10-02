@@ -70,7 +70,7 @@ const SearchWrapper = () => {
 			<div className='search_list'>
 				<div className='search_list__left'>
 					<div className='container'>
-						<SearchListHeader total={doctorsList.length} />
+						<SearchListHeader total={doctorsList.length} place={location}/>
 						{doctorsList.map((doctor) => <SearchCard key={doctor.id} {...doctor} />)}
 					</div>
 				</div>
