@@ -12,7 +12,7 @@ import Specialities from "./Specialities";
 
 const Videoconsult=()=>{
     return(
-       <>
+       <div className="bg-white">
        <Pinkheader/>
        <Specialities />
        <CommonConcerns />
@@ -23,7 +23,7 @@ const Videoconsult=()=>{
        <Benifit/>
        <Beforedownload/>
        <Appdownload/>
-        </>
+        </div>
     )
 }
 export default Videoconsult
