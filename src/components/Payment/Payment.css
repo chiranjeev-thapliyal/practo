@@ -1,0 +1,212 @@
+.payment_div {
+	width: 60%;
+	height: 100vh;
+	max-width: 1440px;
+	max-height: 748px;
+	margin: 2rem auto;
+	background-color: white;
+	box-shadow: 1px 1px 10px 0 #e5e5e5;
+	display: flex;
+	font-size: 1.6rem;
+}
+
+.payment_div_left {
+	width: 40%;
+}
+
+.payment_div_right {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.payment_options {
+	height: 100%;
+	width: 100%;
+}
+
+.payment_secton_heading {
+	font-size: 2.5rem;
+	line-height: 28px;
+	padding: 3rem;
+}
+
+.payment_option_list {
+	margin: 0;
+	padding: 0;
+	border: 1px solid #f0f0f5;
+}
+
+.payment_option_list:first-child {
+	border-top: 1px solid #f0f0f5;
+}
+
+.payment_option_item {
+	font-size: 1.8rem;
+	padding: 1rem 3rem;
+	cursor: pointer;
+	border-bottom: 1px solid #f0f0f5;
+}
+
+.payment_option_item:hover {
+	background-color: #f0f0f5;
+}
+
+.selected_option {
+	background-color: #f0f0f5;
+}
+
+.payment_primary_bg {
+	background-color: #28328c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+	color: white;
+	width: 100%;
+}
+
+.payment_amount {
+	margin-left: 1rem;
+}
+
+.payment_option_content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+.debit_card {
+	position: relative;
+	width: 40.4rem;
+	height: 22.6rem;
+	box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+	border-radius: 3px;
+	padding: 2rem;
+}
+
+.card_section {
+	margin-bottom: 2rem;
+	color: #787887;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.6rem;
+}
+
+.card_section_two_item {
+	display: flex;
+}
+
+.card_section_two_item > .card_section {
+	margin-right: 3rem;
+}
+
+.card_section_two_item > .card_section {
+	width: 30%;
+}
+
+.card_section > label {
+	font-size: 1.6rem;
+	line-height: 13px;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.card_section > input {
+	width: 100%;
+	/* height: 0px; */
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #d2d2d2;
+	font-size: 1.8rem;
+}
+
+.card_section > input::placeholder {
+	font-size: 1.4rem;
+	color: #d6d6dc;
+}
+
+.card_chip_icon {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+}
+
+.payment_info_msg {
+	margin-top: 1rem;
+	color: #b4b4be;
+	font-size: 1.8rem;
+}
+
+.supported_payment_icons {
+	min-width: 500px;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+}
+
+.supported_payment_icons > svg {
+	height: 4rem;
+	width: 4rem;
+}
+
+.remember_card {
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.remember_card > input {
+	display: none;
+}
+
+.remember_card > label {
+	width: 18px;
+	height: 18px;
+	background-color: #b4b4be;
+	border-radius: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.remember_card > label > svg {
+	width: 0;
+	height: 0;
+	transition: all .25s linear;
+}
+
+.remember_card > input:checked ~ label {
+	background: #15bef0;
+}
+
+.remember_card > input:checked ~ label > svg {
+	width: 2rem;
+	height: 2rem;
+}
+
+.remember_card > h3 {
+	margin-left: 1rem;
+}
+
+.payment_pay_now {
+	margin-top: 2rem;
+	background: #b4b4be;
+	border-radius: 2px;
+	font-size: 1.6rem;
+	color: white;
+	border: none;
+	outline: none;
+	width: 100%;
+	max-width: 40.4rem;
+	padding: 1.9rem;
+	font-weight: bold;
+}
+
+.payment_enabled{
+	background-color: #15BEF0;
+	cursor: pointer;
+}
