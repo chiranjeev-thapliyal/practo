@@ -66,7 +66,7 @@ const SearchWrapper = () => {
 
 	return (
 		<div>
-			<SearchHeader {...content} />
+			<SearchHeader {...content} /> 
 			<div className='search_list'>
 				<div className='search_list__left'>
 					<div className='container'>

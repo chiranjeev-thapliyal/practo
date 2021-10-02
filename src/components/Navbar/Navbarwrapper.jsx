@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react/cjs/react.development';
+import { AuthContext } from '../../Contexts/AuthContextProvider';
 import Section from '../Section/Section';
 import Navbar from './Navbar';
 import style from './Navbar.module.css';
 
 const Navbarwrapper = () => {
+	const { user, token } = useContext(AuthContext);
 	const [ state, setstate ] = useState(false);
 	const handelclick = () => {
 		if (state) {
@@ -183,30 +185,56 @@ const Navbarwrapper = () => {
 									<i className='fas fa-chevron-down' />
 								</span>{' '}
 							</div>
-							<div
-								style={{
-									marginRight: 0,
-									display: 'inline-block'
-								}}
-							>
-								<span>
-									<a
-										href='/'
+							{token ? (
+								<div
+									style={{
+										position: 'relative',
+										cursor: 'pointer',
+										lineHeight: '35px',
+										display: 'inline-block',
+										marginRight: '15px'
+									}}
+								>
+									<span className={style.userInfo}>{user.name} </span>{' '}
+									<span
 										style={{
-											fontSize: '13px',
-											lineHeight: '13px',
-											color: '#787887 !important',
-											borderRadius: '4px',
-											border: 'solid 1px #d3d3d3',
-											padding: '8px 10px',
-											textDecoration: 'none',
-											fontWeight: 400
+											fontSize: '15px',
+											lineHeight: '30px',
+											verticalAlign: 'middle',
+											display: 'inline-block',
+											padding: '0 1px',
+											cursor: 'pointer'
 										}}
 									>
-										Login / Signup{' '}
-									</a>{' '}
-								</span>{' '}
-							</div>{' '}
+										<i className='fas fa-chevron-down' />
+									</span>{' '}
+								</div>
+							) : (
+								<div
+									style={{
+										marginRight: 0,
+										display: 'inline-block'
+									}}
+								>
+									<span>
+										<a
+											href='/'
+											style={{
+												fontSize: '13px',
+												lineHeight: '13px',
+												color: '#787887 !important',
+												borderRadius: '4px',
+												border: 'solid 1px #d3d3d3',
+												padding: '8px 10px',
+												textDecoration: 'none',
+												fontWeight: 400
+											}}
+										>
+											Login / Signup{' '}
+										</a>{' '}
+									</span>{' '}
+								</div>
+							)}{' '}
 						</div>{' '}
 					</div>{' '}
 				</div>{' '}
