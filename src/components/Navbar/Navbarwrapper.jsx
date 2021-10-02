@@ -1,6 +1,5 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { useState } from 'react/cjs/react.development';
 import { AuthContext } from '../../Contexts/AuthContextProvider';
 import Section from '../Section/Section';
 import Navbar from './Navbar';
@@ -8,12 +7,13 @@ import style from './Navbar.module.css';
 
 const Navbarwrapper = () => {
 	const { user, token } = useContext(AuthContext);
-	const [ state, setstate ] = useState(false);
-	const handelclick = () => {
+	const [ state, setState ] = useState(false);
+
+	const handleClick = () => {
 		if (state) {
-			setstate(false);
+			setState(false);
 		} else {
-			setstate(true);
+			setState(true);
 		}
 	};
 
@@ -84,7 +84,7 @@ const Navbarwrapper = () => {
 									display: 'inline-block',
 									marginRight: '15px'
 								}}
-								onClick={handelclick}
+								onClick={handleClick}
 							>
 								<span
 									style={{
