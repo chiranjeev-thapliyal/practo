@@ -1,0 +1,50 @@
+.category_div {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin: 3.5rem auto;
+}
+
+.category_div > .slider {
+	height: 24rem;
+	padding: 1rem;
+}
+
+.category_header {
+	display: flex;
+	flex-direction: column;
+}
+
+.category_header > h2 {
+	font-size: 3rem;
+	color: #2d2d32;
+	line-height: 1.5;
+	/* padding-bottom: 30px; */
+}
+
+.category_header > p {
+	font-size: 1.8rem;
+	line-height: 1.29;
+	color: #787887;
+	padding-top: 2rem;
+	padding-bottom: 12px;
+	margin-top: -10px;
+}
+
+.category_button {
+	margin: 0 auto;
+	max-width: 100%;
+	font-size: 14px;
+	font-weight: 700;
+	position: absolute;
+	border-radius: 8px;
+	padding: 11px 17px;
+	text-align: center;
+	color: #2d2d32;
+	border: 1px solid #979797;
+	right: 0;
+	top: 2rem;
+	cursor: pointer;
+	background-color: transparent;
+	text-decoration: none;
+}
