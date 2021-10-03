@@ -1,8 +1,6 @@
 .payment_div {
 	width: 60%;
-	height: 100vh;
 	max-width: 1440px;
-	max-height: 748px;
 	margin: 2rem auto;
 	background-color: white;
 	box-shadow: 1px 1px 10px 0 #e5e5e5;
@@ -47,6 +45,7 @@
 	padding: 2rem 3rem;
 	cursor: pointer;
 	border-bottom: 1px solid #f0f0f5;
+	margin: 0;
 }
 
 .payment_option_item:hover {

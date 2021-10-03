@@ -10,12 +10,12 @@ export default function Flow2ConsultPage() {
   const [more, setMore] = useState(false);
   const [payment, setPayment] = useState(false);
   const [deaseses, setDeaseses] = useState("");
-  const [price, setPrice] = useState(399);
+  // const [price, setPrice] = useState(399);
   const [mobNumber, setMobNumber] = useState(0);
-  const [otp, setOtp] = useState(null);
+  const [otp, setOtp] = useState('');
   const [nameInput, setNameInput] = useState("");
 
-  const { token, user, setUser, setToken } = useContext(AuthContext);
+  const { token, user, setUser, setToken, price, setPrice } = useContext(AuthContext);
 
   const handleChange = (e) => {
     const { value } = e.target;
@@ -49,7 +49,7 @@ export default function Flow2ConsultPage() {
 
   return (
     <div className={styles.ConsultPageSection}>
-      {!payment ? (
+      {!payment ? ( 
         <div>
           <div className={styles.flexBox}>
             <div className={styles.flex2}>
@@ -71,13 +71,13 @@ export default function Flow2ConsultPage() {
                         onChange={handleChange}
                         type="text"
                         value={deaseses}
-                        placeholder="Eg: fever,hedech"
+                        placeholder="Eg: fever, headache"
                       />
                     </div>
                     <div style={{ fontSize: "120%" }}>Min 4 characters</div>
                   </div>
                   <div className={styles.mobileNumberDiv}>
-                    A relevant speciality shown below
+                    A relevant speciality will be shown below...
                   </div>
                   <div className={styles.PatientHeader}>
                     <div className={styles.fullNameLabel}>Mobile number</div>
@@ -91,7 +91,7 @@ export default function Flow2ConsultPage() {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <g clip-path="url(#clip0)">
+                        <g clipPath="url(#clip0)">
                           <path
                             d="M0 17.9997C0 18.7069 0.280952 19.3852 0.781049 19.8853C1.28115 20.3854 1.95942 20.6663 2.66667 20.6663H21.3333C22.0406 20.6663 22.7189 20.3854 23.219 19.8853C23.719 19.3852 24 18.7069 24 17.9997V15.333H0V17.9997Z"
                             fill="#138808"
@@ -142,11 +142,11 @@ export default function Flow2ConsultPage() {
                         placeholder="Enter mobile number"
                       />
                     </div>
-                    <div className={styles.mobileNumberDiv}>
+                    <div className={`${styles.mobileNumberDiv} ${styles.hint_text}`}>
                       A verification code will be sent to this number
                     </div>
                     <div
-                      className={`${styles.inputFullNameBox} ${styles.confirmDiv}`}
+                      className={`${styles.inputFullNameBox} ${user.phone.length < 10 ? styles.disabled_div : styles.confirmDiv}`}
                     >
                       <div className={styles.confirmBox}>Confirm</div>
                     </div>
@@ -322,7 +322,7 @@ export default function Flow2ConsultPage() {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <g clip-path="url(#clip0)">
+                        <g clipPath="url(#clip0)">
                           <path
                             d="M0 17.9997C0 18.7069 0.280952 19.3852 0.781049 19.8853C1.28115 20.3854 1.95942 20.6663 2.66667 20.6663H21.3333C22.0406 20.6663 22.7189 20.3854 23.219 19.8853C23.719 19.3852 24 18.7069 24 17.9997V15.333H0V17.9997Z"
                             fill="#138808"
@@ -384,7 +384,7 @@ export default function Flow2ConsultPage() {
                     </div>
                     <div
                       onClick={handleCheck}
-                      className={`${styles.inputFullNameBox} ${styles.confirmDiv}`}
+                      className={`${styles.inputFullNameBox} ${user.phone.length < 10 ? styles.disabled_div : styles.confirmDiv}`}
                     >
                       <div className={styles.confirmBox}>Confirm</div>
                     </div>
@@ -469,7 +469,7 @@ export default function Flow2ConsultPage() {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g clip-path="url(#clip0)">
+                    <g clipPath="url(#clip0)">
                       <path
                         d="M15.125 1.375C15.4897 1.375 15.8394 1.51987 16.0973 1.77773C16.3551 2.03559 16.5 2.38533 16.5 2.75V19.25C16.5 19.6147 16.3551 19.9644 16.0973 20.2223C15.8394 20.4801 15.4897 20.625 15.125 20.625H6.875C6.51033 20.625 6.16059 20.4801 5.90273 20.2223C5.64487 19.9644 5.5 19.6147 5.5 19.25V2.75C5.5 2.38533 5.64487 2.03559 5.90273 1.77773C6.16059 1.51987 6.51033 1.375 6.875 1.375H15.125ZM6.875 0C6.14565 0 5.44618 0.289731 4.93046 0.805456C4.41473 1.32118 4.125 2.02065 4.125 2.75V19.25C4.125 19.9793 4.41473 20.6788 4.93046 21.1945C5.44618 21.7103 6.14565 22 6.875 22H15.125C15.8543 22 16.5538 21.7103 17.0695 21.1945C17.5853 20.6788 17.875 19.9793 17.875 19.25V2.75C17.875 2.02065 17.5853 1.32118 17.0695 0.805456C16.5538 0.289731 15.8543 0 15.125 0L6.875 0Z"
                         fill="#02A401"
@@ -501,24 +501,21 @@ export default function Flow2ConsultPage() {
                     />
                   </div>
                   <div
-                    style={{ color: "blue" }}
-                    className={`${styles.mobileNumberDiv} ${styles.text4}`}
+                    className={`${styles.mobileNumberDiv} ${styles.text4} ${styles.have_coupon}`}
                   >
                     Have a coupon code?
                   </div>
                   <div
-                    style={{ color: "red" }}
-                    className={`${styles.mobileNumberDiv} ${styles.text4}`}
+                    className={`${styles.mobileNumberDiv} ${styles.text4} ${styles.coupon_applied}`}
                   >
                     ₹59.85 HealthCash applied
                   </div>
-                  <div className={`${styles.mobileNumberDiv} ${styles.text4}`}>
+                  <div className={`${styles.mobileNumberDiv} ${styles.text4} ${styles.final_fee}`}>
                     Final Fee
                   </div>
-                  <h4 className={styles.price}>{+price - 59.85}</h4>
+                  <h4 className={styles.price}>₹{+price - 59.85}</h4>
                   <div
-                    style={{ color: "blue" }}
-                    className={`${styles.mobileNumberDiv} ${styles.text4}`}
+                    className={`${styles.mobileNumberDiv} ${styles.text4} ${styles.fee_breakdown}`}
                   >
                     Show fee breakup
                   </div>
@@ -531,7 +528,7 @@ export default function Flow2ConsultPage() {
                     // }}
                     className={`${styles.confirmDiv} ${styles.payment}`}
                   >
-                    <div className={styles.confirmBox}>Continue to payment</div>
+                      <div onClick={() => setPrice(+price - 59.85)} className={styles.confirmBox}>Continue to payment</div>
                   </Link>
                 </div>
               </div>
@@ -552,10 +549,14 @@ export default function Flow2ConsultPage() {
       )}
 
       {token === "" && payment && (
+        <div className={styles.modalOuter}>
         <div className={styles.modal}>
           <div className={styles.modalHeader}>
-            <div>Login</div>
-            <svg
+            <div>Log in</div>
+              <svg
+                onClick={() => {
+                  setPayment(false);
+                }}
               width="13"
               height="13"
               viewBox="0 0 13 13"
@@ -599,14 +600,15 @@ export default function Flow2ConsultPage() {
             <div className={styles.text2}>
               <div>
                 Still not received OTP?
-                <span style={{ color: "blue" }}> Get via call</span>
+                <span style={{ color: "#14bef0" }}> Get via call</span>
               </div>
-              <div style={{ color: "blue" }}>Resend OTP</div>
+              <div style={{ color: "#14bef0" }}>Resend OTP</div>
             </div>
-            <div onClick={handleLogin} className={styles.loginButton}>
+            <div onClick={handleLogin} className={`${otp.length < 6 ? styles.login_disabled : styles.loginButton}`}>
               <div>Login</div>
             </div>
           </div>
+        </div>
         </div>
       )}
     </div>

@@ -423,21 +423,20 @@ export default function FindDoctors() {
                   <div>
                     <i className="ion-checkmark-round"></i>
                     <span>
-                      Fees starting at <span className="rupees_symbol">₹</span>{" "}
-                      99
+                      Fees starting at <span className={styles.bold_txt}><span className="rupees_symbol"> ₹</span>99</span>
                     </span>
                   </div>
                 </div>
                 <div className={styles.tickBox}>
                   <div>
                     <i className="ion-checkmark-round"></i>
-                    <span>Verified doctors respond in 5 minutes</span>
+                    <span>Verified doctors respond in <span className={styles.bold_txt}>5 minutes</span></span>
                   </div>
                 </div>
                 <div className={styles.tickBox}>
                   <div>
                     <i className="ion-checkmark-round"></i>
-                    <span>100% Private and confidential</span>
+                    <span><span className={styles.bold_txt}>100%</span> Private and confidential</span>
                   </div>
                 </div>
                 <div className={styles.spanBox}>
@@ -565,13 +564,13 @@ export default function FindDoctors() {
                 <div className={styles.tickBox}>
                   <div>
                     <i className="ion-checkmark-round"></i>
-                    <span>Over 130,000+ genuine medicines</span>
+                    <span>Over <span className={styles.bold_txt}>130,000+</span> genuine medicines</span>
                   </div>
                 </div>
                 <div className={styles.tickBox}>
                   <div>
                     <i className="ion-checkmark-round"></i>
-                    <span>Home delivery in 24hrs </span>
+                    <span>Home delivery in <span className={styles.bold_txt}>24hrs</span> </span>
                   </div>
                 </div>
                 <div className={styles.readMoreBox4}>
