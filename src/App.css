@@ -104,6 +104,11 @@
 
 
 @media (max-width: 1200px) {
+
+	.content{
+		width: 100%!important;
+	}
+
 	#medicines, #lab_tests, #surgeries{
 		display: none!important;
 	}
@@ -120,12 +125,22 @@
 		width: 100%!important;
 	}
 
+	#searchbar_content{
+		width: 100%!important;
+	}
+
+	#searchbar_wrapper{
+		width: 90%!important;
+		margin: 0 auto;
+	}
+
 }
 
 @media (max-width: 600px) {
 
 	.content{
 		width: 100%!important;
+		text-align: center;
 	}
 
 	.hamburger_menu{
@@ -212,6 +227,15 @@
 	#footer_top{
 		width: 100%!important;
 
+	}
+
+	.footerdata{
+    min-width: 163px;
+    padding: 1rem;
+	}
+
+	.footerdata > h3{
+		margin-top: 3rem;
 	}
 
 }

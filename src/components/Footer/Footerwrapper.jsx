@@ -7,7 +7,7 @@ const Footerwrapper = () => {
 		<Section
 			id="footer_section"
 			style={{
-				minWidth: '1200px',
+				// minWidth: '1200px',
 				backgroundColor: '#28328c',
 				padding: ' 48px 0',
 				color: '#fff',
@@ -17,7 +17,7 @@ const Footerwrapper = () => {
 			<div
 				id="footer_top"
 				style={{
-					width: '1180px',
+					// width: '1180px',
 					margin: 'auto'
 				}}
 			>
