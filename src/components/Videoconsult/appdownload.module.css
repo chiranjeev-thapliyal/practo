@@ -22,11 +22,11 @@
 .appdownlodsection{
     display: flex;
     padding: 15px 55px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1280px;
-    width: 100%;
-    margin: 0;
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    /* max-width: 1280px; */
+    /* width: 100%; */
+    /* margin: 0; */
     border: 0;
     vertical-align: baseline;
     box-sizing: inherit;
@@ -75,6 +75,8 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     display: block;
+    font-weight: 400;
+    font-family: 'CamphorBold';
 }
 .desc{
     font-weight: 700;
@@ -89,6 +91,8 @@
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    font-weight: 400;
+    font-family: 'CamphorBold';
 }
 
 .ul{
@@ -245,4 +249,21 @@ ion-checkmark-round::before{
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+@media (max-width: 600px) {
+   .form{
+       flex-direction: column;
+   } 
+
+   .inpcontainer{
+       width: 100%;
+       max-width: unset;
+   }
+
+   .btn{
+       margin-top: 1rem;
+       margin-left: 0;
+   }
+
 }

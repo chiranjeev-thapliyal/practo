@@ -202,3 +202,18 @@
 }
 
 .icon-ic_message {}
+
+@media (max-width: 600px) {
+
+    .firstfoldwrap{
+        padding: 20px 20px 0 35px;
+    }
+
+    .add{
+        margin-top: 3rem;
+    }
+
+    .add > p{
+        margin-bottom: 1rem;
+    }
+}

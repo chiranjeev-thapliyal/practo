@@ -51,3 +51,11 @@
 	background-color: transparent;
 	text-decoration: none;
 }
+
+@media (max-width: 600px) {
+	.category_button{
+		position: static;
+		top: 0;
+		left: 0;
+	}	
+}

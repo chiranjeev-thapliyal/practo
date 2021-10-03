@@ -86,3 +86,11 @@
     cursor: pointer;
     color: #787887;
 }
+
+
+@media (max-width: 600px) {
+    .gridrowcol{
+        flex-basis: 100%;
+    }
+
+}

@@ -53,3 +53,10 @@
     text-align: right;
     flex: 0 0 100%;
 }
+
+
+@media (max-width: 600px) {
+    .healthquarie{
+        width: 100%;
+    }
+}
