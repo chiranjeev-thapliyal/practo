@@ -1,0 +1,33 @@
+.appointment_card{
+	width: 280px;
+	position: relative;
+}
+
+.appointment_card_img{
+	width: 280px;
+	height: 200px;
+}
+
+.appointment_card_img > img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.appointment_card_title{
+	margin-top: 12px;
+	/* font-weight: 700; */
+	font-weight: 400;
+	font-family: 'CamphorBold';
+	color: #414146;
+	font-size: 1.6rem;
+}
+
+.appointment_card:hover .appointment_card_title{
+	color: #14bef0;
+}
+
+.appointment_card_desc{
+	color: #414146;
+	font-size: 1.4rem;
+}

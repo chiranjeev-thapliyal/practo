@@ -1,0 +1,54 @@
+.testi_card{
+	display: flex;
+    position: relative;
+    width: 271px;
+    /* width: 100%; */
+		border-radius: 6px;
+    border: 1px solid #f0f0f5;
+    padding: 10px;
+}
+
+.doctor_card_left{
+	position: relative;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	margin-right: 10px;
+}
+
+.doctor_card_img{
+	width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    overflow: hidden;
+		margin: 0;
+}
+
+.doctor_card_img > img{
+	width: 100%;
+	height: 100%;
+}
+
+.doctor_card_badge{
+	position: absolute;
+	top: 49px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background: #ffeb01;
+	border-radius: 3px;
+	font-size: 10px;
+	padding: 2.5px;
+	font-weight: 700;
+}
+
+.doctor_card_name{
+	font-size: 1.4rem;
+	line-height: 1.43;
+	margin-bottom: 2px;
+}
+
+.doctor_card_content > p{
+	font-size: 1.2rem;
+	line-height: 1.5;
+}

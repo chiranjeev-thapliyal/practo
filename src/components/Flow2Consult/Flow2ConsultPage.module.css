@@ -5,16 +5,20 @@
   font-family: roboto;
   position: relative;
 }
+
 .flexBox {
   display: flex;
 }
-.flexBox > div {
+
+.flexBox>div {
   flex-basis: 50%;
 }
+
 .flex2 {
   display: flex;
   justify-content: right;
 }
+
 /* .flex2:after {
   display: block;
   height: 300px;
@@ -30,10 +34,18 @@
   padding: 25px;
   padding-bottom: 30px;
 }
+
 .flex12Header {
   font-size: 170%;
-  padding: 15px 0px;
+  /* padding: 15px 0px; */
 }
+
+.flex12Header>span>h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: 'CamphorBold';
+}
+
 .flex1 {
   display: flex;
   width: 440px;
@@ -43,21 +55,25 @@
   align-items: center;
 }
 
-.flex1 > div > img {
+.flex1>div>img {
   width: 105px;
   height: 108px;
   margin: 0px 8%;
 }
+
 .PatientHeader {
   margin: 10px 0px;
 }
-.PatientHeader > h2 {
+
+.PatientHeader>h2 {
   font-size: 215%;
   margin-bottom: 25px;
 }
-.PatientHeader > div {
+
+.PatientHeader>div {
   font-size: 140%;
 }
+
 .inputNameBox {
   width: 400px;
   background-color: white;
@@ -68,11 +84,13 @@
   align-items: center;
   /* margin-bottom: 15px; */
 }
+
 .iconCercle {
   font-size: medium;
   margin: 0px 10px;
 }
-.inputNameBox > input {
+
+.inputNameBox>input {
   width: 80%;
   border: none;
   height: 70%;
@@ -82,27 +100,60 @@
   margin: 15px 0px;
   font-size: 140%;
 }
+
 .fullNameLabel {
-  font-size: 140%;
-  margin-bottom: 7px;
+  /* font-size: 140%; */
+  font-size: 1.6rem;
+  /* margin-bottom: 7px; */
+  margin: 1.5rem 0;
 }
+
 .inputFullNameBox {
   width: 400px;
   height: 61px;
   border-radius: 3px;
-  padding: 5px;
+  padding: 1rem;
   background-color: white;
   align-items: center;
-
-  border: 1px solid black;
+  border: 1px solid #e0e0e5;
 }
-.inputFullNameBox > input {
+
+.inputFullNameBox>input {
   width: 85%;
   border: none;
+  outline: none;
+  font-size: 1.4rem;
 }
+
+.inputFullNameBox>input::placeholder {
+  color: #b4b4be;
+}
+
+.PatientHeader>div:last-child {
+  color: #b4b4be;
+}
+
 .mobileInput {
   justify-content: space-between;
 }
+
+.disabled_div{
+  width: 134px;
+  height: 41px;
+  border-radius: 3px;
+  padding: 5px;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  background: #b4b4be;
+  color: white;
+  border: 1px solid #b4b4be;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 400;
+  font-family: 'CamphorBold';
+}
+
 .confirmDiv {
   width: 134px;
   height: 41px;
@@ -111,28 +162,53 @@
   display: flex;
   background-color: white;
   align-items: center;
-  background-color: #199fd9;
-  font-size: 140%;
+  background: #14bef0;
+  color: white;
+  border: 1px solid #14bef0;
+  font-size: 1.6rem;
   text-align: center;
+  font-weight: 400;
+  font-family: 'CamphorBold';
 }
+
+.confirmDiv:hover{
+  color: white;
+  background: #14addb;
+  border-color: #14addb;
+}
+
 .confirmBox {
   display: inline-block;
   margin: 0px auto;
   color: white;
+  font-weight: 400;
+  font-family: 'CamphorBold';
+  text-decoration: none;
 }
+
 .mobileNumberDiv {
-  font-size: 140%;
-  margin: 10px 0px;
+  /* font-size: 140%;
+  margin: 10px 0px; */
+  font-size: 1.6rem;
+  margin: 1.5rem 0 1rem;
 }
+
+.hint_text{
+  font-size: 12px;
+  color: #b4b4be;
+}
+
 .termsDiv {
   font-size: 120%;
 }
+
 .wholeOtpBox {
   padding: 10px;
   width: 420px;
   padding-bottom: 60px;
   background-color: white;
 }
+
 .flex5 {
   /* background-color: blueviolet; */
   /* padding-right: 40px; */
@@ -140,130 +216,265 @@
   border-radius: 5px;
   /* padding: 0px 10px; */
 }
+
 .otpBox {
   margin-bottom: 0px;
   /* background-color: violet; */
 }
+
 .inputOtpBox {
   border: none;
   border-radius: 0px;
   border-bottom: 1px solid black;
   background-color: unset;
 }
+
 .resendOtpBox {
   display: flex;
   justify-content: space-between;
 }
+
 .numberBox {
   display: flex;
   width: 298px;
   height: 44px;
 }
+
 .specialityBox {
   width: 80%;
 }
+
 .icons {
   margin-right: 7px;
 }
+
 .speciality {
   display: flex;
   width: 231px;
   margin-bottom: 10px;
   height: 44px;
+  font-family: 'CamphorBold';
 }
+
+.speciality > div:last-child{
+  font-family: 'Camphor';
+}
+
 .imageTitle {
   text-align: center;
   font-size: 18px;
   font-weight: 700;
 }
+
+.modalOuter{
+  background: rgba(255,255,255,0.95) none repeat scroll 0 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 111111;
+  overflow: auto;
+}
+
 .modal {
   position: absolute;
   top: 12px;
   left: 37%;
   background: white;
-  box-shadow: 0px 1px 3px black;
+  /* box-shadow: 0px 1px 3px black; */
   width: 426px;
-  height: 337px;
+  /* height: 337px; */
   border-radius: 4px;
+  border: 1px solid #d4d4d4;
 }
+
 .modalHeader {
+  line-height: 4em;
   padding: 15px 17px;
+  font-size:1.4rem;
+    line-height: 1.42857143;
+    color: #333;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  height: 4.2em;
+  border-bottom: .1em solid #F4F4F4;
+  width: 100%;
 }
-.modalHeader > div {
+
+.modalHeader>div {
   font-size: 14px;
 }
+
 .modalContent {
   /* background: red; */
   padding: 14px 25px;
   font-size: 14px;
 }
+
 .text {
-  margin-bottom: 10px;
+  padding: 20px 0 8px 0;
+  font-size: 14px;
+  font-family: 'Camphor';
+  color: #787887;
 }
+
 .otpNumbBox {
   display: flex;
   margin-bottom: 10px;
+  align-items: baseline;
 }
-.otpNumbBox > h3 {
-  margin-right: 15px;
+
+.otpNumbBox>h3 {
+  /* margin-right: 15px; */
+   font-family: 'Camphor';
+   font-size: 20px;
+   color: #7f7f7f;
+   padding: 10px 15px 0 0;
+   display: inline-block;
+   font-weight: 400;
+   /* font-family: 'CamphorBold'; */
 }
+
 .modalOtpBox {
   width: 375px;
   /* background: blue; */
   height: 36px;
   display: flex;
   margin-bottom: 5px;
+  font-family: 'Camphor';
+  font-size: 1.4rem;
+  color: #787887;
 }
-.modalOtpBox > input {
+
+.modalOtpBox>input {
+  /* width: 100%; */
+  display: block;
   width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  outline: none;
+  border-radius: 2px;
+  border: solid 1px #cacad3;
+  font-size: 1.2rem;
 }
+
+.modalOtpBox > input::placeholder{
+  color: #cacad3;
+}
+
 .text2 {
-  font-size: 12px;
   display: flex;
   justify-content: space-between;
+  padding: 10px 0 25px 0;
+  font-size: 12px;
+  color: #787887;
 }
+
 .loginButton {
-  width: 375px;
-  background: blue;
-  border-radius: 4px;
-  height: 36px;
+  border: 1px solid #14bef0;
+  width: 100%;
+  height: 45px;
+  font-family: 'Camphor';
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 3px;
+  line-height: 24px;
+  background: #13bef0;
+  color: #FFF;
+  cursor: pointer;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  margin-top: 25px;
+    justify-content: center;
+    align-items: center;
 }
+
+.login_disabled{
+  border: 1px solid #b4b4be;
+  width: 100%;
+  height: 45px;
+  font-family: 'Camphor';
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 3px;
+  line-height: 24px;
+  background: #b4b4be;
+  color: #FFF;
+  cursor: pointer;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .ballIconBox {
   display: flex;
   align-items: center;
 }
-.ballIconBox > div:last-child {
+
+.ballIconBox>div:last-child {
   margin-left: 13px;
 }
+
 .iconBall {
   font-size: 41px;
   margin-right: -10px;
 }
+
 .text3 {
   display: flex;
 }
-.text3 > div {
+
+.text3>div {
   margin-left: 10px;
 }
+
 .nameBox {
   width: 302px;
   height: 35px;
 }
+
 .price {
   font-size: 20px;
   font-weight: 500;
+  font-family: 'CamphorBold';
+
 }
+
 .text4 {
   font-size: 13px !important;
+  text-decoration: none;
 }
+
+.have_coupon, .coupon_applied{
+  font-family: 'CamphorBold';
+  margin-top: 1.6rem;
+}
+
+.have_coupon{
+  color: #13bef0;
+}
+
+.coupon_applied{
+  color: #08A607;
+}
+
+.final_fee{
+  margin-bottom: 0;
+}
+
+.fee_breakdown{
+  color: #13bef0
+}
+
 .payment {
   width: 239px;
+  text-decoration: none;
 }

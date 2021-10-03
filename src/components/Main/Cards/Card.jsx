@@ -9,22 +9,52 @@ const Card = styled.div`
 	height: 29rem;
 
 	& > .img-wrapper {
+		/* position: relative; */
 		display: flex;
 		justify-content: center;
+		align-items: flex-end;
 		border-top-left-radius: 2.4rem;
 		border-top-right-radius: 2.4rem;
 		height: 60%;
 		background-color: ${({ bg }) => bg};
-
+		
 		& > img {
-			padding-top: 12px;
-			padding-left: 35px;
-			padding-right: 35px;
-			padding-bottom: 0px;
-			object-fit: contain;
-			width: 150%;
+			/* padding-top: 12px; */
+			/* padding-left: 35px; */
+			/* padding-right: 35px; */
+			/* padding-bottom: 0px; */
+			/* position: absolute; */
+			/* bottom: 0; */
+			/* object-fit: contain;
+			height: 16rem; */
+			/* position: relative; */
+			/* top: 1.2rem; */
+			width: 100%;
+			/* width: auto; */
+			/* width: 150%; */
 			/* height: 100%; */
 		}
+
+		& > .img-0{
+			width: 65%;
+		}
+
+		& > .img-1{
+			width: 80%;
+		}
+		 
+		& > .img-2{
+			width: 85%;
+		}
+
+		& > .img-3{
+			width: 90%;
+		}
+
+		& > .img-4{
+			width: 85%;
+		}
+
 	}
 
 	& > .info {
@@ -36,7 +66,9 @@ const Card = styled.div`
 		& > h3 {
 			padding-bottom: 8px;
 			color: #2d2d32;
-			font-weight: 700;
+			/* font-weight: 700; */
+			font-weight: 400;
+			font-family: 'CamphorBold';
 			font-size: 2rem;
 		}
 

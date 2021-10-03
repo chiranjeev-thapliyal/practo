@@ -50,7 +50,7 @@ const SearchHeader = (props) => {
 					<i className='fas fa-chevron-up' />
 				</li>
 
-				<div id='sortBy' onClick={() => changeFilterOption('sortBy')}>
+				<li id='sortBy' onClick={() => changeFilterOption('sortBy')}>
 					<span>Sort By</span>
 					<li className='filter_box'>
 						<span className='dropdown_selected'>
@@ -66,7 +66,7 @@ const SearchHeader = (props) => {
 							<li onClick={() => handleFormData('sortBy', 'recommendation')}>Recommendation</li>
 						</ul>
 					</li>
-				</div>
+				</li>
 			</ul>
 			<div className={`filter_bottom ${filterForm.all_filters ? 'expanded' : ''}`}>
 				<div className='container'>

@@ -1,7 +1,6 @@
 import axios from 'axios';
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { useState } from 'react/cjs/react.development';
 import { AuthContext } from '../../Contexts/AuthContextProvider';
 import styles from './ConsultPage.module.css';
 
@@ -22,15 +21,14 @@ export default function ConsultPage() {
 	// Checking if user is logged in or not
 	const { currentAppointment: doctor, token, user, setUser, setToken } = useContext(AuthContext);
 
-
 	// Checking state for filling patient form
 	const [ forOwn, setForOwn ] = useState(true);
 	const [ forSomeoneElse, setForSomeoneElse ] = useState(false);
-	const [otp, setOTP] = useState('');
+	const [ otp, setOTP ] = useState('');
 
 	const handleOTP = (e) => {
 		setOTP(e.target.value);
-	}
+	};
 
 	// Changing state for person
 	const changeRef = (value) => {
@@ -56,7 +54,7 @@ export default function ConsultPage() {
 
 	// Asynchronous request for authenticating user
 	const getUser = async () => {
-		const { data } = await axios.get(`http://localhost:3001/users/`, {
+		const { data } = await axios.get(`${process.env.REACT_APP_DATABASE}/users/`, {
 			params: {
 				phone: userDetails.phone
 			}
@@ -71,7 +69,7 @@ export default function ConsultPage() {
 
 	const handleSignIn = async () => {
 		if (otp.length !== 6) {
-			setOTP("");
+			setOTP('');
 			return;
 		}
 		const user = await getUser();
@@ -297,7 +295,7 @@ export default function ConsultPage() {
 										? styles.disabled
 										: ''}`}
 								>
-									<div className={`${styles.confirmBox}`}>
+									<div className={user.phone.length >= 10 ? `${styles.confirmBox}` : `${styles.disabled_btn}`}>
 										Confirm<Link to='/payment' />
 									</div>
 								</div>
@@ -342,12 +340,12 @@ export default function ConsultPage() {
 										</svg>
 									</div>
 								</div>
-								<div className={styles.mobileNumberDiv}>1. You will receive an OTP shortly</div>
+								<div className={styles.mobileNumberDiv}>You will receive an OTP shortly</div>
 								<div className={styles.mobileNumberDiv}>
-									2. We will send appointment related communication on this number
+									We will send appointment related communication on this number
 								</div>
-								<div onClick={getOTP} className={`${styles.inputFullNameBox} ${styles.confirmDiv}`}>
-									<div className={styles.confirmBox}>Confirm</div>
+								<div onClick={getOTP} className={`${styles.inputFullNameBox} ${user.phone.length >= 10 ? styles.confirmDiv : styles.disabled_div}`}>
+									<div className={`${styles.confirmBox}`}>Confirm</div>
 								</div>
 							</div>
 						)}
@@ -362,7 +360,12 @@ export default function ConsultPage() {
 										<div
 											className={`${styles.inputFullNameBox} ${styles.mobileInput} ${styles.inputOtpBox}`}
 										>
-											<input type='text' value={otp} placeholder='Please enter the 6 digit OTP here' onChange={handleOTP} />
+											<input
+												type='text'
+												value={otp}
+												placeholder='Please enter the 6 digit OTP here'
+												onChange={handleOTP}
+											/>
 										</div>
 									</div>
 									<div className={styles.resendOtpBox}>

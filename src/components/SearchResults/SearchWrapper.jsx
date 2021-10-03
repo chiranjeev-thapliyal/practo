@@ -38,7 +38,7 @@ const SearchWrapper = () => {
 		} else {
 			[ gte, lte ] = formData.consultation_fees.split('to').map(Number);
 		}
-		const { data } = await axios.get(`http://localhost:3001/doctors`, {
+		const { data } = await axios.get(`${process.env.REACT_APP_DATABASE}/doctors`, {
 			params: {
 				...(location && { locality: location }),
 				...(keyword && { speciality: keyword }),
@@ -65,12 +65,12 @@ const SearchWrapper = () => {
 	);
 
 	return (
-		<div>
+		<div className="bg-white">
 			<SearchHeader {...content} /> 
 			<div className='search_list'>
 				<div className='search_list__left'>
 					<div className='container'>
-						<SearchListHeader total={doctorsList.length} />
+						<SearchListHeader total={doctorsList.length} place={location}/>
 						{doctorsList.map((doctor) => <SearchCard key={doctor.id} {...doctor} />)}
 					</div>
 				</div>

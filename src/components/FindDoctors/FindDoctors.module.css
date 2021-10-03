@@ -1,7 +1,9 @@
 .headerDiv {
   width: 100%;
   /* height: 70vh; */
+  margin-top: 10rem;
 }
+
 .header {
   background-image: url("https://www.practostatic.com/web-assets/home/assets/images/homepage.06859593240c3efd483fe48951cfe6ff.svg");
   /* height: 100%; */
@@ -10,18 +12,28 @@
   background-position-y: 60px;
   background-attachment: fixed;
 }
+
 .headerTitle {
   color: white;
-  font-size: 210%;
+  /* font-size: 210%; */
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Camphor";
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 45px;
+  padding-top: 4rem;
+  /* padding-bottom: 45px;  */
+  margin-bottom: 5rem;
 }
+
 .headerSmallTitle {
   color: white;
   text-align: center;
-  font-size: 210%;
+  /* font-size: 210%; */
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: "CamporBold";
 }
+
 .headerSearchBar > div {
   /* display: inline-block;
   margin: 0px 25%; */
@@ -32,133 +44,249 @@
   flex-direction: column;
   align-items: center;
 }
+
 .headerPopularSearchDiv {
   color: white;
   font-size: 140%;
   text-align: center;
   padding-left: 45px;
 }
+
 .headerPopularSearch > span {
   margin: 0px 15px;
 }
+
 .headerIconDiv {
   color: white;
   font-size: 140%;
   background-color: #1d2869;
   text-align: center;
-  padding-left: 45px;
-  padding: 20px 0px;
+  /* padding-left: 45px; */
+  /* padding: 20px 0px; */
+  padding: 1.7rem 0;
+  max-height: 8rem;
 }
+
 .headerIconDiv > div {
   display: inline-block;
 }
+
 .headerIcon {
   display: flex;
   text-align: center;
 }
+
 .headerIcon > div {
-  margin: 0px 25px;
+  /* margin: 0px 25px; */
+  padding: 0 2.5rem;
+  border-right: 1px solid #4a5387;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  cursor: pointer;
 }
+
+.headerIcon > div:hover > svg {
+  transform: scale(1.3);
+}
+
+.headerIcon > div:hover > div {
+  color: white;
+}
+
+.headerIcon > div > svg {
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.1s linear;
+}
+
 .headerIcon > div > div {
-  margin-top: 10px;
+  color: #b8bbd9;
+  font-size: 1.4rem;
+  text-decoration: none;
+  /* line-height: 28px; */
 }
+
+.headerIcon .new_badge {
+  margin-left: 3px;
+
+  background-color: #00a500;
+  font-size: 1rem;
+  padding: 2px 3px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 400;
+  font-family: "CamphorBold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .icons {
   color: white;
   width: 20px;
 }
+
+.secondPage,
+.thirdPage,
+.fourthPage,
+.fifthPage,
+.sixthPage,
+.seventhPage,
+.eighthPage {
+  padding: 10rem 0;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eighthPage > div {
+  width: 78%;
+}
+
 .secondPage {
-  padding: 100px 100px;
+  /* padding: 100px 100px; */
+  /* padding: 10rem 0; */
+  width: 100%;
   overflow: hidden;
   background-color: #f0f0f5;
 }
+
 .secondPageFlexbox {
   display: flex;
   font-size: 280%;
 }
+
 .secondPageFlexbox > div {
   flex-basis: 50%;
 }
 
 .flex1 > div {
-  width: 80%;
-  margin: 0px auto;
+  /* width: 80%; */
+  /* margin: 0px auto; */
 }
+
 .flex1 > div h2 {
   font-weight: 500;
 }
-.flex1Heading {
-  margin-bottom: 30px;
+
+.bold_txt {
+  font-weight: 700;
 }
+
+.flex1Heading {
+  width: 100%;
+  margin-bottom: 30px;
+  color: #414146;
+  font-weight: 400;
+  font-family: "CamphorBold";
+}
+
+.flex1Heading > h2:last-child {
+  font-weight: 700;
+}
+
+.content {
+  width: 1180px !important;
+  zoom: 1 !important;
+  margin: auto !important;
+}
+
 .tickBox {
   font-size: large;
   margin-left: 15px;
   margin-bottom: 10px;
+  color: #787887;
 }
+
 .tickBox i {
-  color: blueviolet;
+  color: #14bef0;
   margin-right: 8px;
 }
+
 .readMoreBox {
   display: inline-block;
   font-size: 18px;
   width: 130px;
   background-color: #14bef0;
   text-align: center;
-  height: 50px;
+  /* height: 50px; */
   padding: 10px 0px;
   border-radius: 3px;
   margin-top: 30px;
 }
+
 .readMoreBox > a {
   text-decoration: none;
   color: #fff;
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-family: "CamphorBold";
 }
+
 .flex2 {
   text-align: center;
 }
+
 .flex2 img {
   width: 50%;
 }
+
 .flex2 video {
   width: 40%;
 }
+
 .iconBox {
   width: 925px;
   padding-top: 50px;
   margin: 0 auto;
   display: flex;
 }
+
 .iconBox > div {
   flex-basis: 23%;
   margin: 0px 1%;
   text-align: center;
   font-size: 150%;
 }
+
 .iconBox > div img {
   width: 35%;
 }
+
 .thirdPage {
   padding: 50px 100px;
   overflow: hidden;
+  background-color: #fff;
 }
+
 .readMoreBox2 {
   width: 230px;
   margin-bottom: 50px;
 }
+
 .testimonials {
   max-width: 455px;
   min-height: 210px;
   position: relative;
   font-size: 60%;
-  margin: 0px auto;
+  /* margin: 0px auto; */
   overflow-x: scroll;
   overflow-y: hidden;
 }
+
 .testimonials::-webkit-scrollbar {
   display: none;
 }
+
 .profileIcon {
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   border-radius: 30px;
@@ -167,14 +295,31 @@
   font-size: 20px;
   margin-right: 10px;
   margin-top: 10px;
+  font-weight: 400;
+  font-family: "CamphorBold";
 }
-.testimonialseach {
+
+.testimonialsearch {
   width: 450px;
   margin: 0px 5px;
 }
+
+.testimonialsearch > .review_text {
+  line-height: 1.5;
+  color: #787887;
+  font-size: 1.4rem;
+}
+
+.reviewer_name {
+  line-height: 1.5;
+  color: #787887;
+  font-size: 1.4rem;
+}
+
 .starsDiv {
   margin-bottom: 5px;
 }
+
 .stars {
   color: #00a500;
   margin: 0px 5px;
@@ -185,73 +330,97 @@
   background-color: #f0f0f5;
   overflow: hidden;
 }
+
 .flex12 {
   margin: 0px;
 }
+
 .cercleIcon {
   color: blueviolet;
   margin: 0px 5px;
   font-size: 18px;
 }
+
 .spanBox span {
   font-size: 18px;
 }
+
 .spanBox {
   margin-bottom: 35px;
 }
+
 .fifthPage {
   padding: 50px 100px;
   background-color: #f0f0f5;
   overflow: hidden;
 }
+
 .readMoreBox3 {
   width: 170px;
 }
+
 .spanBox2 {
   padding-top: 27px;
   display: inline-block;
   font-size: 18px;
+  max-width: 45%;
+  color: #414146;
+  font-size: 1.6rem;
 }
+
 .readMoreBox4 {
   display: flex;
 }
+
 .cercleIcon2 {
   padding-top: 40px;
   margin: 0px 10px;
 }
+
 .readMoreBox5 {
   width: 200px;
 }
+
 .sixthPage {
   padding: 50px 100px;
   overflow: hidden;
+  background-color: #fff;
 }
+
 .flex4 img {
   width: 95%;
 }
+
 .seventhPage {
   padding: 50px 100px;
   overflow: hidden;
+  background-color: #fff;
 }
+
 .appDownloadIcons {
   display: flex;
   margin-top: 30px;
 }
+
 .appDownloadIcons > a {
   flex-basis: 25%;
   margin-right: 10px;
 }
+
 .eighthPage {
   padding: 50px 100px;
   overflow: hidden;
   justify-content: center;
+  background-color: #fff;
 }
+
 .secondPageSubjectData {
   width: 90%;
   margin: 0px auto;
   position: relative;
   /* background-color: cadetblue; */
 }
+
 .slider {
   width: 87%;
   margin: 0px auto;
@@ -262,21 +431,25 @@
   overflow-x: scroll;
   overflow-y: hidden;
 }
+
 .slider::-webkit-scrollbar {
   display: none;
 }
+
 .slide {
   display: flex;
   position: absolute;
   left: 0;
   transition: 0.3s left ease-in-out;
 }
+
 .slide1 {
   display: flex;
   position: absolute;
   left: 0;
   transition: 0.3s left ease-in-out;
 }
+
 .item {
   width: 320px;
   height: 350px;
@@ -285,14 +458,17 @@
   border-radius: 5px;
   box-shadow: 0px 2px 4px 0px #e4d4d4;
 }
+
 .imageBox {
   width: 100%;
 }
+
 .imageBox img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   width: 100%;
 }
+
 .detailBox {
   height: 20%;
   margin: 15px;
@@ -311,8 +487,11 @@
   top: 50%;
   margin-top: -27.5px;
 }
+
 .ctrl-btnTest {
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
+  background-color: transparent;
+  color: #b4b4be;
   font-size: large;
   border: none;
   background-color: none;
@@ -324,42 +503,118 @@
 
 .ctrl-btn.pro-prev {
   left: 25px;
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
   height: 50px;
   border-radius: 50px;
 }
+
 .pro-prevTest {
-  left: 0px;
+  left: -3rem;
 }
+
 .ctrl-btnTestWhite {
   background-color: white;
 }
+
 .ctrl-btn.pro-next {
   right: 25px;
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
   height: 50px;
   border-radius: 50px;
 }
+
 .pro-next-Test {
   right: 0px;
 }
+
 .secondPageSubjectHeading {
   text-align: center;
   font-size: 380%;
   margin-bottom: 50px;
 }
+
 .secondPageSubjectReadmoreDiv {
   text-align: center;
   margin-top: 40px;
   font-size: 200%;
 }
+
 .secondPageSubjectReadmore {
-  background: blue;
+  background: #14bef0;
+  border: 1px solid #14bef0;
+  font-weight: 400;
+  font-family: "CamphorBold";
   color: white;
   text-align: center;
-  font-size: 100%;
+  /* font-size: 100%; */
+  font-size: 1.6rem;
   display: inline-block;
   width: 150px;
   padding: 10px 0px;
   border-radius: 4px;
+}
+.searchbarDiv {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .headerDiv {
+    width: auto;
+  }
+  /* .searchbarDiv {
+    display: none !important;
+    width: auto;
+  } */
+  .headerPopularSearchDiv {
+    padding-left: 0px;
+    margin-left: -171px;
+  }
+  .headerPopularSearch > span {
+    margin: 0px 3px;
+  }
+  .headerIconDiv {
+    padding: 5px 0px;
+  }
+  .secondPage {
+    width: auto !important;
+  }
+  .secondPageFlexbox {
+    display: block;
+    text-align: center;
+  }
+  .flex2 {
+    display: none;
+  }
+  .content {
+    width: auto !important;
+  }
+  .iconBox {
+    width: 500px;
+    font-size: unset;
+  }
+  .thirdPage {
+    padding: 50px 0px;
+  }
+  /* .flex1Heading {
+    width: auto !important;
+    text-align: center !important;
+  } */
+  /* .flex1Heading > h2 {
+    display: block !important;
+  } */
+  /* .testimonials {
+    display: none;
+  } */
+  .secondPageSubjectData {
+    width: auto;
+  }
+  .slider {
+    width: auto;
+  }
+  .pro-next {
+    right: -38px !important;
+  }
+  .pro-prev {
+    left: -30px !important;
+  }
 }

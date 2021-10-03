@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
+@font-face {
+  font-family: 'Camphor';
+  src: local('Camphor'), url(./fonts/677b110e-fe2c-4af7-b50b-3e8f00c371ce.woff2) format('woff2');
+}
+
+
+@font-face {
+  font-family: 'CamphorBold';
+  src: local('CamphorBold'), url(./fonts/c96be38e-ea64-418f-ae54-e757ed92b069.woff2) format('woff2');
+}
+
 :root {
 	/* Primary Colors */
 	--primary-color: #28328c;
@@ -30,10 +41,12 @@ body {
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: #f1f0f5;
 }
 
 * {
-	font-family: 'PT Sans', sans-serif;
+	/* font-family: 'PT Sans', sans-serif; */
+	font-family: 'Camphor', 'PT Sans', sans-serif;
 }
 
 *,
@@ -44,7 +57,7 @@ html {
 }
 
 code {
-	font-family: 'PT Sans', sans-serif;
+	/* font-family: 'PT Sans', sans-serif; */
 	font-size: 1.4rem;
 }
 

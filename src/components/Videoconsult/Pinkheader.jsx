@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Section from "../Section/Section";
 import style from "./pinkheader.module.css";
 
 const Pinkheader = () => {
@@ -15,7 +14,7 @@ const Pinkheader = () => {
               <h4>Take Online Doctor Consultation</h4>
             </div>
             <p className={style.desc}>
-              Private consultation + Audio call · Starts at just ₹199
+              Private consultation + Audio call · Starts at just <span className="rupees_symbol">₹</span>199
             </p>
             <article className={style.cardstrip}>
               <div className={style.docimg}>
@@ -55,7 +54,7 @@ const Pinkheader = () => {
             {/* <a href="/doctor" className={style.consultnow}>
               Consult now
             </a> */}
-            <Link to="/flow2consultpage">Consult now</Link>
+            <Link className={style.consult_now} to="/flow2consultpage">Consult now</Link>
           </div>
           <img
             className={style.banner}

@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import styles from "./FindDoctors.module.css";
 import SearchBar from "../SearchBar/Searchbar";
-import cart from "./shopping-cart-simple.png";
-import record from "./notebook.png";
-import article from "./book-open.png";
 
 export default function FindDoctors() {
   const [position, setPosition] = useState(0);
@@ -130,7 +127,6 @@ export default function FindDoctors() {
           <div className={styles.headerIcon}>
             <div>
               <svg
-                className={`${styles.icons}`}
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -221,17 +217,7 @@ export default function FindDoctors() {
                   />
                 </svg>
 
-                <span
-                  style={{
-                    background: "yellow",
-                    color: "black",
-                    padding: "2px 3px",
-                    marginLeft: "3px",
-                    borderRadius: "1px",
-                  }}
-                >
-                  New
-                </span>
+                <span className={styles.new_badge}>New</span>
               </div>
               <div>Book test</div>
             </div>
@@ -297,7 +283,7 @@ export default function FindDoctors() {
       </div>
       <div className={styles.secondPage}>
         <div className={styles.secondPageSubject}>
-          <div className={styles.secondPageFlexbox}>
+          <div className={`${styles.secondPageFlexbox} ${styles.content}`}>
             <div className={styles.flex1}>
               <div>
                 <div className={styles.flex1Heading}>
@@ -384,7 +370,7 @@ export default function FindDoctors() {
       </div>
       <div className={styles.thirdPage}>
         <div className={styles.secondPageSubject}>
-          <div className={styles.secondPageFlexbox}>
+          <div className={`${styles.secondPageFlexbox} ${styles.content}`}>
             <div className={styles.flex1}>
               <div style={{ position: "relative" }}>
                 <div className={styles.flex1Heading}>
@@ -397,19 +383,27 @@ export default function FindDoctors() {
                 <div className={styles.tickBox}>
                   <div>
                     <i className="ion-checkmark-round"></i>
-                    <span>100,000 Verified doctors</span>
+                    <span>
+                      <span className={styles.bold_txt}>100,000</span> Verified
+                      doctors
+                    </span>
                   </div>
                 </div>
                 <div className={styles.tickBox}>
                   <div>
                     <i className="ion-checkmark-round"></i>
-                    <span>3M+ Patient recommendations</span>
+                    <span>
+                      <span className={styles.bold_txt}>3M+</span> Patient
+                      recommendations
+                    </span>
                   </div>
                 </div>
                 <div className={styles.tickBox}>
                   <div>
                     <i className="ion-checkmark-round"></i>
-                    <span>25M Patients/year</span>
+                    <span>
+                      <span className={styles.bold_txt}>25M</span> Patients/year
+                    </span>
                   </div>
                 </div>
                 <div className={`${styles.readMoreBox} ${styles.readMoreBox2}`}>
@@ -424,7 +418,7 @@ export default function FindDoctors() {
                       }}
                     >
                       {commentArr1.map((el) => (
-                        <div key={el.name} className={styles.testimonialseach}>
+                        <div key={el.name} className={styles.testimonialsearch}>
                           <div className={styles.starsDiv}>
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
@@ -432,12 +426,14 @@ export default function FindDoctors() {
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
                           </div>
-                          <div>{el.summary}</div>
+                          <div className={styles.review_text}>{el.summary}</div>
                           <div>
                             <div className={styles.profileIcon}>
                               <i className={el.personIcon}></i>
                             </div>
-                            <span>{el.name}</span>
+                            <span className={styles.reviewer_name}>
+                              {el.name}
+                            </span>
                           </div>
                         </div>
                       ))}
@@ -486,7 +482,7 @@ export default function FindDoctors() {
 
       <div className={styles.fourthPage}>
         <div className={styles.secondPageSubject}>
-          <div className={styles.secondPageFlexbox}>
+          <div className={`${styles.secondPageFlexbox} ${styles.content}`}>
             <div className={styles.flex2}>
               <div>
                 <div>
@@ -511,21 +507,29 @@ export default function FindDoctors() {
                   <div>
                     <i className="ion-checkmark-round"></i>
                     <span>
-                      Fees starting at <span className="rupees_symbol">₹</span>{" "}
-                      99
+                      Fees starting at{" "}
+                      <span className={styles.bold_txt}>
+                        <span className="rupees_symbol"> ₹</span>99
+                      </span>
                     </span>
                   </div>
                 </div>
                 <div className={styles.tickBox}>
                   <div>
                     <i className="ion-checkmark-round"></i>
-                    <span>Verified doctors respond in 5 minutes</span>
+                    <span>
+                      Verified doctors respond in{" "}
+                      <span className={styles.bold_txt}>5 minutes</span>
+                    </span>
                   </div>
                 </div>
                 <div className={styles.tickBox}>
                   <div>
                     <i className="ion-checkmark-round"></i>
-                    <span>100% Private and confidential</span>
+                    <span>
+                      <span className={styles.bold_txt}>100%</span> Private and
+                      confidential
+                    </span>
                   </div>
                 </div>
                 <div className={styles.spanBox}>
@@ -546,7 +550,7 @@ export default function FindDoctors() {
                       }}
                     >
                       {commentArr1.map((el, indx) => (
-                        <div key={indx} className={styles.testimonialseach}>
+                        <div key={indx} className={styles.testimonialsearch}>
                           <div className={styles.starsDiv}>
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
@@ -554,12 +558,14 @@ export default function FindDoctors() {
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
                           </div>
-                          <div>{el.summary}</div>
+                          <div className={styles.review_text}>{el.summary}</div>
                           <div>
                             <div className={styles.profileIcon}>
                               <i className={el.personIcon}></i>
                             </div>
-                            <span>{el.name}</span>
+                            <span className={styles.reviewer_name}>
+                              {el.name}
+                            </span>
                           </div>
                         </div>
                       ))}
@@ -635,7 +641,7 @@ export default function FindDoctors() {
       </div>
       <div className={styles.fifthPage}>
         <div className={styles.secondPageSubject}>
-          <div className={styles.secondPageFlexbox}>
+          <div className={`${styles.secondPageFlexbox} ${styles.content}`}>
             <div className={styles.flex1}>
               <div>
                 <div className={styles.flex1Heading}>
@@ -653,13 +659,19 @@ export default function FindDoctors() {
                 <div className={styles.tickBox}>
                   <div>
                     <i className="ion-checkmark-round"></i>
-                    <span>Over 130,000+ genuine medicines</span>
+                    <span>
+                      Over <span className={styles.bold_txt}>130,000+</span>{" "}
+                      genuine medicines
+                    </span>
                   </div>
                 </div>
                 <div className={styles.tickBox}>
                   <div>
                     <i className="ion-checkmark-round"></i>
-                    <span>Home delivery in 24hrs </span>
+                    <span>
+                      Home delivery in{" "}
+                      <span className={styles.bold_txt}>24hrs</span>{" "}
+                    </span>
                   </div>
                 </div>
                 <div className={styles.readMoreBox4}>
@@ -673,9 +685,9 @@ export default function FindDoctors() {
                   ></i>
                   <div className={styles.spanBox2}>
                     <span>
-                      Last order delivered<span> 2 mins </span>
-                      ago
-                      <br /> in Andheri West, Mumbai
+                      Last order delivered
+                      <span className={styles.bold_txt}> 2 mins ago</span> in
+                      Andheri West, Mumbai
                     </span>
                   </div>
                 </div>
@@ -696,7 +708,7 @@ export default function FindDoctors() {
       </div>
       <div className={styles.sixthPage}>
         <div className={styles.secondPageSubject}>
-          <div className={styles.secondPageFlexbox}>
+          <div className={`${styles.secondPageFlexbox} ${styles.content}`}>
             <div className={styles.flex2}>
               <div>
                 <div>
@@ -741,7 +753,7 @@ export default function FindDoctors() {
       </div>
       <div className={styles.secondPage}>
         <div className={styles.secondPageSubject}>
-          <div className={styles.secondPageFlexbox}>
+          <div className={`${styles.secondPageFlexbox} ${styles.content}`}>
             <div className={styles.flex1}>
               <div>
                 <div className={styles.flex1Heading}>
@@ -784,7 +796,7 @@ export default function FindDoctors() {
                       }}
                     >
                       {commentArr1.map((el, indx) => (
-                        <div key={indx} className={styles.testimonialseach}>
+                        <div key={indx} className={styles.testimonialsearch}>
                           <div className={styles.starsDiv}>
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
@@ -792,12 +804,14 @@ export default function FindDoctors() {
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
                             <i className={`${el.starIcon} ${styles.stars}`}></i>
                           </div>
-                          <div>{el.summary}</div>
+                          <div className={styles.review_text}>{el.summary}</div>
                           <div>
                             <div className={styles.profileIcon}>
                               <i className={el.personIcon}></i>
                             </div>
-                            <span>{el.name}</span>
+                            <span className={styles.reviewer_name}>
+                              {el.name}
+                            </span>
                           </div>
                         </div>
                       ))}
@@ -835,7 +849,7 @@ export default function FindDoctors() {
       </div>
       <div className={styles.seventhPage}>
         <div className={styles.secondPageSubject}>
-          <div className={styles.secondPageFlexbox}>
+          <div className={`${styles.secondPageFlexbox} ${styles.content}`}>
             <div className={styles.flex2}>
               <div>
                 <div>
@@ -850,7 +864,6 @@ export default function FindDoctors() {
               <div>
                 <div className={styles.flex1Heading}>
                   <h2>Download the Practo app</h2>
-                  <h2>In one secure app.</h2>
                 </div>
                 <div className={styles.tickBox}>
                   <div>

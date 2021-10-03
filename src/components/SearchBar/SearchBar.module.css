@@ -13,7 +13,9 @@
 }
 
 .searchBarWrapper {
-  width: 712px;
+  /* width: 712px; */
+  /* width: 7.85rem; */
+  width: 785px;
   padding: 20px 0;
 }
 
@@ -78,7 +80,7 @@
   appearance: none;
   -webkit-appearance: none;
   background: #fff;
-  height: 4rem;
+  height: 5rem;
 }
 
 .searchbox {

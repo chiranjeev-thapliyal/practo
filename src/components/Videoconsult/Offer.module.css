@@ -1,0 +1,102 @@
+.offer_card{
+	display: flex;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	padding-left: 12px;
+	margin: 0;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
+	width: 574px;
+	margin-right: 16px;
+	position: relative;
+}
+
+.offer_card.green{
+	background-color: #96d3bf;
+}
+
+.offer_card.pink{
+	background-color: #fce5f4;
+}
+
+.offer_card.orange{
+	background-color: #feba7f;
+}
+
+.card_content{
+	padding: 20px;
+	max-width: 350px;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	height: 100%;
+	/* max-width: 180px; */
+	font-weight: 700;
+	padding: 9px 7px;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.card_content > .heading{
+	font-size: 2.4rem;
+	line-height: 1.42;
+	max-width: 310px;
+	margin: 1rem 0;
+	font-weight: 400;
+	font-family: 'CamphorBold';
+}
+
+.badge{
+	text-transform: uppercase;
+    padding: 0 7px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 2px;
+    background-color: #fff;
+    font-size: 9px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+		font-size: 16px;
+    height: 27px;
+    line-height: 27px;
+		margin: 1rem 0;
+}
+
+.badge.green{
+	color: #2e6f5a;
+}
+
+.badge.pink{
+	color: #e72ea7;
+}
+
+.badge.orange{
+	color: #b05201;
+}
+
+.card_content > .cta{
+	font-size: 2rem;
+	display: flex;
+	align-items: center;
+	margin: 1rem 0;
+	font-weight: 400;
+	font-family: 'CamphorBold';
+}
+
+.card_content > .cta > svg{
+	margin-left: 1rem;
+}
+
+.img{
+	max-height: 11rem;
+	max-width: 11rem;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}

@@ -1,17 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.App {
+  /* background-color: #cfcfcf; */
+}
+
+.bg-white {
+  background-color: #fff;
+}
 
 .content {
-	width: 1180px !important;
-	zoom: 1 !important;
-	margin: auto !important;
+  width: 1180px !important;
+  zoom: 1 !important;
+  margin: auto !important;
 }
 
 .DownloadWrapper {
-	height: 572px;
-	background-color: #f8f8fb;
-	position: relative;
+  height: 572px;
+  background-color: #f8f8fb;
+  position: relative;
 }
 
-.rupees_symbol{
-	font-family: 'Roboto', sans-serif;
+.rupees_symbol {
+  font-family: "Roboto", sans-serif;
 }

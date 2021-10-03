@@ -1,0 +1,48 @@
+.problem_card {
+	width: 271px;
+	margin-left: 16px;
+	margin-right: 16px;
+	box-shadow: 0 3px 6px 0 rgb(45 45 51 / 8%);
+}
+
+.problem_card_img {
+	height: 179px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.problem_card_title,
+.problem_card_price,
+.consult_link {
+	padding: 0 16px;
+}
+
+.problem_card_title {
+	padding-top: 1.2rem;
+	font-size: 1.6rem;
+	margin-bottom: 3px;
+	font-weight: 700;
+	color: #414146;
+	line-height: 1.43;
+}
+
+.problem_card_price {
+	color: #787887;
+	font-size: 1.6rem;
+	margin-bottom: 1.6rem;
+	font-weight: 400;
+}
+
+.consult_link {
+	color: #14bef0;
+	margin-top: auto;
+	font-size: 1.4rem;
+	text-decoration: none;
+	font-weight: 700;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	padding-bottom: 1.6rem;
+	font-weight: 400;
+	font-family: 'CamphorBold';
+}

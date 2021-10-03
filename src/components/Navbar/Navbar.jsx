@@ -11,7 +11,7 @@ const Navbar = styled.div`
 	top: 0;
 	position: ${({ fixed }) => {
 		return fixed ? 'fixed' : 'relative';
-	}}; 
+	}};
 
 	& > .nav {
 		margin: 0px;
@@ -50,6 +50,10 @@ const Navbar = styled.div`
 
 				& > .active {
 					border-bottom: 5px solid #14bef0;
+
+					& > .prod-title {
+						color: #28328c !important;
+					}
 				}
 
 				& > .prod {
@@ -62,9 +66,10 @@ const Navbar = styled.div`
 					& > .prod-title {
 						font-size: 16px;
 						line-height: 20px;
-						font-weight: bold;
+						/* font-weight: bold; */
 						color: #2d2d32;
 						letter-spacing: -0.3px;
+						font-family: 'CamphorBold';
 					}
 
 					& > .prod-sub {
@@ -75,6 +80,22 @@ const Navbar = styled.div`
 					}
 				}
 			}
+		}
+	}
+
+	& .navbar_login {
+		font-size: 1.3rem;
+		line-height: 1.3rem;
+		color: #787887 !important;
+		border-radius: 4px;
+		border: solid 1px #d3d3d3;
+		padding: 8px 10px;
+		text-decoration: none;
+		font-weight: 400;
+
+		&:hover {
+			border-color: #14bef0;
+			color: #14bef0 !important;
 		}
 	}
 `;
