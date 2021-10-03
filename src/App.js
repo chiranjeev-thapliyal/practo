@@ -40,7 +40,7 @@ function App() {
 				<Route exact path='/consultpage'>
 					<ConsultPage />
 				</Route>
-				<Route exact path='/flow2consultpage'>
+				<Route exact path='/consult-doctor'>
 					<Flow2ConsultPage />
 				</Route>
 				<Route path='/video-consult'>
