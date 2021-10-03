@@ -1,7 +1,10 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { AuthContext } from '../../Contexts/AuthContextProvider';
 import './Payment.css';
 
 const Payment = () => {
+	const { price } = useContext(AuthContext);
+
 	const [ cardData, setCardData ] = useState({
 		cardNo: '',
 		cardHolderName: '',
@@ -35,7 +38,7 @@ const Payment = () => {
 					<h3 className='payment_secton_heading'>Payment Options</h3>
 					<ul className='payment_option_list'>
 						<li className='payment_option_item selected_option'>Debit/Credit</li>
-						<li className='payment_option_item'>Paytm Wallet</li> 
+						<li className='payment_option_item'>Paytm Wallet</li>
 						<li className='payment_option_item'>UPI</li>
 						<li className='payment_option_item'>Google Pay</li>
 						<li className='payment_option_item'>Amazon Pay</li>
@@ -50,7 +53,7 @@ const Payment = () => {
 				<h3 className='payment_secton_heading payment_primary_bg'>
 					Amount to pay:{' '}
 					<span className='payment_amount'>
-						<span className='rupees_symbol'>₹</span> 350
+						<span className='rupees_symbol'>₹</span> {price}
 					</span>
 				</h3>
 				<div className='payment_option_content'>

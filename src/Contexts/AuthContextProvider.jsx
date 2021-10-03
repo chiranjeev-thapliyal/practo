@@ -5,6 +5,7 @@ export const AuthContext = createContext();
 
 const AuthContextProvider = ({ children }) => {
 	const [ user, setUser ] = useState({ name: '', phone: '' });
+	const [price, setPrice] = useState(399);
 	const [ token, setToken ] = useState('');
 	const [ currentAppointment, setCurrentAppointment ] = useState({});
 
@@ -43,6 +44,7 @@ const AuthContextProvider = ({ children }) => {
 		...query,
 		user,
 		token,
+		price,
 		searched,
 		currentAppointment,
 		handleLocation,
@@ -50,6 +52,7 @@ const AuthContextProvider = ({ children }) => {
 		handleSearched,
 		setUser,
 		setToken,
+		setPrice,
 		setCurrentAppointment
 	};
 
