@@ -6,13 +6,13 @@ const DownloadWrapper = () => {
 	return (
 		<Section className='mt-60 DownloadWrapper'>
 			<Download className='download content'>
-				<div className='left'>
+				<div id="download_left" className='left'>
 					<img
 						src='https://www.practostatic.com/consumer-home/desktop/images/1597423628/footer-img.png'
 						alt='download practo app'
 					/>
 				</div>
-				<div className='right'> 
+				<div id="download_right" className='right'> 
 					<h3>Download the Practo app </h3>
 					<p className='app_info'>
 						Access video consultation with India’s top doctors on the Practo app. Connect with doctors
