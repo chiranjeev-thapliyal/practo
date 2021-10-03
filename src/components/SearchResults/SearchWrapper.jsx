@@ -38,7 +38,7 @@ const SearchWrapper = () => {
 		} else {
 			[ gte, lte ] = formData.consultation_fees.split('to').map(Number);
 		}
-		const { data } = await axios.get(`http://localhost:3001/doctors`, {
+		const { data } = await axios.get(`${process.env.REACT_APP_DATABASE}/doctors`, {
 			params: {
 				...(location && { locality: location }),
 				...(keyword && { speciality: keyword }),

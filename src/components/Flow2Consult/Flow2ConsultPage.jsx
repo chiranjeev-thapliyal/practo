@@ -39,7 +39,7 @@ export default function Flow2ConsultPage() {
   };
 
   const getData = async () => {
-    let res = await axios.get("http://localhost:3001/users", {
+    let res = await axios.get(`${process.env.REACT_APP_DATABASE}/users`, {
       params: {
         phone: user.phone,
       },

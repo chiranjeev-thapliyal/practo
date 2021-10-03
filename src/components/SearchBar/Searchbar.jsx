@@ -26,7 +26,7 @@ export default function Searchbar() {
 	const getData = async () => {
 		if (!showPlaces && !showSpeciality) return;
 		const endpoint = showPlaces ? 'place' : 'speciality';
-		const { data } = await axios.get(`http://localhost:3001/${endpoint}`);
+		const { data } = await axios.get(`${process.env.REACT_APP_DATABASE}/${endpoint}`);
 		setSuggestionList(data);
 	};
 
