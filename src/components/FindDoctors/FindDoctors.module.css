@@ -567,7 +567,7 @@
   } */
   .headerPopularSearchDiv {
     padding-left: 0px;
-    margin-left: -171px;
+    /* margin-left: -171px; */
   }
   .headerPopularSearch > span {
     margin: 0px 3px;
@@ -576,8 +576,8 @@
     padding: 5px 0px;
   }
 
-  .headerIcon > div:last-child{
-    padding: 0px;
+  .headerIcon > div{
+    padding: 0px!important;
   }
 
   .secondPage {
@@ -613,6 +613,15 @@
   .secondPageSubjectData {
     width: auto;
   }
+
+  .appDownloadIcons{
+    display: block;
+  }
+  
+  .appDownloadIcons > a > img{
+    max-width: 150px;
+  }
+
   .slider {
     width: auto;
   }

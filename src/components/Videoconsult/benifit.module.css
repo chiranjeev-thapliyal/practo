@@ -72,3 +72,12 @@
     color: #787887;
     
 }
+
+
+@media (max-width: 600px) {
+    .gridcont{
+        flex-basis: 100%;
+    }
+
+
+}

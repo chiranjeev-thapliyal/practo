@@ -18,6 +18,7 @@ const Footerwrapper = () => {
 				id="footer_top"
 				style={{
 					// width: '1180px',
+					maxWidth: "100rem",
 					margin: 'auto'
 				}}
 			>

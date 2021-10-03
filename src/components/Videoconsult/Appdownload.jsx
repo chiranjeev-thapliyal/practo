@@ -5,11 +5,11 @@ const Appdownload=()=>{
     return (
   <div className={style.appdownlod}>
       <div className={style.grey}>
-          <div className={style.appdownlodsection} id="download">
+                <div className={`${style.appdownlodsection} content`} id="download">
               <figure className={style.fig}>
                  <img  className={style.img} src="https://www.practo.com/consult/static/images/app-download-banner-web.png" alt="" />
               </figure>
-              <div className={style.content} id="downloadsub2">
+              <div className={style.content} id="downloadsub2"> 
                   <h2 className={style.head}>Download the Practo app</h2>
                   <p  className={style.desc}>Get ₹200 HealthCash</p>
                   <ul  className={style.ul} >
