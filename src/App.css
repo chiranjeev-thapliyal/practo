@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.App{
+.App {
 	/* background-color: #cfcfcf; */
 }
 
-.bg-white{
+.bg-white {
 	background-color: #fff;
 }
 
@@ -20,11 +20,11 @@
 	position: relative;
 }
 
-.rupees_symbol{
+.rupees_symbol {
 	font-family: 'Roboto', sans-serif;
 }
 
-.mobile_list{
+.mobile_list {
 	position: relative;
 	width: 100%;
 	background-color: var(--primary-color);
@@ -38,7 +38,7 @@
 	transition: left .5s linear;
 }
 
-.mobile_list > .close_icon{
+.mobile_list>.close_icon {
 	position: absolute;
 	right: 3rem;
 	top: 3rem;
@@ -47,29 +47,30 @@
 
 }
 
-.mobile_list::before, .mobile_list::after{
+.mobile_list::before,
+.mobile_list::after {
 	display: none;
 }
 
-.mobile_list > ul{
+.mobile_list>ul {
 	margin: 0;
 	padding: 0;
 }
 
-.mobile_list > ul > li{
+.mobile_list>ul>li {
 	text-align: center;
 	padding: 1rem 2rem;
 }
 
-.mobile_list > ul > li:hover{
+.mobile_list>ul>li:hover {
 	background-color: white;
 }
 
-.mobile_list > ul > li:hover > a{
+.mobile_list>ul>li:hover>a {
 	color: var(--primary-color);
 }
 
-.mobile_list > ul > li > a{
+.mobile_list>ul>li>a {
 	color: white;
 	font-size: 3rem;
 	text-decoration: none;
@@ -77,20 +78,20 @@
 	font-family: 'CamphorBold';
 }
 
-#hamburger_icon{
+#hamburger_icon {
 	display: none;
 	appearance: none;
 }
 
-#hamburger_icon:checked ~ .mobile_list{
+#hamburger_icon:checked~.mobile_list {
 	left: 0;
 }
 
-#hamburger_icon:checked ~ .hamburger_menu{
+#hamburger_icon:checked~.hamburger_menu {
 	display: none;
 }
 
-.hamburger_menu{
+.hamburger_menu {
 	display: none;
 	font-size: 3rem;
 	width: 4rem;
@@ -105,32 +106,34 @@
 
 @media (max-width: 1200px) {
 
-	.content{
-		width: 100%!important;
+	.content {
+		width: 100% !important;
 	}
 
-	#medicines, #lab_tests, #surgeries{
-		display: none!important;
+	#medicines,
+	#lab_tests,
+	#surgeries {
+		display: none !important;
 	}
 
-	#try_plus_ad{
-		display: none!important;
-	} 
+	#try_plus_ad {
+		display: none !important;
+	}
 
-	#nav_mid{
+	#nav_mid {
 		display: none;
 	}
 
-	#cards_content{
-		width: 100%!important;
+	#cards_content {
+		width: 100% !important;
 	}
 
-	#searchbar_content{
-		width: 100%!important;
+	#searchbar_content {
+		width: 100% !important;
 	}
 
-	#searchbar_wrapper{
-		width: 90%!important;
+	#searchbar_wrapper {
+		width: 90% !important;
 		margin: 0 auto;
 	}
 
@@ -138,138 +141,151 @@
 
 @media (max-width: 600px) {
 
-	.content{
-		width: 100%!important;
+	.content {
+		width: 100% !important;
 		text-align: center;
 	}
 
-	.hamburger_menu{
+	.hamburger_menu {
 		display: block;
 	}
 
-	.nav > .wrapper{
-		display: flex!important;
-    justify-content: center!important;
-    align-items: center!important;
+	.nav>.wrapper {
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center !important;
 	}
 
-	.nav > .wrapper > .nav-left{
+	.nav>.wrapper>.nav-left {
 		text-align: center;
 	}
 
-	.nav > .wrapper > div:last-child{
-		display: none!important;
+	.nav>.wrapper>div:last-child {
+		display: none !important;
 	}
 
-	.Card{
+	.Card {
 		margin-bottom: 1rem;
 	}
 
-	.head{
+	.head {
 		display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-	}
-
-	.head > .btn{
-		position: unset!important;
-	}
-
-	#cards_content{
 		flex-direction: column;
 		align-items: center;
-	}	
-
-	#card_content > div{
-		margin-bottom: 1rem!important;
+		width: 100%;
 	}
 
-	#consult_doc{
+	.head>.btn {
+		position: unset !important;
+	}
+
+	#cards_content {
 		flex-direction: column;
-    display: flex;
-    align-items: center;
+		align-items: center;
 	}
 
-	#download_left{
+	#card_content>div {
+		margin-bottom: 1rem !important;
+	}
+
+	#consult_doc {
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+	}
+
+	#download_left {
 		display: none;
 	}
 
-	#download_right{
+	#download_right {
 		width: 100%;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-    /* text-align: center; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+		margin: 0 auto;
+		padding: 1rem 2rem;
+		/* text-align: center; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		text-align: center;
 	}
 
-	#searchbar_content{
+	#searchbar_content {
 		width: 100%;
 	}
 
-	#searchbar_wrapper{
+	#searchbar_wrapper {
 		width: 90%;
 		margin: 0 auto;
 	}
 
-	#banner_wrapper{
+	#banner_wrapper {
 		min-height: unset;
 	}
 
-	#footer_section{
-		min-width: 100vw!important;
+	#footer_section {
+		min-width: 100vw !important;
 		width: 100%;
 	}
 
-	#footer_top{
-		width: 100%!important;
+	#footer_top {
+		width: 100% !important;
 
 	}
 
-	.footerdata{
-    min-width: 163px;
-    padding: 1rem;
+	.footerdata {
+		min-width: 163px;
+		padding: 1rem;
 	}
 
-	.footerdata > h3{
+	.footerdata>h3 {
 		margin-top: 3rem;
 	}
 
 
-	#download{
+	#download {
 		display: block;
 	}
-	#downloadsub2{
+
+	#downloadsub2 {
 		margin-left: 13% !important;
 	}
-	#beforedownload{
-		margin-left: 12% !important;
+
+	#beforedownload {
+		/* margin-left: 12% !important; */
 	}
-	#benifit_card{
+
+	#benifit_card {
 		margin-left: 5% !important;
 	}
-	#content{
+
+	#content {
 		width: 95% !important;
 	}
-	#pinkbanner{
-		height:45% !important;
+
+	#pinkbanner {
+		height: 45% !important;
 		width: 62% !important;
 	}
-	#pinkheading{
+
+	#pinkheading {
 		font-size: 20px;
 	}
-	#pinksub{
+
+	#pinksub {
 		font-size: 12px;
 	}
-	#active{
-     font-size: 10px;
+
+	#active {
+		font-size: 10px;
 	}
-	#add{
+
+	#add {
 		font-size: 12px;
 		display: block !important;
 	}
-	
+
+	.ctrl-btn {
+		display: none !important;
+	}
+
 }

@@ -290,12 +290,9 @@ export default function ConsultPage() {
                 <input type="text" />
               </div> */}
 								<div
-									className={`${styles.inputFullNameBox} ${styles.confirmDiv} ${styles.disabled} ${userDetails
-										.phone.length < 10
-										? styles.disabled
-										: ''}`}
+									className={`${styles.inputFullNameBox} ${styles.confirmDiv}`}
 								>
-									<div className={user.phone.length >= 10 ? `${styles.confirmBox}` : `${styles.disabled_btn}`}>
+									<div className={`${styles.confirmBox}`}>
 										Confirm<Link to='/payment' />
 									</div>
 								</div>
@@ -344,7 +341,7 @@ export default function ConsultPage() {
 								<div className={styles.mobileNumberDiv}>
 									We will send appointment related communication on this number
 								</div>
-								<div onClick={getOTP} className={`${styles.inputFullNameBox} ${user.phone.length >= 10 ? styles.confirmDiv : styles.disabled_div}`}>
+								<div onClick={getOTP} className={`${styles.inputFullNameBox} ${styles.confirmDiv} ${userDetails.phone.length < 10 && styles.disabled_div}`}>
 									<div className={`${styles.confirmBox}`}>Confirm</div>
 								</div>
 							</div>
@@ -376,7 +373,7 @@ export default function ConsultPage() {
 											Resend OTP
 										</div>
 									</div>
-									<div className={`${styles.inputFullNameBox} ${styles.confirmDiv}`}>
+									<div className={`${styles.inputFullNameBox} ${styles.confirmDiv} ${otp.length < 6 && styles.disabled_div}`}>
 										<div onClick={handleSignIn} className={styles.confirmBox}>
 											Continue to booking
 										</div>

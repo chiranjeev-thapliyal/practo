@@ -165,3 +165,25 @@
   display: table-cell;
   vertical-align: middle;
 }
+
+@media (max-width: 600px) {
+  .searchBarContainer{
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+
+  .searchBarContainer > div{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .searchbox_wrapper{
+    border: 1px solid #b4b4be;
+  }
+  
+  .searchbox{
+    border: none;
+    /* border-left: 1px solid #b4b4be; */
+  }
+
+}
