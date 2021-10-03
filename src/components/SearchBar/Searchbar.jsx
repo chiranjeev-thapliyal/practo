@@ -24,7 +24,6 @@ export default function Searchbar() {
 	};
 
 	const getData = async () => {
-		console.log(process.env);
 		if (!showPlaces && !showSpeciality) return;
 		const endpoint = showPlaces ? 'place' : 'speciality';
 		const { data } = await axios.get(`${process.env.REACT_APP_DATABASE}/${endpoint}`);
