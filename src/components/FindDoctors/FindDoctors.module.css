@@ -572,6 +572,15 @@
   .headerPopularSearch > span {
     margin: 0px 3px;
   }
+
+  .headerPopularSearch{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* align-items: center; */
+    flex-wrap: wrap;
+  }
+
   .headerIconDiv {
     padding: 5px 0px;
   }
@@ -600,6 +609,11 @@
   .thirdPage {
     padding: 50px 0px;
   }
+
+  .flex1Heading{
+    font-size: 2rem;
+  }
+
   /* .flex1Heading {
     width: auto !important;
     text-align: center !important;
@@ -631,4 +645,11 @@
   .pro-prev {
     left: -30px !important;
   }
+
+  .iconBox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }
