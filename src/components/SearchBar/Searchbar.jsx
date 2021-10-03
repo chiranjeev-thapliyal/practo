@@ -45,7 +45,7 @@ export default function Searchbar() {
 	};
 
 	return (
-		<div className={styles.searchBarWrapper}>
+		<div id="searchbar_wrapper" className={styles.searchBarWrapper}>
 			<div className={styles.searchBarContainer}>
 				<div className={styles.searchBarLocality} onClick={() => showSuggestion('places')}>
 					<div className={styles.searchbox_wrapper}>

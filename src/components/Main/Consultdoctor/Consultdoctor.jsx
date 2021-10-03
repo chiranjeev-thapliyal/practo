@@ -15,7 +15,7 @@ const Consultdoctor = () => {
 							Private online consultations with verified doctors in all specialists
 						</div>
 						<button className='btn'>View All Specialities</button>
-						<div style={{ marginTop: '20px' }}>
+						<div id="consult_doc" style={{ marginTop: '20px' }}>
 							<div style={{ verticalAlign: 'top', marginRight: '10px', display: 'inline-block' }}>
 								<div className='speciality_card'>
 									<div style={{ width: '120px', height: '120px' }}>

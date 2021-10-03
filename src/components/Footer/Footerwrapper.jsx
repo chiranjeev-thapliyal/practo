@@ -5,6 +5,7 @@ import Footer from './Footer';
 const Footerwrapper = () => {
 	return (
 		<Section
+			id="footer_section"
 			style={{
 				minWidth: '1200px',
 				backgroundColor: '#28328c',
@@ -14,6 +15,7 @@ const Footerwrapper = () => {
 			}}
 		>
 			<div
+				id="footer_top"
 				style={{
 					width: '1180px',
 					margin: 'auto'
@@ -75,7 +77,7 @@ const Footerwrapper = () => {
 					</div>
 				</Footer>
 			</div>
-			<div style={{ textAlign: 'center' }}>
+			<div id="footer_img_div" style={{ textAlign: 'center' }}>
 				<span>
 					<img
 						src='https://www.practostatic.com/web-assets/images/white_practo_logo.svg'

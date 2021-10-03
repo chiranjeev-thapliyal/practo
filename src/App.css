@@ -23,3 +23,195 @@
 .rupees_symbol{
 	font-family: 'Roboto', sans-serif;
 }
+
+.mobile_list{
+	position: relative;
+	width: 100%;
+	background-color: var(--primary-color);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 100%;
+	transition: left .5s linear;
+}
+
+.mobile_list > .close_icon{
+	position: absolute;
+	right: 3rem;
+	top: 3rem;
+	font-size: 3rem;
+	color: white;
+
+}
+
+.mobile_list::before, .mobile_list::after{
+	display: none;
+}
+
+.mobile_list > ul{
+	margin: 0;
+	padding: 0;
+}
+
+.mobile_list > ul > li{
+	text-align: center;
+	padding: 1rem 2rem;
+}
+
+.mobile_list > ul > li:hover{
+	background-color: white;
+}
+
+.mobile_list > ul > li:hover > a{
+	color: var(--primary-color);
+}
+
+.mobile_list > ul > li > a{
+	color: white;
+	font-size: 3rem;
+	text-decoration: none;
+	font-weight: 400;
+	font-family: 'CamphorBold';
+}
+
+#hamburger_icon{
+	display: none;
+	appearance: none;
+}
+
+#hamburger_icon:checked ~ .mobile_list{
+	left: 0;
+}
+
+#hamburger_icon:checked ~ .hamburger_menu{
+	display: none;
+}
+
+.hamburger_menu{
+	display: none;
+	font-size: 3rem;
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	right: 0;
+	top: 2rem;
+	color: var(--primary-color);
+}
+
+
+
+@media (max-width: 1200px) {
+	#medicines, #lab_tests, #surgeries{
+		display: none!important;
+	}
+
+	#try_plus_ad{
+		display: none!important;
+	} 
+
+	#nav_mid{
+		display: none;
+	}
+
+	#cards_content{
+		width: 100%!important;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	.content{
+		width: 100%!important;
+	}
+
+	.hamburger_menu{
+		display: block;
+	}
+
+	.nav > .wrapper{
+		display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+	}
+
+	.nav > .wrapper > .nav-left{
+		text-align: center;
+	}
+
+	.nav > .wrapper > div:last-child{
+		display: none!important;
+	}
+
+	.Card{
+		margin-bottom: 1rem;
+	}
+
+	.head{
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+	}
+
+	.head > .btn{
+		position: unset!important;
+	}
+
+	#cards_content{
+		flex-direction: column;
+		align-items: center;
+	}	
+
+	#card_content > div{
+		margin-bottom: 1rem!important;
+	}
+
+	#consult_doc{
+		flex-direction: column;
+    display: flex;
+    align-items: center;
+	}
+
+	#download_left{
+		display: none;
+	}
+
+	#download_right{
+		width: 100%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+		text-align: center;
+	}
+
+	#searchbar_content{
+		width: 100%;
+	}
+
+	#searchbar_wrapper{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#banner_wrapper{
+		min-height: unset;
+	}
+
+	#footer_section{
+		min-width: 100vw!important;
+		width: 100%;
+	}
+
+	#footer_top{
+		width: 100%!important;
+
+	}
+
+}

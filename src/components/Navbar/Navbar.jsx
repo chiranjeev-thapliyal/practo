@@ -42,7 +42,7 @@ const Navbar = styled.div`
 				height: 100%;
 			}
 
-			& > .nav-mid {
+			& > .nav-mid { 
 				height: 100%;
 				vertical-align: top;
 				display: inline-block;

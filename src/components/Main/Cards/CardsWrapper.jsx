@@ -39,7 +39,7 @@ const CardsWrapper = () => {
 
 	return (
 		<Section className='mt-60'>
-			<Cards className='content'>
+			<Cards id="cards_content" className='content'>
 				{info.map(({ title, desc, img, bg }, indx) => (
 					<Card bg={bg} key={title} className={`Card`}>
 						<div className='img-wrapper'>
