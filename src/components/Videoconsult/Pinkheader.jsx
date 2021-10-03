@@ -8,12 +8,12 @@ const Pinkheader = () => {
       <div className={style.pink}>
         <section className={style.firstfoldwrap}>
           <div className={style.content}>
-            <div className={style.heading}>
+            <div className={style.heading} id="pinkheading">
               Skip the travel!
               <br />
               <h4>Take Online Doctor Consultation</h4>
             </div>
-            <p className={style.desc}>
+            <p className={style.desc} id="pinksub">
               Private consultation + Audio call · Starts at just <span className="rupees_symbol">₹</span>199
             </p>
             <article className={style.cardstrip}>
@@ -41,6 +41,7 @@ const Pinkheader = () => {
                 </span>
                 <span
                   className={style.eachimgcount}
+                  id="active"
                   style={{
                     transform: "translateX(-30px)",
                     zIndex: 1,
@@ -58,10 +59,11 @@ const Pinkheader = () => {
           </div>
           <img
             className={style.banner}
+            id="pinkbanner"
             src="https://www.practo.com/consult/static/images/homepage-hero-image-web-v1.png"
             alt=""
           />
-          <div className={style.add}>
+          <div className={style.add} id="add">
             <img
               src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-award-business-kiranshastry-lineal-kiranshastry.png"
               alt="a"

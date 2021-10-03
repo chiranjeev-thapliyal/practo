@@ -7,7 +7,7 @@ const Benifit = () => {
       <div className={style.wrap}>
         <h2 className={style.heading}>Benefits of Online Consultation</h2>
         <div className={style.card}>
-          <div className={style.grid}>
+          <div className={style.grid} id="benifit_card">
             <div className={style.gridcont}>
               <div className={style.gridcont1}>
                 <h3 className={style.gridcont1head}>

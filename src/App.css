@@ -238,4 +238,38 @@
 		margin-top: 3rem;
 	}
 
+
+	#download{
+		display: block;
+	}
+	#downloadsub2{
+		margin-left: 13% !important;
+	}
+	#beforedownload{
+		margin-left: 12% !important;
+	}
+	#benifit_card{
+		margin-left: 5% !important;
+	}
+	#content{
+		width: 95% !important;
+	}
+	#pinkbanner{
+		height:45% !important;
+		width: 62% !important;
+	}
+	#pinkheading{
+		font-size: 20px;
+	}
+	#pinksub{
+		font-size: 12px;
+	}
+	#active{
+     font-size: 10px;
+	}
+	#add{
+		font-size: 12px;
+		display: block !important;
+	}
+	
 }
