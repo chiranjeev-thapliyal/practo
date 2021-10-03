@@ -1,25 +1,47 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
+	"theme_color": "#28328C",
+	"background_color": "#28328C",
+	"display": "standalone",
+	"scope": "/",
+	"start_url": "/",
+	"name": "Practo India",
+	"short_name": "Practo",
+	"description": "Say Hello to India\u2019s top doctors via video consultation, get digital prescriptions, order medicines, book doctor appointments & lab tests, find doctors near you, get health packages, ask a free health question to doctors",
+	"icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
+      "src": "maskable.png",
+      "size": "196x196",
       "type": "image/png",
-      "sizes": "192x192"
+      "purpose": "any maskable"
     },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+		{
+			"src": "favicon.ico",
+			"sizes": "64x64 32x32 24x24 16x16",
+			"type": "image/x-icon"
+		},
+		{
+			"src": "icon-192x192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "icon-256x256.png",
+			"type": "image/png",
+			"sizes": "256x256"
+		},
+		{
+			"src": "icon-384x384.png",
+			"type": "image/png",
+			"sizes": "384x384"
+		},
+		{
+			"src": "icon-512x512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#000000",
+	"background_color": "#ffffff"
 }
