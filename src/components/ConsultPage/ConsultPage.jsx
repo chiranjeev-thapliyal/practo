@@ -54,7 +54,7 @@ export default function ConsultPage() {
 
 	// Asynchronous request for authenticating user
 	const getUser = async () => {
-		const { data } = await axios.get(`http://localhost:3001/users/`, {
+		const { data } = await axios.get(`${process.env.REACT_APP_DATABASE}/users/`, {
 			params: {
 				phone: userDetails.phone
 			}
