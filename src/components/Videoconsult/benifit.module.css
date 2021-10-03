@@ -1,83 +1,79 @@
-.benifitsection{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-    font-weight: 400;
-    font-size: 14px;
+.benifitsection {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-weight: 400;
+  font-size: 14px;
 }
-.wrap{
-    padding: 25px 50px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1280px;
-    width: 100%;
-  
+.wrap {
+  padding: 25px 50px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1280px;
+  width: 100%;
 }
-.heading{
-    font-size: 30px;
-    line-height: 1.5;
-    padding-bottom: 30px;
-    color: #2d2d32;
-    
+.heading {
+  font-size: 30px;
+  line-height: 1.5;
+  padding-bottom: 30px;
+  color: #2d2d32;
+  font-weight: 400;
+  font-family: "CamphorBold";
 }
-.card{
-    border-radius: 4px;
-    border: 1px solid #f0f0f5;
-    background-color: #fff;
-}
-    
-.grid{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-   
-}
-.gridcont{
-    flex-basis: 33.33333%;
-}
-.gridcont1{
-    margin: 30px;
-}
-.gridcont1head{
-    font-size: 20px;
-    margin-bottom: 14px;
-}
-.tick{
-    vertical-align: middle;
-    font-size: 30px;
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
-}
-.tick::before{
-    margin: 0;
-    content: "\e9a8";
-    font-family: practicon,sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    speak: none;
-    display: inline-block;
-    text-decoration: inherit;
-    width: 1em;
-    text-align: center;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1em;
-}
-.gridcont1para{
-    font-size: 16px;
-    line-height: 20px;
-    color: #787887;
-    
+.card {
+  border-radius: 4px;
+  border: 1px solid #f0f0f5;
+  background-color: #fff;
 }
 
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.gridcont {
+  flex-basis: 33.33333%;
+  font-weight: 400;
+  font-family: "CamphorBold";
+}
+.gridcont1 {
+  margin: 30px;
+}
+.gridcont1head {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+.tick {
+  vertical-align: middle;
+  font-size: 30px;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+.tick::before {
+  margin: 0;
+  content: "\e9a8";
+  font-family: practicon, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+}
+.gridcont1para {
+  font-size: 16px;
+  line-height: 20px;
+  color: #787887;
+}
 
 @media (max-width: 600px) {
-    .gridcont{
-        flex-basis: 100%;
-    }
-
-
+  .gridcont {
+    flex-basis: 100%;
+  }
 }

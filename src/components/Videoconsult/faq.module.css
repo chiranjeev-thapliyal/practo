@@ -1,96 +1,94 @@
-.section{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-    font-weight: 400;
-    font-size: 14px;
-    
-
+.section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-weight: 400;
+  font-size: 14px;
 }
-.wrap{
-    padding-top: 78px;
-    padding-bottom: 32px;
-    color: #414146;
-    position: relative;
-    padding: 25px 50px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1280px;
-    width: 100%;
+.wrap {
+  padding-top: 78px;
+  padding-bottom: 32px;
+  color: #414146;
+  position: relative;
+  padding: 25px 50px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1280px;
+  width: 100%;
 }
-.heading{
-    padding-bottom: 5px;
-    font-size: 30px;
-    color: #2d2d32;
-    line-height: 1.5;
+.heading {
+  padding-bottom: 5px;
+  font-size: 30px;
+  color: #2d2d32;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "CamphorBold";
 }
-.container{
-    text-align: left;
-    color: #414146;
-    width: auto;
+.container {
+  text-align: left;
+  color: #414146;
+  width: auto;
 }
-.gridrow{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+.gridrow {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
-.gridrowcol{
-    flex-basis: 50%;
-    display: block;
+.gridrowcol {
+  flex-basis: 50%;
+  display: block;
 }
-.cont{
-    margin: 10px;
+.cont {
+  margin: 10px;
 }
-.accodiantext{
-    cursor: pointer;
-    padding-left: 27px;
-    display: block;
-    position: relative;
-    z-index: 4;
-    line-height: 1.43;
-    color: #414146;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 16px;
+.accodiantext {
+  cursor: pointer;
+  padding-left: 27px;
+  display: block;
+  position: relative;
+  z-index: 4;
+  line-height: 1.43;
+  color: #414146;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "CamphorBold";
 }
-.accodiantext::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 19px;
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 6px solid #414146;
-    transition: all .3s ease;
-
-
+.accodiantext::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 19px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 6px solid #414146;
+  transition: all 0.3s ease;
 }
-.accodiantextsub{
-    margin: 0 100px 16px 27px;
-    line-height: 1.25;
-    padding: 0 0 10px;
-    white-space: pre-line;
-    border-bottom: 1px solid rgba(240,240,245,.5);
-    font-size: 16px;
-    color: #787887;
+.accodiantextsub {
+  margin: 0 100px 16px 27px;
+  line-height: 1.25;
+  padding: 0 0 10px;
+  white-space: pre-line;
+  border-bottom: 1px solid rgba(240, 240, 245, 0.5);
+  font-size: 16px;
+  color: #787887;
 }
-.link1{
-    display: inline-block;
-    text-decoration: underline;
-    cursor: pointer;
-    color: #787887;
+.link1 {
+  display: inline-block;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #787887;
 }
-
 
 @media (max-width: 600px) {
-    .gridrowcol{
-        flex-basis: 100%;
-    }
-
+  .gridrowcol {
+    flex-basis: 100%;
+  }
 }
