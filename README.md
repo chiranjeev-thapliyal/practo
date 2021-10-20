@@ -8,7 +8,9 @@ This is a clone of the Practo India App, built with ReactJS, styled-components, 
 
 [Visit Live Site](https://practo.vercel.app/)
 
-<video src="https://chiranjeev-thapliyal.vercel.app/videos/practo.mp4?" width=600 autoplay loop>
+<div>
+	<video src="https://chiranjeev-thapliyal.vercel.app/videos/practo.mp4?" width=600 autoplay loop>
+</div>
 
   
 ## Run Locally
